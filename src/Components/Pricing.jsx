@@ -1,0 +1,52 @@
+export default function Pricing() {
+  const plans = [
+    ["Basic Kundli", "₹499", ["Chart overview", "Basic remedies", "PDF report"]],
+    [
+      "Premium Consultation",
+      "₹1999",
+      ["1-on-1 call", "Detailed guidance", "Personal remedies"],
+    ],
+    [
+      "Complete Life Report",
+      "₹4999",
+      ["Career", "Marriage", "Finance", "Health", "Yearly forecast"],
+    ],
+  ];
+
+  return (
+    <section id="pricing" className="bg-cream px-5 py-24 text-midnight">
+      <div className="mx-auto max-w-7xl">
+        <div className="text-center">
+          <p className="font-semibold text-teal">Pricing</p>
+          <h2 className="mt-3 font-display text-4xl font-bold">
+            Choose Your Astrology Plan
+          </h2>
+        </div>
+
+        <div className="mt-14 grid gap-6 md:grid-cols-3">
+          {plans.map(([name, price, features], index) => (
+            <div
+              key={name}
+              className={`rounded-[2rem] p-8 shadow-xl ${
+                index === 1
+                  ? "bg-midnight text-cream"
+                  : "bg-white text-midnight"
+              }`}
+            >
+              <h3 className="font-display text-3xl font-bold">{name}</h3>
+              <p className="mt-5 text-4xl font-bold text-teal">{price}</p>
+              <ul className="mt-6 space-y-3">
+                {features.map((feature) => (
+                  <li key={feature}>✓ {feature}</li>
+                ))}
+              </ul>
+              <button className="mt-8 w-full rounded-full bg-gold px-6 py-4 font-bold text-midnight">
+                Book Now
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
