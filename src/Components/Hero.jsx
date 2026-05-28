@@ -116,7 +116,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen overflow-hidden bg-midnight px-5 pt-32"
+      className="relative min-h-screen overflow-hidden bg-midnight px-5 pt-10 "
     >
       {/* Background Glow */}
       <div className="absolute left-[-100px] top-[-100px] h-[320px] w-[320px] rounded-full bg-teal/20 blur-3xl" />
@@ -194,7 +194,7 @@ export default function Hero() {
           className="relative flex justify-center"
         >
           {/* Glow Behind Image */}
-          <div className="absolute h-[420px] w-[420px] rounded-full bg-gold/10 blur-3xl" />
+          <div className="absolute  h-[420px] w-[420px] rounded-full bg-gold/10 blur-3xl" />
 
           {/* Main Image Card */}
           <motion.div
@@ -205,7 +205,7 @@ export default function Hero() {
             <img
               src="/astroHero.jpeg"
               alt="Astrology Hero"
-              className="h-[550px] w-full max-w-[450px] rounded-[2rem] object-cover"
+              className="h-[550px] w-full max-w-[550px] rounded-[2rem] object-cover overflow-hidden"
             />
 
             {/* Overlay Gradient */}
