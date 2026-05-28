@@ -114,7 +114,7 @@ import { Sparkles } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen overflow-hidden px-5">
+    <section id="home" className="relative h-screen overflow-hidden px-5">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
@@ -196,11 +196,11 @@ export default function Hero() {
           className="relative flex justify-center"
         >
           {/* Main Image Card */}
-          <div className="relative mt-50">
+          <div className="relative mt-45 mr-20">
             <img
               src="/home1.webp"
               alt="Astrology"
-              className="h-[650px] w-full max-w-[650px]  object-cover"
+              className="h-[700px]  w-full object-contain"
             />
           </div>
         </motion.div>

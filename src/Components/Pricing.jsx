@@ -4,7 +4,7 @@ export default function Pricing() {
     [
       "Premium Consultation",
       "₹2101",
-      ["1-on-1 call", "Detailed guidance", "Personal remedies"],
+      ["1-on-1 Consultation", "Detailed guidance", "Personal remedies"],
     ],
     [
       "Complete Life Report",
