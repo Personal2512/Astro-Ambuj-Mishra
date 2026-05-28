@@ -1,14 +1,14 @@
 export default function Pricing() {
   const plans = [
-    ["Basic Kundli", "₹499", ["Chart overview", "Basic remedies", "PDF report"]],
+    ["Basic Kundli", "₹1101", ["Chart overview", "Basic remedies", "PDF report"]],
     [
       "Premium Consultation",
-      "₹1999",
+      "₹2101",
       ["1-on-1 call", "Detailed guidance", "Personal remedies"],
     ],
     [
       "Complete Life Report",
-      "₹4999",
+      "₹5101",
       ["Career", "Marriage", "Finance", "Health", "Yearly forecast"],
     ],
   ];
