@@ -33,9 +33,27 @@ export default function Footer() {
         ))}
       </div>
 
-      <div className="mx-auto mt-10 max-w-7xl border-t border-cream/10 pt-6 text-center text-cream/50">
-        © 2026 Acharya Bhairav. All rights reserved.
-      </div>
+      <div className="mx-auto mt-10 max-w-7xl border-t border-cream/10 pt-6 text-cream/50">
+  <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+    
+    <p className="text-center sm:text-left">
+      © {new Date().getFullYear()} Acharya Bhairav. All Rights Reserved.
+    </p>
+
+    <p className="text-center sm:text-right">
+      Powered by{" "}
+      <a
+        href="https://hexaschoolerp.com"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-medium text-gold transition-colors duration-300 hover:underline"
+      >
+        Hexawarre Software Pvt. Ltd
+      </a>
+    </p>
+
+  </div>
+</div>
     </footer>
   );
 }

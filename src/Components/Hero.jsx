@@ -114,24 +114,27 @@ import { Sparkles } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section
-      id="home"
-      className="relative min-h-screen overflow-hidden bg-midnight px-5 pt-10 "
-    >
-      {/* Background Glow */}
-      <div className="absolute left-[-100px] top-[-100px] h-[320px] w-[320px] rounded-full bg-teal/20 blur-3xl" />
+    <section id="home" className="relative min-h-screen overflow-hidden px-5">
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/home.webp"
+          alt="background"
+          className="h- w-full object-cover "
+        />
 
-      <div className="absolute bottom-[-120px] right-[-100px] h-[320px] w-[320px] rounded-full bg-purpleGlow/20 blur-3xl" />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/40" />
+      </div>
 
-      {/* Rotating Ring */}
+      {/* Rotating Ring
       <motion.div
         animate={{ rotate: 360 }}
         transition={{ duration: 35, repeat: Infinity, ease: "linear" }}
         className="absolute right-20 top-36 hidden h-52 w-52 rounded-full border border-gold/20 md:block"
-      />
+      /> */}
 
-      <div className="relative mx-auto grid max-w-7xl items-center gap-16 py-16 md:grid-cols-2">
-        
+      <div className="relative z-10 mx-auto -mt-16 grid max-w-7xl items-center gap-16 py-16 md:grid-cols-2">
         {/* LEFT CONTENT */}
         <div>
           <motion.p
@@ -159,9 +162,8 @@ export default function Hero() {
             transition={{ delay: 0.3 }}
             className="mt-7 max-w-xl text-lg leading-8 text-cream/70"
           >
-            Get personalized kundli reports, relationship guidance,
-            career astrology and spiritual remedies from experienced
-            astrologers.
+            Get personalized kundli reports, relationship guidance, career
+            astrology and spiritual remedies from experienced astrologers.
           </motion.p>
 
           <motion.div
@@ -193,35 +195,14 @@ export default function Hero() {
           transition={{ duration: 1 }}
           className="relative flex justify-center"
         >
-          {/* Glow Behind Image */}
-          <div className="absolute  h-[420px] w-[420px] rounded-full bg-gold/10 blur-3xl" />
-
           {/* Main Image Card */}
-          <motion.div
-            animate={{ y: [0, -12, 0] }}
-            transition={{ duration: 5, repeat: Infinity }}
-            className="glass relative overflow-hidden rounded-[2.5rem] border border-white/10 p-3 shadow-2xl"
-          >
+          <div className="relative mt-50">
             <img
-              src="/astroHero.jpeg"
-              alt="Astrology Hero"
-              className="h-[550px] w-full max-w-[550px] rounded-[2rem] object-cover overflow-hidden"
+              src="/home1.webp"
+              alt="Astrology"
+              className="h-[650px] w-full max-w-[650px]  object-cover"
             />
-
-            {/* Overlay Gradient */}
-            <div className="absolute inset-0 rounded-[2rem] bg-gradient-to-t from-midnight/60 via-transparent to-transparent" />
-
-            {/* Floating Badge */}
-            <div className="absolute bottom-6 left-6 rounded-2xl border border-white/10 bg-black/30 px-5 py-4 backdrop-blur-xl">
-              <p className="text-sm text-seafoam">
-                ✨ Trusted By 1.2L+ People
-              </p>
-
-              <h4 className="mt-1 text-xl font-bold text-cream">
-                Premium Astrology Guidance
-              </h4>
-            </div>
-          </motion.div>
+          </div>
         </motion.div>
       </div>
     </section>

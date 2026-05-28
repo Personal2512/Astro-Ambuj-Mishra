@@ -1,10 +1,10 @@
 import { Menu, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
-const navItems = ["Home", "Services", "Kundli", "Pricing", "Blogs"];
+const navItems = ["Home", "About", "Services", "Kundli", "Pricing", "Blogs"];
 
 export default function Navbar() {
-  return (
+  return ( 
     <motion.header
       initial={{ y: -70, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}

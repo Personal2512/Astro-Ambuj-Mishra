@@ -43,10 +43,10 @@ export const services = [
 ];
 
 export const stats = [
-  ["21+", "Years Legacy"],
-  ["25000+", "Consultations"],
-  ["5+", "Countries"],
-  ["5000+", "Students Trained"],
+  ["12+", "Years Legacy"],
+  ["1 lac+", "Consultations"],
+  ["10+", "Countries"],
+  ["1000+", "Students Trained"],
 ];
 
 export const testimonials = [
