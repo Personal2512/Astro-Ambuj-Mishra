@@ -25,7 +25,7 @@ export default function Navbar() {
             <a
               key={item}
               href={`#${item.toLowerCase()}`}
-              className="text-sm font-medium text-cream/80 transition hover:text-gold"
+              className="text-lg font-bold text-cream/80 transition hover:text-gold"
             >
               {item}
             </a>
