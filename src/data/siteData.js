@@ -44,8 +44,8 @@ export const services = [
 
 export const stats = [
   ["15+", "Years Legacy"],
-  ["1 lac+", "Consultations"],
-  ["15+", "Countries"],
+  ["100 K+", "Consultations"],
+  ["20+", "Countries"],
   ["1000+", "Students Trained"],
 ];
 

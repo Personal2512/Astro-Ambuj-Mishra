@@ -6,9 +6,9 @@ export default function Services() {
     <section id="services" className="bg-midnight px-5 py-24">
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto max-w-2xl text-center">
-          <p className="font-semibold text-gold">Our Services</p>
-          <h2 className="mt-3 font-display text-4xl font-bold text-cream md:text-5xl">
-            Astrology Guidance For Every Life Question
+          {/* <p className="font-semibold text-gold">Our Services</p> */}
+          <h2 className="mt-3 font-display text-4xl font-bold text-cream md:text-5xl leading-[70px]">
+            Astrology Guidance <br /> For Every Life Question
           </h2>
         </div>
 
