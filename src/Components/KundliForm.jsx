@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 export default function KundliForm() {
   return (
-    <section id="kundli" className="bg-cream px-5 py-24 text-midnight">
+    <section id="kundli" className="bg-cream px-5 pt-8 pb-24 text-midnight">
       <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
-        <div>
+        <div className="-mt-10">
           <p className="font-semibold text-teal">Free Kundli</p>
           <h2 className="mt-3 font-display text-4xl font-bold md:text-5xl">
             Start Your Personalized Astrology Journey
@@ -14,7 +14,7 @@ export default function KundliForm() {
             form can later be connected with your backend API.
           </p>
 
-          <div className="mt-8 rounded-3xl bg-midnight p-6 text-cream">
+          <div className="mt-8 rounded-3xl bg-midnight p-6 text-cream h-80">
             <h3 className="font-display text-2xl font-bold text-gold">
               What You Get
             </h3>

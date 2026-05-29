@@ -13,12 +13,12 @@ const AboutUs = () => {
       <div className="relative max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-14">
-          <p className="text-orange-400 font-semibold tracking-widest uppercase mb-3">
+          {/* <p className="text-orange-400 font-semibold tracking-widest uppercase mb-3">
             About us
-          </p>
+          </p> */}
 
           <h2 className="text-4xl md:text-5xl font-bold text-cream leading-tight">
-            About <span className="text-orange-400">Acharya Vatsal Mishra</span>
+            About <span className="text-orange-400">Acharya Vatsal Mishra "Bhairav"</span>
           </h2>
 
           <div className="w-28 h-1 bg-orange-500 mx-auto mt-5 rounded-full"></div>
