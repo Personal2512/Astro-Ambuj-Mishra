@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 // import Zodiac from "./components/Zodiac";
 import Panchang from "./Components/Panchang";
+import AstroShop from "./components/AstroShop";
 
 
 export default function App() {
@@ -20,6 +21,7 @@ export default function App() {
       {/* <Zodiac /> */}
       <About />
       <Stats />
+      <AstroShop />
       <Services />
       <KundliForm />
       {/* <Testimonials /> */}
