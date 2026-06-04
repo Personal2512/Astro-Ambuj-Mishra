@@ -11,32 +11,32 @@ import {
 
 export const services = [
   {
-    icon: Star,
+    image: "/Kundli.webp",
     title: "Premium Kundli Reading",
     desc: "Detailed birth-chart analysis for career, marriage, finance and life direction.",
   },
   {
-    icon: Moon,
+    image: "/DailyHoroscope.webp",
     title: "Daily Horoscope",
     desc: "Personal guidance based on planetary movements and zodiac energy.",
   },
   {
-    icon: Gem,
+    image: "/GemGuide.webp",
     title: "Gemstone Guidance",
     desc: "Authentic gemstone recommendation based on your chart and goals.",
   },
   {
-    icon: HeartHandshake,
+    image: "/marriage.webp",
     title: "Marriage Compatibility",
     desc: "Kundli matching, relationship clarity and compatibility insights.",
   },
   {
-    icon: BriefcaseBusiness,
+    image: "/carrier.webp",
     title: "Career Astrology",
     desc: "Understand your professional strengths, timing and growth opportunities.",
   },
   {
-    icon: BookOpen,
+    image: "/course.webp",
     title: "Astrology Courses",
     desc: "Learn Vedic astrology, numerology and spiritual sciences step by step.",
   },

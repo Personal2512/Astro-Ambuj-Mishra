@@ -1,45 +1,43 @@
 const products = [
   {
-    title: "Planetary Energy Stones",
-    price: "From ₹1,999",
+    title: "Gemstones   ",
+    price: "From ₹599",
     image: "/gemstones.webp",
   },
   {
-    title: "Sacred Rudra Collection",
-    price: "From ₹5999",
-    image: "/rudraksha.jpg",
+    title: "Rudraksha ",
+    price: "From ₹599",
+    image: "/Rudraksha.webp",
   },
   {
-    title: "Protection & Healing Bands",
+    title: "Bracelets",
     price: "From ₹599",
-    image: "/bracelets.jpg",
+    image: "/braclets.webp",
   },
   {
-    title: "Prosperity Energy Decor",
+    title: "Crystal Trees",
     price: "From ₹599",
-    image: "/crystal-trees.jpg",
+    image: "/crystaltree.webp",
   },
 ];
 
 export default function AstroShop() {
   return (
-    <section className="bg-[#F8F5EE] px-5 py-20">
+    <section className="bg-[#E2B071] px-5 py-20">
       <div className="mx-auto max-w-7xl">
         <div className="mb-14 text-center">
-          <p className="font-semibold tracking-wide text-teal">
-            Astro Store
-          </p>
+          {/* <p className="font-semibold tracking-wide text-teal">Astro Store</p> */}
 
           <h2 className="mt-3 text-4xl font-bold text-midnight md:text-5xl">
             Shop Spiritual Essentials
           </h2>
         </div>
 
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-7 md:grid-cols-2 lg:grid-cols-4">
           {products.map((item) => (
             <div
               key={item.title}
-              className="overflow-hidden border border-gold/20 bg-cream shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+              className="flex flex-col overflow-hidden border border-midnight/80 bg-midnight shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
               <img
                 src={item.image}
@@ -47,16 +45,14 @@ export default function AstroShop() {
                 className="h-[260px] w-full object-cover"
               />
 
-              <div className="p-6">
-                <h3 className="text-3xl font-semibold text-midnight">
+              <div className="flex flex-1 flex-col p-6">
+                <h3 className="text-3xl font-semibold text-white">
                   {item.title}
                 </h3>
 
-                <p className="mt-3 text-xl text-midnight/80">
-                  {item.price}
-                </p>
+                <p className="mt-3 mb-8 text-xl text-white">{item.price}</p>
 
-                <button className="mt-8 w-full border border-gold bg-transparent px-6 py-3 text-lg font-medium text-midnight transition-all duration-300 hover:bg-gold hover:text-midnight">
+                <button className="mt-auto w-full border border-gold bg-gold px-6 py-3 text-lg font-medium text-midnight transition-all duration-300">
                   Shop Now
                 </button>
               </div>

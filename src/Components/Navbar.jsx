@@ -1,20 +1,22 @@
 import { Menu, Sparkles } from "lucide-react";
 import { motion } from "framer-motion";
 
-const navItems = ["Home", "About", "Services", "Kundli", "Pricing", "Blogs"];
+const navItems = ["Home", "Services", "About", "Contact Us"];
 
 export default function Navbar() {
-  return ( 
+  return (
     <motion.header
       initial={{ y: -70, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       className="fixed left-0 top-0 z-50 w-full border-b border-cream/10 bg-midnight/80 backdrop-blur-xl"
     >
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4">
-        <div className="flex items-center gap-2">
-          <div className="gold-gradient flex h-10 w-10 items-center justify-center rounded-full text-midnight">
-            <Sparkles size={22} />
-          </div>
+      <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5">
+        <div className="flex items-center gap-3">
+          <img
+            src="/favicon.webp"
+            alt="Astro Logo"
+            className="h-12 w-12 object-contain  rounded-full border border-cream/20"
+          />
           <span className="font-display text-2xl font-bold text-cream">
             Acharya Bhairav
           </span>

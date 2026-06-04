@@ -9,7 +9,11 @@ import {
   Scale,
   Landmark,
   Flower2,
+  Sparkles,
+  Eclipse,
+  Orbit,
 } from "lucide-react";
+import { WiMoonrise, WiMoonset } from "react-icons/wi";
 import PanchangModal from "./PanchangModal";
 
 const Panchang = () => {
@@ -54,7 +58,7 @@ const Panchang = () => {
       icon: Moon,
     },
     {
-      title: "Samvat",
+      title: "Rahu Kaal",
       value: "2083 Raudra",
       sub: "",
       icon: CalendarDays,
@@ -72,10 +76,28 @@ const Panchang = () => {
       icon: Landmark,
     },
     {
-      title: "Mas",
+      title: "Hindu Month",
       value: "Jyeshtha",
       sub: "",
       icon: Scale,
+    },
+     {
+      title: "Retu",
+      value: "Jyeshtha",
+      sub: "",
+      icon: Orbit,
+    },
+     {
+      title: "Kali Samvat",
+      value: "Swati",
+      sub: "",
+      icon: Eclipse,
+    },
+     {
+      title: "Ayana",
+      value: "Variyaan",
+      sub: "",
+      icon: Sparkles,
     },
   ];
   const formatDate = (dateString) => {
@@ -86,7 +108,7 @@ const Panchang = () => {
   };
 
   return (
-    <section className="bg-[#020a3d] py-16 px-4">
+    <section className="bg-midnight py-16 px-4">
       <div className="max-w-7xl mx-auto border border-yellow-500 rounded-3xl p-6 md:p-8">
         {/* Header */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-6">
@@ -98,7 +120,7 @@ const Panchang = () => {
               <div className="flex items-center gap-2 text-gray-300">
                 <MapPin
                   size={18}
-                  className="text-red-500 cursor-pointer"
+                  className="text-gold cursor-pointer"
                   onClick={() => setShowLocationSelector(!showLocationSelector)}
                 />
 
@@ -168,7 +190,7 @@ const Panchang = () => {
         {/* Date Picker */}
         <div className="flex justify-center items-center gap-3 my-8 border-t border-gray-600 pt-6">
           <CalendarDays
-            className="text-sky-400 cursor-pointer"
+            className="text-gold cursor-pointer"
             size={24}
             onClick={() => {
               if (dateInputRef.current?.showPicker) {
@@ -204,16 +226,16 @@ const Panchang = () => {
             <p className="text-orange-400 text-3xl font-bold mt-3">07:12 PM</p>
           </div>
 
-          <div className="bg-gradient-to-br from-[#04154f] to-[#131b55] rounded-2xl p-6 border border-gray-700">
-            <Moon className="text-cyan-300 mb-4" size={48} />
+          <div className="bg-gradient-to-br from-[#24012b] to-[#0a1645] rounded-2xl p-6 border border-gray-700">
+            <WiMoonrise className="text-yellow-400 mb-4" size={60} />
             <h3 className="text-white text-xl">Chandra Uday</h3>
-            <p className="text-gray-200 text-3xl font-bold mt-3">04:52 PM</p>
+            <p className="text-yellow-400 text-3xl font-bold mt-3">04:52 PM</p>
           </div>
 
-          <div className="bg-gradient-to-br from-[#15136d] to-[#0a1645] rounded-2xl p-6 border border-gray-700">
-            <Moon className="text-cyan-300 mb-4" size={48} />
+          <div className="bg-gradient-to-br from-[#2a0038] to-[#131b55] rounded-2xl p-6 border border-gray-700">
+            <WiMoonset className="text-orange-400 mb-4" size={60} />
             <h3 className="text-white text-xl">Chandra Ast</h3>
-            <p className="text-gray-200 text-3xl font-bold mt-3">03:27 AM</p>
+            <p className="text-orange-400 text-3xl font-bold mt-3">03:27 AM</p>
           </div>
         </div>
 
@@ -225,21 +247,21 @@ const Panchang = () => {
             return (
               <div
                 key={index}
-                className="bg-[#07134d] border border-[#22306f] rounded-xl p-5 flex items-center gap-4 hover:border-yellow-500 transition"
+                className="bg-cream border border-[#22306f] rounded-xl p-5 flex items-center gap-4 hover:border-yellow-500 transition"
               >
                 <div className="w-14 h-14 rounded-full border border-yellow-500/40 flex items-center justify-center">
-                  <Icon className="text-yellow-400" size={28} />
+                  <Icon className="text-midnight" size={28} />
                 </div>
 
                 <div>
-                  <h3 className="text-white text-lg font-semibold">
+                  <h3 className="text-midnight text-lg font-semibold">
                     {item.title}
                   </h3>
 
-                  <p className="text-gray-200">{item.value}</p>
+                  <p className="text-midnight">{item.value}</p>
 
                   {item.sub && (
-                    <p className="text-gray-400 text-sm">{item.sub}</p>
+                    <p className="text-midnight text-sm">{item.sub}</p>
                   )}
                 </div>
               </div>

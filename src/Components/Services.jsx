@@ -13,28 +13,32 @@ export default function Services() {
         </div>
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {services.map((service, index) => {
-            const Icon = service.icon;
-            return (
-              <motion.div
-                key={service.title}
-                initial={{ opacity: 0, y: 35 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.08 }}
-                viewport={{ once: true }}
-                whileHover={{ y: -8 }}
-                className="glass rounded-[2rem] p-7"
-              >
-                <div className="gold-gradient mb-6 flex h-14 w-14 items-center justify-center rounded-2xl text-midnight">
-                  <Icon />
-                </div>
-                <h3 className="font-display text-2xl font-bold text-cream">
-                  {service.title}
-                </h3>
-                <p className="mt-3 leading-7 text-cream/65">{service.desc}</p>
-              </motion.div>
-            );
-          })}
+          {services.map((service) => (
+  <div
+    key={service.title}
+    className="overflow-hidden rounded-2xl bg-midnight/80 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+  >
+    {/* Image Section */}
+    <div className="h-60 overflow-hidden">
+      <img
+        src={service.image}
+        alt={service.title}
+        className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+      />
+    </div>
+
+    {/* Text Section */}
+    <div className="p-6">
+      <h3 className="text-2xl font-bold text-cream">
+        {service.title}
+      </h3>
+
+      <p className="mt-3 text-cream">
+        {service.desc}
+      </p>
+    </div>
+  </div>
+))}
         </div>
       </div>
     </section>

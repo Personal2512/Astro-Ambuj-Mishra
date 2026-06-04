@@ -18,7 +18,7 @@ const AboutUs = () => {
           </p> */}
 
           <h2 className="text-4xl md:text-5xl font-bold text-cream leading-tight">
-            About <span className="text-orange-400">Acharya Vatsal Mishra "Bhairav"</span>
+            About <span className="text-orange-400">Acharya Vatsal Mishra  <span className="text-cream">'Bhairav'</span> </span>
           </h2>
 
           <div className="w-28 h-1 bg-orange-500 mx-auto mt-5 rounded-full"></div>
@@ -42,9 +42,9 @@ const AboutUs = () => {
               </div>
 
               <div>
-                <h4 className="font-bold text-lg text-cream">15+ Years</h4>
+                <h4 className="font-bold text-lg text-white">15+ Years</h4>
 
-                <p className="text-sm text-cream/70">Experience in Astrology</p>
+                <p className="text-sm text-white">Experience in Astrology</p>
               </div>
             </div>
           </div>
@@ -59,12 +59,12 @@ const AboutUs = () => {
               </span>
             </div>
 
-            <p className="text-cream/70 leading-8 text-lg mb-6">
+            <p className="text-white leading-8 text-lg mb-6">
               Acharya Vatsal Mishra ‘Bhairav’ has been practicing astrology for
               over 15 years, deeply rooted in the sacred Guru-Shishya Parampara.
             </p>
 
-            <p className="text-cream/70 leading-8 text-lg mb-6">
+            <p className="text-white leading-8 text-lg mb-6">
               Certified by the Uttar Pradesh Sanskrit Sansthan, he holds a
               Master of Arts (Jyotish Vigyan) degree, blending deep academic
               excellence with traditional spiritual lineage. He is a lifetime
@@ -72,7 +72,7 @@ const AboutUs = () => {
               Astrological Sciences (ICAS).
             </p>
 
-            <p className="text-cream/70 leading-8 text-lg mb-6">
+            <p className="text-white leading-8 text-lg mb-6">
               Driven by a passion for accuracy, Acharya Bhairav actively
               incorporates rigorous astrological research into his practice. By
               combining timeless traditional wisdom with a contemporary,
