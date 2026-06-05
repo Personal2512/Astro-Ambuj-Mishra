@@ -17,14 +17,13 @@ import Rudraksha from "./pages/Rudraksha";
 import CrystalTrees from "./pages/CrystalTrees";
 import { Route, Routes } from "react-router-dom";
 
-
-function Home(){
+function Home() {
   return (
     <>
-     <Navbar />
-          <Hero />
-          {/* <Zodiac /> */}
-          <About />
+      <Navbar />
+      <Hero />
+      {/* <Zodiac /> */}
+      <About />
       <Stats />
       <AstroShop />
       <Services />
