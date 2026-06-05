@@ -60,7 +60,7 @@ const PanchangModal = ({ onClose, selectedDate, location }) => {
           </div>
 
           {/* Tabs */}
-          <div className="grid grid-cols-4 bg-[#12184a] rounded-lg overflow-hidden border border-[#2a3672]">
+          <div className="grid grid-cols-4 bg-cream rounded-lg overflow-hidden border border-[#2a3672]">
             {tabs.map((tab) => (
               <button
                 key={tab}
@@ -68,7 +68,7 @@ const PanchangModal = ({ onClose, selectedDate, location }) => {
                 className={`py-4 capitalize font-medium ${
                   activeTab === tab
                     ? "border-b-2 border-yellow-400 text-yellow-400"
-                    : "text-white"
+                    : "text-midnight"
                 }`}
               >
                 {tab}
@@ -80,8 +80,8 @@ const PanchangModal = ({ onClose, selectedDate, location }) => {
 
           {activeTab === "panchang" && (
             <div className="grid md:grid-cols-3 gap-4 mt-6">
-              <div className="bg-[#101747] rounded-xl p-5 border border-[#26336e]">
-                <h3 className="text-white text-xl font-bold mb-4">
+              <div className="bg-cream rounded-xl p-5 border border-[#26336e]">
+                <h3 className="text-midnight text-xl font-bold mb-4">
                   Panchang Details
                 </h3>
 
@@ -94,8 +94,8 @@ const PanchangModal = ({ onClose, selectedDate, location }) => {
                 </div>
               </div>
 
-              <div className="bg-[#101747] rounded-xl p-5 border border-[#26336e]">
-                <h3 className="text-white text-xl font-bold mb-4">
+              <div className="bg-cream rounded-xl p-5 border border-[#26336e]">
+                <h3 className="text-midnight text-xl font-bold mb-4">
                   Auspicious Timings
                 </h3>
 
@@ -107,8 +107,8 @@ const PanchangModal = ({ onClose, selectedDate, location }) => {
                 </div>
               </div>
 
-              <div className="bg-[#101747] rounded-xl p-5 border border-[#26336e]">
-                <h3 className="text-white text-xl font-bold mb-4">
+              <div className="bg-cream rounded-xl p-5 border border-[#26336e]">
+                <h3 className="text-midnight text-xl font-bold mb-4">
                   Inauspicious Timings
                 </h3>
 
@@ -123,24 +123,24 @@ const PanchangModal = ({ onClose, selectedDate, location }) => {
           )}
 
           {activeTab === "muhurat" && (
-            <div className="mt-6 bg-[#101747] rounded-xl p-6 border border-[#26336e]">
+            <div className="mt-6 bg-cream rounded-xl p-6 border border-[#26336e]">
               <h2 className="text-yellow-400 text-3xl font-bold mb-4">
                 Abhijit Muhurat
               </h2>
 
-              <p className="text-gray-300">
+              <p className="text-midnight">
                 Highly auspicious for starting important works.
               </p>
             </div>
           )}
 
           {activeTab === "choghadiya" && (
-            <div className="mt-6 bg-[#101747] rounded-xl p-6 border border-[#26336e]">
+            <div className="mt-6 bg-cream rounded-xl p-6 border border-[#26336e]">
               <h2 className="text-red-400 text-3xl font-bold mb-4">
                 Rahu Kaal
               </h2>
 
-              <p className="text-gray-300">
+              <p className="text-midnight">
                 Avoid starting important work during this period.
               </p>
             </div>

@@ -5,7 +5,7 @@ export default function KundliForm() {
     <section id="kundli" className="bg-cream px-5 pt-8 pb-24 text-midnight">
       <div className="mx-auto grid max-w-7xl items-center gap-12 md:grid-cols-2">
         <div className="-mt-10">
-          <p className="font-semibold text-teal">Free Kundli</p>
+          {/* <p className="font-semibold text-teal">Free Kundli</p> */}
           <h2 className="mt-3 font-display text-4xl font-bold md:text-5xl">
             Start Your Personalized Astrology Journey
           </h2>
@@ -45,7 +45,7 @@ export default function KundliForm() {
                 <span className="mb-2 block text-sm font-bold">{label}</span>
                 <input
                   type={label.includes("Date") ? "date" : "text"}
-                  className="w-full rounded-2xl border border-midnight/10 bg-cream px-4 py-3 outline-none focus:border-teal"
+                  className="w-full rounded-2xl border border-midnight/10 bg-white px-4 py-3 outline-none focus:border-gold"
                   placeholder={label}
                 />
               </label>
@@ -53,7 +53,7 @@ export default function KundliForm() {
 
             <button
               type="button"
-              className="mt-3 rounded-full bg-teal px-7 py-4 font-bold text-white shadow-xl shadow-teal/20"
+              className="mt-3 rounded-full bg-gold px-7 py-4 font-bold text-midnight shadow-xl shadow-teal/20"
             >
               Generate Kundli
             </button>

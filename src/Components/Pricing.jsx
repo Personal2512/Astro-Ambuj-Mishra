@@ -9,7 +9,7 @@ export default function Pricing() {
       "Premium Consultation",
       "₹2101",
       [
-        "51 Minutes of talk time",
+        "51 Minutes Call duration",
         "1-on-1 Consultation",
         "Detailed guidance",
         "Personal remedies",
