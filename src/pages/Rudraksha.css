@@ -1,0 +1,706 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ─── Root & Page ─────────────────────────── */
+.rudraksha-page {
+  background: #0a0e1a;
+  min-height: 100vh;
+  font-family: 'Inter', sans-serif;
+  color: #e8e0d4;
+}
+
+/* ─── HERO ────────────────────────────────── */
+.rudraksha-hero {
+  position: relative;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background:
+    linear-gradient(135deg, rgba(10,14,26,0.92) 0%, rgba(20,10,40,0.88) 50%, rgba(10,14,26,0.92) 100%),
+    url('https://gemsmantra.com/cdn/shop/collections/Natural_Rudraksha_-_Gemsmantra-4015542.jpg?v=1727539921&width=1800') center/cover no-repeat;
+}
+
+.rudraksha-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse at 50% 60%, rgba(139,80,30,0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.rudraksha-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  padding: 80px 24px 60px;
+}
+
+.rudraksha-hero-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #c9a96e;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
+
+.rudraksha-hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.4rem, 6vw, 4.2rem);
+  font-weight: 700;
+  color: #f5f0e8;
+  line-height: 1.15;
+  margin: 0 0 12px;
+  text-shadow: 0 4px 32px rgba(0,0,0,0.6);
+}
+
+.rudraksha-hero-subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1rem, 2.5vw, 1.45rem);
+  color: #c9a96e;
+  font-style: italic;
+  margin: 0 0 20px;
+}
+
+.rudraksha-hero-desc {
+  font-size: 0.975rem;
+  color: #b8b0a4;
+  line-height: 1.75;
+  margin: 0 auto 28px;
+  max-width: 600px;
+}
+
+.rudraksha-hero-badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.hero-badge {
+  background: rgba(245,240,232,0.08);
+  border: 1px solid rgba(201,169,110,0.35);
+  color: #c9a96e;
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 0.78rem;
+  letter-spacing: 0.05em;
+  backdrop-filter: blur(6px);
+}
+
+.rudraksha-hero-scroll {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #c9a96e;
+  font-size: 1.4rem;
+  animation: bounce 2s infinite;
+  opacity: 0.7;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* ─── BREADCRUMB ──────────────────────────── */
+.rudraksha-breadcrumb {
+  padding: 14px 40px;
+  background: rgba(255,255,255,0.03);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  font-size: 0.82rem;
+  color: #8a8070;
+}
+
+.rudraksha-breadcrumb a {
+  color: #c9a96e;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.rudraksha-breadcrumb a:hover { color: #e8c98a; }
+.bc-sep { margin: 0 8px; }
+
+/* ─── BENEFITS STRIP ──────────────────────── */
+.rudraksha-benefits-strip {
+  background: rgba(245,240,232,0.04);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 40px 24px;
+}
+
+.benefits-strip-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 28px;
+}
+
+.benefit-item {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+}
+
+.benefit-icon {
+  font-size: 2rem;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.benefit-item strong {
+  display: block;
+  color: #f5f0e8;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.benefit-item p {
+  color: #8a8070;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ─── TOOLBAR ─────────────────────────────── */
+.rudraksha-toolbar {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 24px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.rudraksha-filters {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background: rgba(245,240,232,0.06);
+  border: 1px solid rgba(245,240,232,0.12);
+  color: #b8b0a4;
+  padding: 8px 20px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-family: 'Inter', sans-serif;
+  transition: all 0.25s ease;
+  letter-spacing: 0.03em;
+}
+
+.filter-btn:hover {
+  background: rgba(201,169,110,0.12);
+  border-color: rgba(201,169,110,0.4);
+  color: #c9a96e;
+}
+
+.filter-btn.active {
+  background: #c9a96e;
+  border-color: #c9a96e;
+  color: #0a0e1a;
+  font-weight: 600;
+}
+
+.rudraksha-sort {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #8a8070;
+  font-size: 0.82rem;
+}
+
+.rudraksha-sort select {
+  background: #E2B071;
+  border: 1px solid rgba(245,240,232,0.12);
+  color: #07111f;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.rudraksha-sort select:hover {
+  border-color: rgba(201,169,110,0.4);
+}
+
+/* ─── PRODUCTS ────────────────────────────── */
+.rudraksha-products {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 16px 24px 60px;
+}
+
+.rudraksha-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 28px;
+}
+
+/* ─── CARD ────────────────────────────────── */
+.rudraksha-card {
+  background: #E2B071;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.32s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.32s ease;
+  box-shadow: 0 2px 24px rgba(0,0,0,0.28);
+  display: flex;
+  flex-direction: column;
+}
+
+.rudraksha-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 48px rgba(0,0,0,0.4), 0 0 0 1px rgba(201,169,110,0.2);
+}
+
+.card-img-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  background: #e8e2d8;
+}
+
+.card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+  display: block;
+}
+
+.rudraksha-card:hover .card-img-wrap img {
+  transform: scale(1.07);
+}
+
+.card-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #0a0e1a;
+  color: #c9a96e;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 100px;
+  border: 1px solid rgba(201,169,110,0.4);
+  z-index: 2;
+}
+
+.card-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10,14,26,0.72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.rudraksha-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.card-overlay-btn {
+  background: #c9a96e;
+  color: #0a0e1a;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 100px;
+  font-weight: 700;
+  font-size: 0.82rem;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: background 0.2s;
+}
+
+.card-overlay-btn:hover {
+  background: #e8c98a;
+}
+
+/* ─── CARD BODY ───────────────────────────── */
+.card-body {
+  padding: 18px 18px 20px;
+  background: #E2B071;
+  color: #0a0e1a;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-deity {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #8a6e40;
+  margin: 0 0 6px;
+  font-weight: 500;
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #1a1208;
+  line-height: 1.35;
+  margin: 0 0 12px;
+}
+
+.card-pricing {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.card-price {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1a1208;
+}
+
+.card-original {
+  font-size: 0.8rem;
+  color: #a09080;
+  text-decoration: line-through;
+}
+
+.card-discount {
+  background: #1a4a1a;
+  color: #6dd96d;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 100px;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.tag {
+  font-size: 0.68rem;
+  background: rgba(10,14,26,0.08);
+  color: #4a3c28;
+  padding: 3px 10px;
+  border-radius: 100px;
+  border: 1px solid rgba(10,14,26,0.12);
+  letter-spacing: 0.03em;
+}
+
+.card-btn {
+  width: 100%;
+  background: gold;
+  color: midnight;
+  border: none;
+  padding: 11px;
+  border-radius: 8px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+  margin-top: auto;
+  font-family: 'Inter', sans-serif;
+}
+
+.card-btn:hover {
+  background: gold;
+}
+
+/* ─── ABOUT SECTION ───────────────────────── */
+.rudraksha-about {
+  background: rgba(245,240,232,0.03);
+  border-top: 1px solid rgba(255,255,255,0.06);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  padding: 72px 24px;
+}
+
+.rudraksha-about-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 64px;
+  align-items: start;
+}
+
+.about-text h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: #f5f0e8;
+  margin: 0 0 20px;
+  font-weight: 600;
+}
+
+.about-text p {
+  color: #9a9285;
+  line-height: 1.8;
+  margin: 0 0 16px;
+  font-size: 0.9rem;
+}
+
+.about-text em {
+  color: #c9a96e;
+  font-style: normal;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  min-width: 260px;
+}
+
+.a-stat {
+  background: rgba(245,240,232,0.05);
+  border: 1px solid rgba(245,240,232,0.1);
+  border-radius: 14px;
+  padding: 24px 16px;
+  text-align: center;
+  transition: border-color 0.3s;
+}
+
+.a-stat:hover {
+  border-color: rgba(201,169,110,0.4);
+}
+
+.a-stat span {
+  display: block;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #c9a96e;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+
+.a-stat p {
+  font-size: 0.75rem;
+  color: #7a7268;
+  margin: 0;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ─── MUKHI GUIDE ─────────────────────────── */
+.rudraksha-guide {
+  padding: 72px 24px;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.guide-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: #f5f0e8;
+  text-align: center;
+  margin: 0 0 10px;
+}
+
+.guide-sub {
+  text-align: center;
+  color: #7a7268;
+  margin: 0 0 48px;
+  font-size: 0.9rem;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.guide-card {
+  background: #E2B071;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.28s ease, box-shadow 0.28s ease;
+}
+
+.guide-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.32);
+}
+
+.guide-mukhi {
+  background: #0a0e1a;
+  color: #c9a96e;
+  text-align: center;
+  padding: 14px;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.guide-info {
+  padding: 14px 16px;
+}
+
+.guide-deity {
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: #1a1208;
+  margin: 0 0 6px;
+}
+
+.guide-planet {
+  font-size: 0.75rem;
+  color: #07111f;
+  margin: 0 0 6px;
+}
+
+.guide-benefit {
+  font-size: 0.75rem;
+  color: #07111f;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ─── FAQ ─────────────────────────────────── */
+.rudraksha-faq {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 72px 24px 80px;
+}
+
+.faq-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  color: #f5f0e8;
+  text-align: center;
+  margin: 0 0 48px;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: rgba(245,240,232,0.05);
+  border: 1px solid rgba(245,240,232,0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.25s ease;
+}
+
+.faq-item.open {
+  border-color: rgba(201,169,110,0.4);
+}
+
+.faq-question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 22px;
+  background: none;
+  border: none;
+  color: #e8e0d4;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: left;
+  font-family: 'Inter', sans-serif;
+  transition: color 0.2s;
+}
+
+.faq-question:hover {
+  color: #c9a96e;
+}
+
+.faq-icon {
+  flex-shrink: 0;
+  font-size: 1.2rem;
+  color: #c9a96e;
+  width: 24px;
+  text-align: center;
+  transition: transform 0.25s ease;
+}
+
+.faq-item.open .faq-icon {
+  transform: rotate(0deg);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.38s ease, padding 0.38s ease;
+  padding: 0 22px;
+}
+
+.faq-item.open .faq-answer {
+  max-height: 300px;
+  padding: 0 22px 20px;
+}
+
+.faq-answer p {
+  color: #8a8070;
+  font-size: 0.86rem;
+  line-height: 1.75;
+  margin: 0;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  padding-top: 14px;
+}
+
+/* ─── RESPONSIVE ──────────────────────────── */
+@media (max-width: 900px) {
+  .rudraksha-about-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  .about-stats {
+    min-width: unset;
+  }
+}
+
+@media (max-width: 600px) {
+  .rudraksha-hero-content {
+    padding: 72px 16px 48px;
+  }
+  .rudraksha-toolbar {
+    padding: 20px 16px 10px;
+  }
+  .rudraksha-products {
+    padding: 12px 16px 40px;
+  }
+  .rudraksha-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 16px;
+  }
+  .card-title {
+    font-size: 0.85rem;
+  }
+  .rudraksha-breadcrumb {
+    padding: 12px 16px;
+  }
+  .guide-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+  .benefits-strip-inner {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

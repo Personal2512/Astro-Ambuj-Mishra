@@ -9,17 +9,21 @@ import Pricing from "./components/Pricing";
 import Footer from "./components/Footer";
 import About from "./components/About";
 // import Zodiac from "./components/Zodiac";
-import Panchang from "./Components/Panchang";
+import Panchang from "./components/Panchang";
 import AstroShop from "./components/AstroShop";
+import Bracelets from "./pages/Bracelets";
+import Gemstones from "./pages/Gemstones";
+import Rudraksha from "./pages/Rudraksha";
+import CrystalTrees from "./pages/CrystalTrees";
+import { Route, Routes } from "react-router-dom";
 
-
-export default function App() {
+function Home(){
   return (
     <>
-      <Navbar />
-      <Hero />
-      {/* <Zodiac /> */}
-      <About />
+     <Navbar />
+          <Hero />
+          {/* <Zodiac /> */}
+          <About />
       <Stats />
       <AstroShop />
       <Services />
@@ -30,5 +34,16 @@ export default function App() {
       {/* <Blogs /> */}
       <Footer />
     </>
+  );
+}
+export default function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/bracelets" element={<Bracelets />} />
+      <Route path="/gemstones" element={<Gemstones />} />
+      <Route path="/rudraksha" element={<Rudraksha />} />
+      <Route path="/crystal-trees" element={<CrystalTrees />} />
+    </Routes>
   );
 }
