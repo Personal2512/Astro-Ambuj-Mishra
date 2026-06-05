@@ -1,23 +1,28 @@
+import { Link } from "react-router-dom";
 const products = [
   {
     title: "Gemstones   ",
     price: "From ₹599",
     image: "/gemstones.webp",
+    path: "/gemstones",
   },
   {
     title: "Rudraksha ",
     price: "From ₹599",
     image: "/Rudraksha.webp",
+    path: "/rudraksha",
   },
   {
     title: "Bracelets",
     price: "From ₹599",
     image: "/braclets.webp",
+    path: "/bracelets",
   },
   {
     title: "Crystal Trees",
     price: "From ₹599",
     image: "/crystaltree.webp",
+    path: "/crystal-trees",
   },
 ];
 
@@ -52,9 +57,12 @@ export default function AstroShop() {
 
                 <p className="mt-3 mb-8 text-xl text-white">{item.price}</p>
 
-                <button className="mt-auto w-full border border-gold bg-gold px-6 py-3 text-lg font-medium text-midnight transition-all duration-300">
+                <Link
+                  to={item.path}
+                  className="mt-auto w-full border border-gold bg-gold px-6 py-3 text-center text-lg font-medium text-midnight transition-all duration-300"
+                >
                   Shop Now
-                </button>
+                </Link>
               </div>
             </div>
           ))}

@@ -18,7 +18,7 @@ export default function Stats() {
               {number}
             </h3>
 
-            <p className="mt-3 font-semibold text-seafoam">
+            <p className="mt-3 font-semibold text-white">
               {label}
             </p>
           </motion.div>
