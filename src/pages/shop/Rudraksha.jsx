@@ -1,7 +1,5 @@
-import React, { useState } from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
-import './Rudraksha.css'
+import React, { useState } from "react";
+import "./Rudraksha.css";
 
 const products = [
   {
@@ -13,7 +11,7 @@ const products = [
     badge: "Best Seller",
     deity: "Kalagni Rudra",
     mukhis: 5,
-    category: "single"
+    category: "single",
   },
   {
     id: 2,
@@ -24,7 +22,7 @@ const products = [
     badge: "Popular",
     deity: "Mahalakshmi",
     mukhis: 7,
-    category: "single"
+    category: "single",
   },
   {
     id: 3,
@@ -35,7 +33,7 @@ const products = [
     badge: null,
     deity: "Kartikeya",
     mukhis: 6,
-    category: "single"
+    category: "single",
   },
   {
     id: 4,
@@ -46,7 +44,7 @@ const products = [
     badge: null,
     deity: "Agni Dev",
     mukhis: 3,
-    category: "single"
+    category: "single",
   },
   {
     id: 5,
@@ -57,7 +55,7 @@ const products = [
     badge: "Rare",
     deity: "Shiva-Parvati",
     mukhis: null,
-    category: "special"
+    category: "special",
   },
   {
     id: 6,
@@ -68,7 +66,7 @@ const products = [
     badge: null,
     deity: "Brahma",
     mukhis: 4,
-    category: "single"
+    category: "single",
   },
   {
     id: 7,
@@ -79,7 +77,7 @@ const products = [
     badge: null,
     deity: "Lord Vishnu",
     mukhis: 10,
-    category: "single"
+    category: "single",
   },
   {
     id: 8,
@@ -90,7 +88,7 @@ const products = [
     badge: null,
     deity: "Ganesha",
     mukhis: 8,
-    category: "single"
+    category: "single",
   },
   {
     id: 9,
@@ -101,7 +99,7 @@ const products = [
     badge: null,
     deity: "Durga Devi",
     mukhis: 9,
-    category: "single"
+    category: "single",
   },
   {
     id: 10,
@@ -112,7 +110,7 @@ const products = [
     badge: null,
     deity: "Hanuman",
     mukhis: 11,
-    category: "single"
+    category: "single",
   },
   {
     id: 11,
@@ -123,7 +121,7 @@ const products = [
     badge: "Ultra Rare",
     deity: "Shiva",
     mukhis: 1,
-    category: "single"
+    category: "single",
   },
   {
     id: 12,
@@ -134,7 +132,7 @@ const products = [
     badge: "Rare",
     deity: "Ardhanarishvara",
     mukhis: 2,
-    category: "single"
+    category: "single",
   },
   {
     id: 13,
@@ -145,7 +143,7 @@ const products = [
     badge: "Rare",
     deity: "Parvati",
     mukhis: null,
-    category: "special"
+    category: "special",
   },
   {
     id: 14,
@@ -156,7 +154,7 @@ const products = [
     badge: null,
     deity: "Surya Dev",
     mukhis: 12,
-    category: "single"
+    category: "single",
   },
   {
     id: 15,
@@ -167,7 +165,7 @@ const products = [
     badge: null,
     deity: "Indra",
     mukhis: 13,
-    category: "single"
+    category: "single",
   },
   {
     id: 16,
@@ -178,7 +176,7 @@ const products = [
     badge: "Rare",
     deity: "Hanuman",
     mukhis: 14,
-    category: "single"
+    category: "single",
   },
   {
     id: 17,
@@ -189,7 +187,7 @@ const products = [
     badge: null,
     deity: "Ardhanarishvara",
     mukhis: 2,
-    category: "single"
+    category: "single",
   },
   {
     id: 18,
@@ -200,7 +198,7 @@ const products = [
     badge: null,
     deity: "Pashupati",
     mukhis: 15,
-    category: "single"
+    category: "single",
   },
   {
     id: 19,
@@ -211,7 +209,7 @@ const products = [
     badge: null,
     deity: "Ganesha",
     mukhis: null,
-    category: "special"
+    category: "special",
   },
   {
     id: 20,
@@ -222,7 +220,7 @@ const products = [
     badge: "Premium",
     deity: "All Deities",
     mukhis: null,
-    category: "mala"
+    category: "mala",
   },
   {
     id: 21,
@@ -233,7 +231,7 @@ const products = [
     badge: null,
     deity: "Kalagni Rudra",
     mukhis: 5,
-    category: "mala"
+    category: "mala",
   },
   {
     id: 22,
@@ -244,7 +242,7 @@ const products = [
     badge: null,
     deity: "Mahalakshmi",
     mukhis: 7,
-    category: "mala"
+    category: "mala",
   },
   {
     id: 23,
@@ -255,83 +253,110 @@ const products = [
     badge: "Combo",
     deity: "Ganesha & Lakshmi",
     mukhis: null,
-    category: "special"
+    category: "special",
   },
   {
     id: 24,
     name: "Navananda Rudraksha Mala",
     price: 1799,
     originalPrice: 2999,
-    image:"/rudra1.webp",
+    image: "/rudra1.webp",
     badge: null,
     deity: "Nava Graha",
     mukhis: null,
-    category: "mala"
+    category: "mala",
   },
-]
+];
 
 const benefits = [
-  { icon: "🧘", title: "Meditation & Focus", desc: "Enhances concentration, deepens meditation and brings mental clarity to practitioners." },
-  { icon: "🛡️", title: "Aura Protection", desc: "Creates a protective shield around the wearer, warding off negative energies and evil eye." },
-  { icon: "❤️", title: "Health & Healing", desc: "Known to regulate blood pressure, reduce stress and promote overall physical well-being." },
-  { icon: "💫", title: "Spiritual Growth", desc: "Accelerates spiritual awakening and helps establish a deep connection with the divine." },
-  { icon: "🍀", title: "Prosperity & Luck", desc: "Attracts abundance, prosperity and good fortune into the wearer's life." },
-  { icon: "⚡", title: "Energy Balance", desc: "Balances the seven chakras and harmonizes the body's electromagnetic energy field." },
-]
+  {
+    icon: "🧘",
+    title: "Meditation & Focus",
+    desc: "Enhances concentration, deepens meditation and brings mental clarity to practitioners.",
+  },
+  {
+    icon: "🛡️",
+    title: "Aura Protection",
+    desc: "Creates a protective shield around the wearer, warding off negative energies and evil eye.",
+  },
+  {
+    icon: "❤️",
+    title: "Health & Healing",
+    desc: "Known to regulate blood pressure, reduce stress and promote overall physical well-being.",
+  },
+  {
+    icon: "💫",
+    title: "Spiritual Growth",
+    desc: "Accelerates spiritual awakening and helps establish a deep connection with the divine.",
+  },
+  {
+    icon: "🍀",
+    title: "Prosperity & Luck",
+    desc: "Attracts abundance, prosperity and good fortune into the wearer's life.",
+  },
+  {
+    icon: "⚡",
+    title: "Energy Balance",
+    desc: "Balances the seven chakras and harmonizes the body's electromagnetic energy field.",
+  },
+];
 
 const faqs = [
   {
     q: "What is Rudraksha and why is it sacred?",
-    a: "Rudraksha is the sacred seed of the Elaeocarpus ganitrus tree, found primarily in the Himalayan region. The word 'Rudraksha' derives from 'Rudra' (Shiva) and 'Aksha' (eyes). It holds deep spiritual significance in Hinduism and is believed to carry the blessings of Lord Shiva."
+    a: "Rudraksha is the sacred seed of the Elaeocarpus ganitrus tree, found primarily in the Himalayan region. The word 'Rudraksha' derives from 'Rudra' (Shiva) and 'Aksha' (eyes). It holds deep spiritual significance in Hinduism and is believed to carry the blessings of Lord Shiva.",
   },
   {
     q: "How to identify an authentic Rudraksha?",
-    a: "Authentic Rudrakshas have natural lines (mukhis) running from top to bottom. You can test by placing it in water — a genuine bead sinks. Also, when placed between two copper coins it should rotate due to its natural electromagnetic properties. Always buy from certified, reputed sources."
+    a: "Authentic Rudrakshas have natural lines (mukhis) running from top to bottom. You can test by placing it in water — a genuine bead sinks. Also, when placed between two copper coins it should rotate due to its natural electromagnetic properties. Always buy from certified, reputed sources.",
   },
   {
     q: "Which Mukhi Rudraksha is best for me?",
-    a: "The right Mukhi depends on your zodiac sign, planetary positions and specific goals. 5 Mukhi is universally beneficial. 7 Mukhi attracts wealth, 8 Mukhi removes obstacles, 9 Mukhi provides divine protection. Consult an astrologer for personalized guidance."
+    a: "The right Mukhi depends on your zodiac sign, planetary positions and specific goals. 5 Mukhi is universally beneficial. 7 Mukhi attracts wealth, 8 Mukhi removes obstacles, 9 Mukhi provides divine protection. Consult an astrologer for personalized guidance.",
   },
   {
     q: "How to wear and energize Rudraksha?",
-    a: "Wash the bead with Panchamrit (milk, curd, honey, ghee, sugar) on a Monday. Chant 'Om Namah Shivaya' 108 times and wear it. It can be worn in red/black thread or silver/gold wire. Avoid wearing during funerals, and remove before consuming non-vegetarian food."
+    a: "Wash the bead with Panchamrit (milk, curd, honey, ghee, sugar) on a Monday. Chant 'Om Namah Shivaya' 108 times and wear it. It can be worn in red/black thread or silver/gold wire. Avoid wearing during funerals, and remove before consuming non-vegetarian food.",
   },
   {
     q: "What is the difference between Nepali and Indonesian Rudraksha?",
-    a: "Nepali Rudrakshas are larger, have deeper and more distinct mukhis and are considered more powerful. Indonesian (Indo) Rudrakshas are smaller, smoother and more affordable. Both are authentic and effective — Nepali ones are preferred for high-level spiritual practices."
+    a: "Nepali Rudrakshas are larger, have deeper and more distinct mukhis and are considered more powerful. Indonesian (Indo) Rudrakshas are smaller, smoother and more affordable. Both are authentic and effective — Nepali ones are preferred for high-level spiritual practices.",
   },
-]
+];
 
 const formatPrice = (price) => {
-  return new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(price)
-}
+  return new Intl.NumberFormat("en-IN", {
+    style: "currency",
+    currency: "INR",
+    maximumFractionDigits: 0,
+  }).format(price);
+};
 
-const discount = (orig, curr) => Math.round(((orig - curr) / orig) * 100)
+const discount = (orig, curr) => Math.round(((orig - curr) / orig) * 100);
 
 export default function Rudraksha() {
-  const [activeFilter, setActiveFilter] = useState('all')
-  const [sortBy, setSortBy] = useState('featured')
-  const [openFaq, setOpenFaq] = useState(null)
+  const [activeFilter, setActiveFilter] = useState("all");
+  const [sortBy, setSortBy] = useState("featured");
+  const [openFaq, setOpenFaq] = useState(null);
 
   const filters = [
-    { label: 'All', value: 'all' },
-    { label: 'Single Bead', value: 'single' },
-    { label: 'Special', value: 'special' },
-    { label: 'Malas', value: 'mala' },
-  ]
+    { label: "All", value: "all" },
+    { label: "Single Bead", value: "single" },
+    { label: "Special", value: "special" },
+    { label: "Malas", value: "mala" },
+  ];
 
   const filteredProducts = products
-    .filter(p => activeFilter === 'all' || p.category === activeFilter)
+    .filter((p) => activeFilter === "all" || p.category === activeFilter)
     .sort((a, b) => {
-      if (sortBy === 'price-asc') return a.price - b.price
-      if (sortBy === 'price-desc') return b.price - a.price
-      if (sortBy === 'name') return a.name.localeCompare(b.name)
-      return 0
-    })
+      if (sortBy === "price-asc") return a.price - b.price;
+      if (sortBy === "price-desc") return b.price - a.price;
+      if (sortBy === "name") return a.name.localeCompare(b.name);
+      return 0;
+    });
 
   return (
     <div className="rudraksha-page">
-      <Navbar />
 
       {/* Hero Banner */}
       <section className="rudraksha-hero">
@@ -339,10 +364,13 @@ export default function Rudraksha() {
         <div className="rudraksha-hero-content">
           <span className="rudraksha-hero-tag">✦ Sacred & Authentic ✦</span>
           <h1 className="rudraksha-hero-title">Natural Rudraksha</h1>
-          <p className="rudraksha-hero-subtitle">Protect Your Aura with Sacred Rudraksha</p>
+          <p className="rudraksha-hero-subtitle">
+            Protect Your Aura with Sacred Rudraksha
+          </p>
           <p className="rudraksha-hero-desc">
-            Authentic 1 to 27 Mukhi Rudraksha beads — ethically sourced from Nepal & Indonesia.
-            Energized with Vedic rituals for maximum spiritual benefit.
+            Authentic 1 to 27 Mukhi Rudraksha beads — ethically sourced from
+            Nepal & Indonesia. Energized with Vedic rituals for maximum
+            spiritual benefit.
           </p>
           <div className="rudraksha-hero-badges">
             <span className="hero-badge">🔬 Lab Certified</span>
@@ -381,10 +409,10 @@ export default function Rudraksha() {
       {/* Filter + Sort Bar */}
       <section className="rudraksha-toolbar">
         <div className="rudraksha-filters">
-          {filters.map(f => (
+          {filters.map((f) => (
             <button
               key={f.value}
-              className={`filter-btn ${activeFilter === f.value ? 'active' : ''}`}
+              className={`filter-btn ${activeFilter === f.value ? "active" : ""}`}
               onClick={() => setActiveFilter(f.value)}
             >
               {f.label}
@@ -393,7 +421,7 @@ export default function Rudraksha() {
         </div>
         <div className="rudraksha-sort">
           <label>Sort by:</label>
-          <select value={sortBy} onChange={e => setSortBy(e.target.value)}>
+          <select value={sortBy} onChange={(e) => setSortBy(e.target.value)}>
             <option value="featured">Featured</option>
             <option value="price-asc">Price: Low to High</option>
             <option value="price-desc">Price: High to Low</option>
@@ -405,7 +433,7 @@ export default function Rudraksha() {
       {/* Products Grid */}
       <section className="rudraksha-products">
         <div className="rudraksha-grid">
-          {filteredProducts.map(product => (
+          {filteredProducts.map((product) => (
             <div className="rudraksha-card" key={product.id}>
               <div className="card-img-wrap">
                 <img src={product.image} alt={product.name} loading="lazy" />
@@ -420,12 +448,20 @@ export default function Rudraksha() {
                 <p className="card-deity">Deity: {product.deity}</p>
                 <h3 className="card-title">{product.name}</h3>
                 <div className="card-pricing">
-                  <span className="card-price">{formatPrice(product.price)}</span>
-                  <span className="card-original">{formatPrice(product.originalPrice)}</span>
-                  <span className="card-discount">{discount(product.originalPrice, product.price)}% off</span>
+                  <span className="card-price">
+                    {formatPrice(product.price)}
+                  </span>
+                  <span className="card-original">
+                    {formatPrice(product.originalPrice)}
+                  </span>
+                  <span className="card-discount">
+                    {discount(product.originalPrice, product.price)}% off
+                  </span>
                 </div>
                 <div className="card-tags">
-                  {product.mukhis && <span className="tag">{product.mukhis} Mukhi</span>}
+                  {product.mukhis && (
+                    <span className="tag">{product.mukhis} Mukhi</span>
+                  )}
                   <span className="tag">✓ Certified</span>
                   <span className="tag">✓ Energized</span>
                 </div>
@@ -442,26 +478,44 @@ export default function Rudraksha() {
           <div className="about-text">
             <h2>What is Rudraksha?</h2>
             <p>
-              Rudraksha refers to the sacred seed of the <em>Elaeocarpus ganitrus</em> tree, found primarily in the Himalayan
-              region of Nepal and parts of Indonesia. The name originates from Sanskrit — "Rudra" meaning Lord Shiva
-              and "Aksha" meaning eyes, translating to "Eyes of Shiva."
+              The holy Rudraksha bead comes from the seeds of the{" "}
+              <em>Elaeocarpus ganitrus</em> tree and has been valued for
+              centuries for its spiritual significance, found primarily in the
+              Himalayan region of Nepal and parts of Indonesia. The name
+              originates from Sanskrit — "Rudra" meaning Lord Shiva and "Aksha"
+              meaning eyes, translating to "Eyes of Shiva."
             </p>
             <p>
-              These sacred beads carry deep spiritual significance in Hinduism, Buddhism and other Dharmic traditions.
-              Worn as malas or individual beads, they are prized for meditation, prayer, and protection. Each bead features
-              natural lines called <em>mukhis</em> (faces), ranging from 1 to 27+, each associated with specific deities,
+              These sacred beads carry deep spiritual significance in Hinduism,
+              Buddhism and other Dharmic traditions. Worn as malas or individual
+              beads, they are prized for meditation, prayer, and protection.
+              Each bead features natural lines called <em>mukhis</em> (faces),
+              ranging from 1 to 27+, each associated with specific deities,
               planets and benefits.
             </p>
             <p>
-              Our Rudraksha beads are directly sourced from the highlands of Nepal and verified through X-ray analysis
-              to ensure authenticity. Every bead is energized with Vedic rituals before dispatch.
+              Our Rudraksha beads are directly sourced from the highlands of
+              Nepal and verified through X-ray analysis to ensure authenticity.
+              Every bead is energized with Vedic rituals before dispatch.
             </p>
           </div>
           <div className="about-stats">
-            <div className="a-stat"><span>78+</span><p>Products</p></div>
-            <div className="a-stat"><span>1-27</span><p>Mukhis Available</p></div>
-            <div className="a-stat"><span>100%</span><p>Authentic</p></div>
-            <div className="a-stat"><span>5000+</span><p>Happy Customers</p></div>
+            <div className="a-stat">
+              <span>78+</span>
+              <p>Products</p>
+            </div>
+            <div className="a-stat">
+              <span>1-27</span>
+              <p>Mukhis Available</p>
+            </div>
+            <div className="a-stat">
+              <span>100%</span>
+              <p>Authentic</p>
+            </div>
+            <div className="a-stat">
+              <span>5000+</span>
+              <p>Happy Customers</p>
+            </div>
           </div>
         </div>
       </section>
@@ -469,21 +523,84 @@ export default function Rudraksha() {
       {/* Mukhi Guide */}
       <section className="rudraksha-guide">
         <h2 className="guide-heading">Rudraksha Mukhi Guide</h2>
-        <p className="guide-sub">Each Mukhi carries unique spiritual properties and planetary associations</p>
+        <p className="guide-sub">
+          Each Mukhi carries unique spiritual properties and planetary
+          associations
+        </p>
         <div className="guide-grid">
           {[
-            { mukhi: "1 Mukhi", planet: "Sun", benefit: "Ultimate consciousness, Moksha", deity: "Lord Shiva" },
-            { mukhi: "2 Mukhi", planet: "Moon", benefit: "Unity, relationships, peace", deity: "Ardhanarishvara" },
-            { mukhi: "3 Mukhi", planet: "Mars", benefit: "Self-confidence, liberation from sins", deity: "Agni Dev" },
-            { mukhi: "4 Mukhi", planet: "Mercury", benefit: "Wisdom, creativity, intelligence", deity: "Brahma" },
-            { mukhi: "5 Mukhi", planet: "Jupiter", benefit: "Health, peace, freedom", deity: "Kalagni Rudra" },
-            { mukhi: "6 Mukhi", planet: "Venus", benefit: "Willpower, learning, stability", deity: "Kartikeya" },
-            { mukhi: "7 Mukhi", planet: "Saturn", benefit: "Wealth, health, prosperity", deity: "Mahalakshmi" },
-            { mukhi: "8 Mukhi", planet: "Rahu", benefit: "Removes obstacles, success", deity: "Ganesha" },
-            { mukhi: "9 Mukhi", planet: "Ketu", benefit: "Power, fearlessness, protection", deity: "Durga Devi" },
-            { mukhi: "10 Mukhi", planet: "All Planets", benefit: "Pacifies all planets, peace", deity: "Lord Vishnu" },
-            { mukhi: "11 Mukhi", planet: "All Planets", benefit: "Adventure, wisdom, meditation", deity: "Hanuman" },
-            { mukhi: "12 Mukhi", planet: "Sun", benefit: "Leadership, radiance, ambition", deity: "Surya Dev" },
+            {
+              mukhi: "1 Mukhi",
+              planet: "Sun",
+              benefit: "Ultimate consciousness, Moksha",
+              deity: "Lord Shiva",
+            },
+            {
+              mukhi: "2 Mukhi",
+              planet: "Moon",
+              benefit: "Unity, relationships, peace",
+              deity: "Ardhanarishvara",
+            },
+            {
+              mukhi: "3 Mukhi",
+              planet: "Mars",
+              benefit: "Self-confidence, liberation from sins",
+              deity: "Agni Dev",
+            },
+            {
+              mukhi: "4 Mukhi",
+              planet: "Mercury",
+              benefit: "Wisdom, creativity, intelligence",
+              deity: "Brahma",
+            },
+            {
+              mukhi: "5 Mukhi",
+              planet: "Jupiter",
+              benefit: "Health, peace, freedom",
+              deity: "Kalagni Rudra",
+            },
+            {
+              mukhi: "6 Mukhi",
+              planet: "Venus",
+              benefit: "Willpower, learning, stability",
+              deity: "Kartikeya",
+            },
+            {
+              mukhi: "7 Mukhi",
+              planet: "Saturn",
+              benefit: "Wealth, health, prosperity",
+              deity: "Mahalakshmi",
+            },
+            {
+              mukhi: "8 Mukhi",
+              planet: "Rahu",
+              benefit: "Removes obstacles, success",
+              deity: "Ganesha",
+            },
+            {
+              mukhi: "9 Mukhi",
+              planet: "Ketu",
+              benefit: "Power, fearlessness, protection",
+              deity: "Durga Devi",
+            },
+            {
+              mukhi: "10 Mukhi",
+              planet: "All Planets",
+              benefit: "Pacifies all planets, peace",
+              deity: "Lord Vishnu",
+            },
+            {
+              mukhi: "11 Mukhi",
+              planet: "All Planets",
+              benefit: "Adventure, wisdom, meditation",
+              deity: "Hanuman",
+            },
+            {
+              mukhi: "12 Mukhi",
+              planet: "Sun",
+              benefit: "Leadership, radiance, ambition",
+              deity: "Surya Dev",
+            },
           ].map((g, i) => (
             <div className="guide-card" key={i}>
               <div className="guide-mukhi">{g.mukhi}</div>
@@ -502,10 +619,13 @@ export default function Rudraksha() {
         <h2 className="faq-heading">Frequently Asked Questions</h2>
         <div className="faq-list">
           {faqs.map((faq, i) => (
-            <div className={`faq-item ${openFaq === i ? 'open' : ''}`} key={i}>
-              <button className="faq-question" onClick={() => setOpenFaq(openFaq === i ? null : i)}>
+            <div className={`faq-item ${openFaq === i ? "open" : ""}`} key={i}>
+              <button
+                className="faq-question"
+                onClick={() => setOpenFaq(openFaq === i ? null : i)}
+              >
                 <span>{faq.q}</span>
-                <span className="faq-icon">{openFaq === i ? '−' : '+'}</span>
+                <span className="faq-icon">{openFaq === i ? "−" : "+"}</span>
               </button>
               <div className="faq-answer">
                 <p>{faq.a}</p>
@@ -514,8 +634,6 @@ export default function Rudraksha() {
           ))}
         </div>
       </section>
-
-      <Footer />
     </div>
-  )
+  );
 }

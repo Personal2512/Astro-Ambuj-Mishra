@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
 import "./Bracelets.css";
 const products = [
   {
@@ -81,7 +79,7 @@ const products = [
     subtitle: "Intuition, Detachment, and Spirituality",
     price: 899,
     orig: 1299,
-    image:"/bracelet1.webp",
+    image: "/bracelet1.webp",
     badge: null,
     cat: "healing",
     benefit: "Intuition & Spirit",
@@ -93,7 +91,7 @@ const products = [
     subtitle: "Calm Emotions, Peace & Inner Balance",
     price: 1549,
     orig: 1999,
-    image:"/bracelet3.webp",
+    image: "/bracelet3.webp",
     badge: null,
     cat: "healing",
     benefit: "Peace & Balance",
@@ -225,7 +223,7 @@ const products = [
     subtitle: "Master Healer & Energy Amplifier",
     price: 1099,
     orig: 1899,
-    image:"/bracelet3.webp",
+    image: "/bracelet3.webp",
     badge: null,
     cat: "healing",
     benefit: "Universal Healing",
@@ -333,7 +331,7 @@ const products = [
     subtitle: "Insight, Intuition & Psychic Ability",
     price: 1249,
     orig: 1599,
-    image:"/bracelet3.webp",
+    image: "/bracelet3.webp",
     badge: null,
     cat: "healing",
     benefit: "Insight & Intuition",
@@ -357,7 +355,7 @@ const products = [
     subtitle: "Calm, Courage & Positive Communication",
     price: 899,
     orig: 1299,
-    image:"/bracelet4.webp",
+    image: "/bracelet4.webp",
     badge: null,
     cat: "healing",
     benefit: "Courage & Positivity",
@@ -381,7 +379,7 @@ const products = [
     subtitle: "Grounding, Balance & Inner Strength",
     price: 699,
     orig: 1099,
-    image:"/bracelet3.webp",
+    image: "/bracelet3.webp",
     badge: null,
     cat: "healing",
     benefit: "Grounding & Balance",
@@ -477,7 +475,7 @@ const products = [
     subtitle: "Universal Fit Chakra Healing",
     price: 849,
     orig: 1199,
-    image:"/bracelet4.webp",
+    image: "/bracelet4.webp",
     badge: null,
     cat: "chakra",
     benefit: "Chakra Balancing",
@@ -561,7 +559,7 @@ const products = [
     subtitle: "With Lab Certificate — Cleansing & Clarity",
     price: 1099,
     orig: 2199,
-    image:"/bracelet1.webp",
+    image: "/bracelet1.webp",
     badge: "Certified",
     cat: "certified",
     benefit: "Cleansing & Clarity",
@@ -585,7 +583,7 @@ const products = [
     subtitle: "With Lab Certificate",
     price: 849,
     orig: 1199,
-    image:"/bracelet3.webp",
+    image: "/bracelet3.webp",
     badge: "Certified",
     cat: "certified",
     benefit: "Certified Chakra",
@@ -597,7 +595,7 @@ const products = [
     subtitle: "Sunstone + Tiger Eye Combo Set",
     price: 1049,
     orig: 2399,
-    image:"/bracelet1.webp",
+    image: "/bracelet1.webp",
     badge: "Combo",
     cat: "combo",
     benefit: "Confidence & Power",
@@ -711,7 +709,6 @@ export default function Bracelets() {
 
   return (
     <div className="br-page">
-      <Navbar />
 
       {/* ── Hero ─────────────────────────────── */}
       <section className="br-hero">
@@ -869,19 +866,20 @@ export default function Bracelets() {
             <p>
               Our crystal bracelets are{" "}
               <em>
-                stylish accessories that blend elegance with the healing
-                properties
-              </em>{" "}
-              of natural gemstones. Featuring a selection of over 50 stones —
-              from Amethyst, Rose Quartz and Turquoise to rare certified
-              Sulemani Hakik — each offers unique spiritual and energetic
-              benefits.
+                beautifully handcrafted pieces designed to enhance your style
+                while embracing the natural beauty of genuine crystals
+              </em>
+              . Made from carefully selected gemstones such as Amethyst, Rose
+              Quartz, Citrine, Tiger Eye, and many more, each bracelet showcases
+              its own unique charm and timeless appeal.
             </p>
+
             <p>
-              Worn for both fashion and wellness, these bracelets promote
-              positivity, protection and energetic balance — perfect for
-              everyday wear or special occasions. Each piece is handcrafted by
-              artisans and energized with Vedic mantras before dispatch.
+              Perfect for everyday wear or gifting, these crystal bracelets
+              combine elegance with fine craftsmanship. Their vibrant colors and
+              natural textures make them a versatile accessory that complements
+              both traditional and modern outfits, adding a touch of
+              sophistication to any look.
             </p>
             <p>
               Whether you are seeking{" "}
@@ -937,8 +935,6 @@ export default function Bracelets() {
           ))}
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

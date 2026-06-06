@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { services } from "../data/siteData";
+import {services} from "../../data/siteData";
 
 export default function Services() {
   return (
