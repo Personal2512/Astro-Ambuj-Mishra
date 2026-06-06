@@ -105,7 +105,7 @@ export default function Hero() {
         <img
           src="/home.webp"
           alt="Astrology Background"
-          className=" w-full object-cover object-center"
+          className=" w-full  object-cover object-center"
         />
 
         {/* Premium Overlay */}

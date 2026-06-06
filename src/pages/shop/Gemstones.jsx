@@ -153,11 +153,11 @@ export default function Gemstones() {
       </section>
 
       {/* Breadcrumb */}
-      <div className="gems-breadcrumb">
+      {/* <div className="gems-breadcrumb">
         <a href="/">Home</a>
         <span className="bc-sep">›</span>
         <span>Gemstones</span>
-      </div>
+      </div> */}
 
       {/* Benefits Strip */}
       <section className="gems-benefits-strip">

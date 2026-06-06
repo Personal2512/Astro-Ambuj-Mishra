@@ -95,11 +95,11 @@ export default function CrystalTrees() {
       </section>
 
       {/* Breadcrumb */}
-      <div className="ct-breadcrumb">
+      {/* <div className="ct-breadcrumb">
         <a href="/">Home</a>
         <span className="ct-bc-sep">›</span>
         <span>Crystal Trees & Healing Crystals</span>
-      </div>
+      </div> */}
 
       {/* Benefits Strip */}
       <section className="ct-benefits">

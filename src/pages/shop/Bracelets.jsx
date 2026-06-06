@@ -142,11 +142,11 @@ export default function Bracelets() {
       </section>
 
       {/* ── Breadcrumb ───────────────────────── */}
-      <nav className="br-breadcrumb">
+      {/* <nav className="br-breadcrumb">
         <a href="/">Home</a>
         <span>›</span>
         <span>Crystal Bracelets</span>
-      </nav>
+      </nav> */}
 
       {/* ── Benefits ─────────────────────────── */}
       <section className="br-benefits">

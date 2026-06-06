@@ -121,11 +121,11 @@ export default function Rudraksha() {
       </section>
 
       {/* Breadcrumb */}
-      <div className="rudraksha-breadcrumb">
+      {/* <div className="rudraksha-breadcrumb">
         <a href="/">Home</a>
         <span className="bc-sep">›</span>
         <span>Natural Rudraksha</span>
-      </div>
+      </div> */}
 
       {/* Benefits Strip */}
       <section className="rudraksha-benefits-strip">

@@ -191,7 +191,7 @@
 }
 .br-sort { display: flex; align-items: center; gap: 10px; color: #8a8070; font-size: 0.82rem; }
 .br-sort select {
-  background: #E2B071;
+  background: var(--color-cream);
   border: 1px solid rgba(245,240,232,0.12);
   color: #07111f; padding: 8px 16px;
   border-radius: 8px; font-size: 0.82rem;
@@ -264,7 +264,7 @@
 /* ─── CARD BODY ───────────────────────────── */
 .br-card-body {
   padding: 16px 16px 18px;
-  background: #E2B071; color: #07111f;
+  background: var(--color-cream); color: #07111f;
   display: flex; flex-direction: column; flex: 1;
 }
 .br-stone-tag {

@@ -192,7 +192,7 @@
   gap: 20px;
 }
 .ct-placement-card {
-  background: #E2B071;
+  background: var(--color-cream);
   border: 1px solid rgba(245,240,232,0.09);
   border-radius: 14px;
   padding: 24px 18px;
@@ -261,7 +261,7 @@
 }
 .ct-sort { display: flex; align-items: center; gap: 10px; color: #8a8070; font-size: 0.82rem; }
 .ct-sort select {
-  background: #E2B071;
+  background: var(--color-cream);
   border: 1px solid rgba(245,240,232,0.12);
   color: #07111f;
   padding: 8px 16px;
@@ -368,7 +368,7 @@
 /* ─── CARD BODY ───────────────────────────── */
 .ct-card-body {
   padding: 16px 18px 20px;
-  background: #E2B071;
+  background: var(--color-cream);
   color: #07111f;
   display: flex;
   flex-direction: column;

@@ -241,13 +241,13 @@ export default function ProductDetail({ category }) {
     <div className="pd-page">
 
       {/* ─── Breadcrumb ───────────────────────────── */}
-      <nav className="pd-breadcrumb">
+      {/* <nav className="pd-breadcrumb">
         <Link to="/">Home</Link>
         <span className="sep">›</span>
         <Link to={catRoute}>{catLabel}</Link>
         <span className="sep">›</span>
         <span>{product.name}</span>
-      </nav>
+      </nav> */}
 
       {/* ─── Main Section ─────────────────────────── */}
       <div className="pd-main">
