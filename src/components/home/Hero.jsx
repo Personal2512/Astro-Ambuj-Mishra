@@ -112,7 +112,6 @@ export default function Hero() {
         {/* <div className="absolute inset-0 bg-gradient-to-r from-midnight via-midnight/75 to-midnight/30" />
         <div className="absolute inset-0 bg-black/25" /> */}
       </div>
-
       {/* Soft Glow */}
       <div className="absolute left-[-120px] top-20 h-[320px] w-[320px] rounded-full bg-teal/25 blur-3xl" />
       <div className="absolute bottom-[-120px] right-[-120px] h-[340px] w-[340px] rounded-full bg-gold/20 blur-3xl" />
