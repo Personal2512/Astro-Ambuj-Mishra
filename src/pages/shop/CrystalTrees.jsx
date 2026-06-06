@@ -1,318 +1,7 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 import './CrystalTrees.css'
-const products = [
-  // Crystal Trees
-  {
-    id: 1,
-    name: "Small Amethyst Crystal Tree",
-    price: 599,
-    originalPrice: 799,
-    image: "/crystal1.webp",
-    badge: "Best Seller",
-    category: "tree",
-    benefit: "Peace & Clarity",
-    color: "#7c3aed"
-  },
-  {
-    id: 2,
-    name: "Large Amethyst Crystal Tree",
-    price: 999,
-    originalPrice: 1099,
-    image: "/crystal2.webp",
-    badge: null,
-    category: "tree",
-    benefit: "Intuition & Calm",
-    color: "#6d28d9"
-  },
-  {
-    id: 3,
-    name: "Amethyst Crystal Tree (With Plate Base)",
-    price: 599,
-    originalPrice: 1299,
-    image: "/crystal3.webp",
-    badge: "Premium",
-    category: "tree",
-    benefit: "Spiritual Growth",
-    color: "#7c3aed"
-  },
-  {
-    id: 4,
-    name: "Amethyst With Cluster Tree",
-    price: 699,
-    originalPrice: 1749,
-    image: "/crystal4.webp",
-    badge: null,
-    category: "tree",
-    benefit: "Protection & Balance",
-    color: "#7c3aed"
-  },
-  {
-    id: 5,
-    name: "Large Crystal Quartz Tree",
-    price: 999,
-    originalPrice: 1199,
-    image:"/crystal3.webp",
-    badge: null,
-    category: "tree",
-    benefit: "Healing & Clarity",
-    color: "#e2e8f0"
-  },
-  {
-    id: 6,
-    name: "Small Seven Chakra Crystal Tree",
-    price: 749,
-    originalPrice: 999,
-    image: "/crystal2.webp",
-    badge: null,
-    category: "tree",
-    benefit: "Chakra Balancing",
-    color: "#f59e0b"
-  },
-  {
-    id: 7,
-    name: "Large Seven Chakra Crystal Tree",
-    price: 999,
-    originalPrice: 1399,
-    image: "/crystal4.webp",
-    badge: "Popular",
-    category: "tree",
-    benefit: "Full Chakra Balance",
-    color: "#f59e0b"
-  },
-  {
-    id: 8,
-    name: "Seven Chakra Raw Stone Tree",
-    price: 1299,
-    originalPrice: 1899,
-    image: "/crystal3.webp",
-    badge: null,
-    category: "tree",
-    benefit: "Grounding & Healing",
-    color: "#84cc16"
-  },
-  {
-    id: 9,
-    name: "Citrine With Amethyst Cluster Tree",
-    price: 1599,
-    originalPrice: 2399,
-    image:"/crystal1.webp",
-    badge: "Rare Combo",
-    category: "tree",
-    benefit: "Wealth & Clarity",
-    color: "#f59e0b"
-  },
-  {
-    id: 10,
-    name: "Amethyst With Raw Rose Quartz Large Tree",
-    price: 1599,
-    originalPrice: 2599,
-    image: "/crystal2.webp",
-    badge: null,
-    category: "tree",
-    benefit: "Love & Serenity",
-    color: "#fda4af"
-  },
-  {
-    id: 11,
-    name: "Citrine With Raw Rose Quartz Large Tree",
-    price: 1599,
-    originalPrice: 2599,
-    image: "/crystal3.webp",
-    badge: null,
-    category: "tree",
-    benefit: "Abundance & Love",
-    color: "#fbbf24"
-  },
-  {
-    id: 12,
-    name: "Wooden Golden Quartz Crystal Tree",
-    price: 1099,
-    originalPrice: 1799,
-    image: "/crystal4.webp",
-    badge: null,
-    category: "tree",
-    benefit: "Prosperity & Success",
-    color: "#f59e0b"
-  },
-  // Clusters & Stones
-  {
-    id: 13,
-    name: "Aura Quartz Cluster",
-    price: 1299,
-    originalPrice: 2499,
-    image: "/crystal1.webp",
-    badge: "Rare",
-    category: "cluster",
-    benefit: "Aura Protection",
-    color: "#a78bfa"
-  },
-  {
-    id: 14,
-    name: "Pyrite Cluster",
-    price: 1299,
-    originalPrice: 2349,
-    image: "/crystal2.webp",
-    badge: null,
-    category: "cluster",
-    benefit: "Wealth & Manifestation",
-    color: "#fbbf24"
-  },
-  {
-    id: 15,
-    name: "Green Aventurine Amethyst Cluster",
-    price: 1499,
-    originalPrice: 2199,
-    image: "/crystal3.webp",
-    badge: null,
-    category: "cluster",
-    benefit: "Luck & Opportunity",
-    color: "#34d399"
-  },
-  {
-    id: 16,
-    name: "Black Tower Tourmaline",
-    price: 799,
-    originalPrice: 1199,
-    image:"/crystal4.webp",
-    badge: null,
-    category: "cluster",
-    benefit: "EMF & Negativity Shield",
-    color: "#1f2937"
-  },
-  // Malas & Bracelets
-  {
-    id: 17,
-    name: "7 Chakra Mala",
-    price: 699,
-    originalPrice: 2399,
-    image: "/crystal3.webp",
-    badge: null,
-    category: "mala",
-    benefit: "Full Chakra Activation",
-    color: "#f59e0b"
-  },
-  {
-    id: 18,
-    name: "Sphatik Mala (Crystal Quartz)",
-    price: 699,
-    originalPrice: 7999,
-    image: "/crystal1.webp",
-    badge: "Premium",
-    category: "mala",
-    benefit: "Meditation & Clarity",
-    color: "#e2e8f0"
-  },
-  {
-    id: 19,
-    name: "Clear Quartz Bracelet",
-    price: 899,
-    originalPrice: 1799,
-    image: "/crystal4.webp",
-    badge: null,
-    category: "bracelet",
-    benefit: "Universal Healing",
-    color: "#f8fafc"
-  },
-  {
-    id: 20,
-    name: "7 Chakra Bracelet",
-    price: 1099,
-    originalPrice: 1499,
-    image: "/crystal3.webp",
-    badge: "Popular",
-    category: "bracelet",
-    benefit: "Energy Alignment",
-    color: "#f59e0b"
-  },
-  {
-    id: 21,
-    name: "Amethyst Bracelet",
-    price: 1099,
-    originalPrice: 1999,
-    image: "/crystal2.webp",
-    badge: null,
-    category: "bracelet",
-    benefit: "Focus & Emotional Balance",
-    color: "#7c3aed"
-  },
-  {
-    id: 22,
-    name: "Rose Quartz Bracelet",
-    price: 899,
-    originalPrice: 1499,
-    image: "/crystal1.webp",
-    badge: null,
-    category: "bracelet",
-    benefit: "Love & Heart Chakra",
-    color: "#fda4af"
-  },
-  {
-    id: 23,
-    name: "Citrine Bracelet",
-    price: 1399,
-    originalPrice: 1699,
-    image: "/crystal3.webp",
-    badge: null,
-    category: "bracelet",
-    benefit: "Abundance & Wealth",
-    color: "#fbbf24"
-  },
-  {
-    id: 24,
-    name: "Rudraksha Crystal Bracelet",
-    price: 1099,
-    originalPrice: 1499,
-    image:"/crystal1.webp",
-    badge: null,
-    category: "bracelet",
-    benefit: "Divine Protection",
-    color: "#92400e"
-  },
-  {
-    id: 25,
-    name: "Original Rock Crystal Bracelet (Certified)",
-    price: 699,
-    originalPrice: 1399,
-    image: "/crystal2.webp",
-    badge: "Certified",
-    category: "bracelet",
-    benefit: "Clarity & Healing",
-    color: "#e2e8f0"
-  },
-  {
-    id: 26,
-    name: "Green Aventurine Bracelet",
-    price: 1099,
-    originalPrice: 1399,
-    image: "/crystal3.webp",
-    badge: null,
-    category: "bracelet",
-    benefit: "Luck & Opportunities",
-    color: "#34d399"
-  },
-  {
-    id: 27,
-    name: "Pyrite Bracelet",
-    price: 1399,
-    originalPrice: 1649,
-    image: "/crystal4.webp",
-    badge: null,
-    category: "bracelet",
-    benefit: "Wealth & Success",
-    color: "#fbbf24"
-  },
-  {
-    id: 28,
-    name: "Tourmaline Bracelet",
-    price: 999,
-    originalPrice: 1849,
-    image: "/crystal2.webp",
-    badge: null,
-    category: "bracelet",
-    benefit: "Negative Energy Shield",
-    color: "#1f2937"
-  },
-]
+import { crystalTrees as products } from '../../data/crystalTrees'
 
 const benefits = [
   { icon: "🌳", title: "Hand-crafted Trees", desc: "Each crystal tree is handcrafted with genuine gemstone chips set on natural wire branches." },
@@ -352,6 +41,7 @@ const formatPrice = (price) =>
 const discount = (orig, curr) => Math.round(((orig - curr) / orig) * 100)
 
 export default function CrystalTrees() {
+  const navigate = useNavigate()
   const [activeFilter, setActiveFilter] = useState('all')
   const [sortBy, setSortBy] = useState('featured')
   const [openFaq, setOpenFaq] = useState(null)
@@ -487,7 +177,7 @@ export default function CrystalTrees() {
                   <span className="ct-card-badge">{product.badge}</span>
                 )}
                 <div className="ct-card-overlay">
-                  <button className="ct-overlay-btn">View Details</button>
+                  <button className="ct-overlay-btn" onClick={() => navigate(`/crystal-trees/${product.id}`)}>View Details</button>
                 </div>
               </div>
               <div className="ct-card-body">
@@ -509,7 +199,7 @@ export default function CrystalTrees() {
                     product.category === 'mala' ? '📿 Mala' : '🔮 Bracelet'
                   }</span>
                 </div>
-                <button className="ct-card-btn">Add to Cart</button>
+                <button className="ct-card-btn" onClick={() => navigate(`/crystal-trees/${product.id}`)}>Add to Cart</button>
               </div>
             </div>
           ))}
@@ -567,3 +257,4 @@ export default function CrystalTrees() {
     </div>
   )
 }
+
