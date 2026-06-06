@@ -5,9 +5,9 @@ const AboutUs = () => {
   return (
     <section className="relative overflow-hidden w-full py-20 bg-midnight px-6 lg:px-10">
       {/* SAME HERO GLOW */}
-      <div className="absolute left-[-100px] top-[-100px] h-[320px] w-[320px] rounded-full bg-teal/20 blur-3xl" />
+      {/* <div className="absolute left-[-100px] top-[-100px] h-[320px] w-[320px] rounded-full bg-teal/20 blur-3xl" /> */}
 
-      <div className="absolute bottom-[-120px] right-[-100px] h-[320px] w-[320px] rounded-full bg-purpleGlow/20 blur-3xl" />
+      {/* <div className="absolute bottom-[-120px] right-[-100px] h-[320px] w-[320px] rounded-full bg-purpleGlow/20 blur-3xl" /> */}
 
       {/* MAIN CONTAINER */}
       <div className="relative max-w-7xl mx-auto">

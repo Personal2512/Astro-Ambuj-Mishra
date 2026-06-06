@@ -6,7 +6,7 @@
   scroll-behavior: smooth;
 }
 
-@theme {
+/* @theme {
   --color-midnight: #07111f;
   --color-teal: #0e7490;
   --color-seafoam: #9ae6d8;
@@ -14,7 +14,20 @@
   --color-cream: #E2B071;
   --color-purpleGlow: #6d28d9;
   --color-cardBg: #101b2d;
+} */
+
+@theme {
+  --color-midnight: #07111F;
+  --color-teal: #0E7490;
+  --color-seafoam: #9AE6D8;
+  --color-gold: #EAB308;
+
+  --color-cream: #F5EEDC;
+
+  --color-purpleGlow: #6D28D9;
+  --color-cardBg: #101B2D;
 }
+
 
 body {
   background:

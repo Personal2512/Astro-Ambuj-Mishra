@@ -217,7 +217,7 @@
   gap: 16px;
 }
 .navagraha-card {
-  background: #E2B071;
+  background: var(--color-cream);
   border: 1px solid rgba(245,240,232,0.09);
   border-radius: 12px;
   padding: 20px 16px;
@@ -295,7 +295,7 @@
   font-size: 0.82rem;
 }
 .gems-sort select {
-  background: #E2B071;
+  background: var(--color-cream);
   border: 1px solid rgba(245,240,232,0.12);
   color: #07111f;
   padding: 8px 16px;
@@ -322,7 +322,7 @@
 
 /* ─── CARD ────────────────────────────────── */
 .gems-card {
-  background: #E2B071;
+  background: var(--color-cream);
   border-radius: 16px;
   overflow: hidden;
   transition: transform 0.32s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.32s ease;
@@ -402,7 +402,7 @@
 /* ─── CARD BODY ───────────────────────────── */
 .gems-card-body {
   padding: 18px 18px 20px;
-  background: #E2B071;
+  background: var(--color-cream);
   color: #0a0e1a;
   display: flex;
   flex-direction: column;
@@ -517,7 +517,7 @@
   margin: 0 auto;
 }
 .birthstone-card {
-  background: #E2B071;
+  background: var(--color-cream);
   border-radius: 14px;
   padding: 20px 14px;
   text-align: center;

@@ -28,7 +28,7 @@ const products = [
 
 export default function AstroShop() {
   return (
-    <section className="bg-[#E2B071] px-5 py-20">
+    <section className="bg-cream px-5 py-20">
       <div className="mx-auto max-w-7xl">
         <div className="mb-14 text-center">
           {/* <p className="font-semibold tracking-wide text-teal">Astro Store</p> */}
