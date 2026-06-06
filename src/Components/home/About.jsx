@@ -36,7 +36,7 @@ const AboutUs = () => {
             </div>
 
             {/* Floating Card */}
-            <div className="absolute -bottom-6 -right-6 rounded-2xl border border-white/10 bg-white/10 backdrop-blur-xl p-5 flex items-center gap-4 shadow-xl">
+            <div className="absolute -bottom-2 -right-6 rounded-2xl border border-white/10 bg-white/10 backdrop-blur-xl py-2 px-2 flex items-center gap-4 shadow-xl">
               <div className="w-14 h-14 rounded-full bg-orange-500/20 flex items-center justify-center text-orange-400">
                 <Award size={28} />
               </div>
