@@ -1,272 +1,7 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Rudraksha.css";
-
-const products = [
-  {
-    id: 1,
-    name: "Natural 5 Mukhi Rudraksha (Nepali)",
-    price: 599,
-    originalPrice: 1249,
-    image: "/rudra1.webp",
-    badge: "Best Seller",
-    deity: "Kalagni Rudra",
-    mukhis: 5,
-    category: "single",
-  },
-  {
-    id: 2,
-    name: "Natural 7 Mukhi Rudraksha (Nepali)",
-    price: 1299,
-    originalPrice: 1899,
-    image: "/rudra2.webp",
-    badge: "Popular",
-    deity: "Mahalakshmi",
-    mukhis: 7,
-    category: "single",
-  },
-  {
-    id: 3,
-    name: "Natural 6 Mukhi Rudraksha (Nepali)",
-    price: 999,
-    originalPrice: 1149,
-    image: "/rudra3.webp",
-    badge: null,
-    deity: "Kartikeya",
-    mukhis: 6,
-    category: "single",
-  },
-  {
-    id: 4,
-    name: "Natural 3 Mukhi Rudraksha (Nepali)",
-    price: 1299,
-    originalPrice: 2099,
-    image: "/rudra4.webp",
-    badge: null,
-    deity: "Agni Dev",
-    mukhis: 3,
-    category: "single",
-  },
-  {
-    id: 5,
-    name: "Natural Gauri Shankar Rudraksha",
-    price: 2999,
-    originalPrice: 3299,
-    image: "/rudra4.webp",
-    badge: "Rare",
-    deity: "Shiva-Parvati",
-    mukhis: null,
-    category: "special",
-  },
-  {
-    id: 6,
-    name: "Natural 4 Mukhi Rudraksha (Nepali)",
-    price: 1099,
-    originalPrice: 1549,
-    image: "/rudra2.webp",
-    badge: null,
-    deity: "Brahma",
-    mukhis: 4,
-    category: "single",
-  },
-  {
-    id: 7,
-    name: "Natural 10 Mukhi Rudraksha (Nepali)",
-    price: 999,
-    originalPrice: 1799,
-    image: "/rudra1.webp",
-    badge: null,
-    deity: "Lord Vishnu",
-    mukhis: 10,
-    category: "single",
-  },
-  {
-    id: 8,
-    name: "Natural 8 Mukhi Rudraksha (Nepali)",
-    price: 799,
-    originalPrice: 1699,
-    image: "/rudra3.webp",
-    badge: null,
-    deity: "Ganesha",
-    mukhis: 8,
-    category: "single",
-  },
-  {
-    id: 9,
-    name: "Natural 9 Mukhi Rudraksha (Nepali)",
-    price: 1299,
-    originalPrice: 1599,
-    image: "/rudra1.webp",
-    badge: null,
-    deity: "Durga Devi",
-    mukhis: 9,
-    category: "single",
-  },
-  {
-    id: 10,
-    name: "Natural 11 Mukhi Rudraksha (Nepali)",
-    price: 1399,
-    originalPrice: 1749,
-    image: "/rudra3.webp",
-    badge: null,
-    deity: "Hanuman",
-    mukhis: 11,
-    category: "single",
-  },
-  {
-    id: 11,
-    name: "Natural 1 Mukhi Rudraksha Savar (Nepali)",
-    price: 7999,
-    originalPrice: 9999,
-    image: "/rudra2.webp",
-    badge: "Ultra Rare",
-    deity: "Shiva",
-    mukhis: 1,
-    category: "single",
-  },
-  {
-    id: 12,
-    name: "Natural 2 Mukhi Rudraksha (Nepali)",
-    price: 5999,
-    originalPrice: 7499,
-    image: "/rudra4.webp",
-    badge: "Rare",
-    deity: "Ardhanarishvara",
-    mukhis: 2,
-    category: "single",
-  },
-  {
-    id: 13,
-    name: "Natural Garbh Gauri Shankar Rudraksha",
-    price: 4999,
-    originalPrice: 8599,
-    image: "/rudra2.webp",
-    badge: "Rare",
-    deity: "Parvati",
-    mukhis: null,
-    category: "special",
-  },
-  {
-    id: 14,
-    name: "Natural 12 Mukhi Rudraksha (Nepali)",
-    price: 1599,
-    originalPrice: 1899,
-    image: "/rudra1.webp",
-    badge: null,
-    deity: "Surya Dev",
-    mukhis: 12,
-    category: "single",
-  },
-  {
-    id: 15,
-    name: "Natural 13 Mukhi Rudraksha (Nepali)",
-    price: 2599,
-    originalPrice: 5799,
-    image: "/rudra4.webp",
-    badge: null,
-    deity: "Indra",
-    mukhis: 13,
-    category: "single",
-  },
-  {
-    id: 16,
-    name: "Natural 14 Mukhi Rudraksha (Nepali)",
-    price: 6999,
-    originalPrice: 8999,
-    image: "/rudra3.webp",
-    badge: "Rare",
-    deity: "Hanuman",
-    mukhis: 14,
-    category: "single",
-  },
-  {
-    id: 17,
-    name: "Natural 2 Mukhi Rudraksha (Indian)",
-    price: 2999,
-    originalPrice: 3999,
-    image: "/rudra1.webp",
-    badge: null,
-    deity: "Ardhanarishvara",
-    mukhis: 2,
-    category: "single",
-  },
-  {
-    id: 18,
-    name: "Natural 15 Mukhi Rudraksha (Nepali)",
-    price: 3899,
-    originalPrice: 8999,
-    image: "/rudra3.webp",
-    badge: null,
-    deity: "Pashupati",
-    mukhis: 15,
-    category: "single",
-  },
-  {
-    id: 19,
-    name: "Natural Ganesha Rudraksha",
-    price: 699,
-    originalPrice: 1599,
-    image: "/rudra4.webp",
-    badge: null,
-    deity: "Ganesha",
-    mukhis: null,
-    category: "special",
-  },
-  {
-    id: 20,
-    name: "1-14 Mukhi Rudraksha Mala (Siddha Mala)",
-    price: 3799,
-    originalPrice: 4999,
-    image: "/rudra3.webp",
-    badge: "Premium",
-    deity: "All Deities",
-    mukhis: null,
-    category: "mala",
-  },
-  {
-    id: 21,
-    name: "5 Mukhi Japa Rudraksha Mala",
-    price: 7999,
-    originalPrice: 9999,
-    image: "/rudra2.webp",
-    badge: null,
-    deity: "Kalagni Rudra",
-    mukhis: 5,
-    category: "mala",
-  },
-  {
-    id: 22,
-    name: "7 Mukhi Japa Rudraksha Mala",
-    price: 1099,
-    originalPrice: 1499,
-    image: "/rudra4.webp",
-    badge: null,
-    deity: "Mahalakshmi",
-    mukhis: 7,
-    category: "mala",
-  },
-  {
-    id: 23,
-    name: "Natural Ganesh Laxmi Rudraksha Samriddhi Kit",
-    price: 7499,
-    originalPrice: 9999,
-    image: "/rudra2.webp",
-    badge: "Combo",
-    deity: "Ganesha & Lakshmi",
-    mukhis: null,
-    category: "special",
-  },
-  {
-    id: 24,
-    name: "Navananda Rudraksha Mala",
-    price: 1799,
-    originalPrice: 2999,
-    image: "/rudra1.webp",
-    badge: null,
-    deity: "Nava Graha",
-    mukhis: null,
-    category: "mala",
-  },
-];
+import { rudraksha as products } from "../../data/rudraksha";
 
 const benefits = [
   {
@@ -335,6 +70,7 @@ const formatPrice = (price) => {
 const discount = (orig, curr) => Math.round(((orig - curr) / orig) * 100);
 
 export default function Rudraksha() {
+  const navigate = useNavigate();
   const [activeFilter, setActiveFilter] = useState("all");
   const [sortBy, setSortBy] = useState("featured");
   const [openFaq, setOpenFaq] = useState(null);
@@ -441,7 +177,7 @@ export default function Rudraksha() {
                   <span className="card-badge">{product.badge}</span>
                 )}
                 <div className="card-overlay">
-                  <button className="card-overlay-btn">View Details</button>
+                  <button className="card-overlay-btn" onClick={() => navigate(`/rudraksha/${product.id}`)}>View Details</button>
                 </div>
               </div>
               <div className="card-body">
@@ -465,7 +201,7 @@ export default function Rudraksha() {
                   <span className="tag">✓ Certified</span>
                   <span className="tag">✓ Energized</span>
                 </div>
-                <button className="card-btn">Add to Cart</button>
+                <button className="card-btn" onClick={() => navigate(`/rudraksha/${product.id}`)}>Add to Cart</button>
               </div>
             </div>
           ))}
@@ -637,3 +373,4 @@ export default function Rudraksha() {
     </div>
   );
 }
+

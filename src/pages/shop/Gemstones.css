@@ -35,7 +35,7 @@
   overflow: hidden;
   background:
     linear-gradient(135deg, rgba(10,14,26,0.94) 0%, rgba(15,8,40,0.9) 50%, rgba(10,14,26,0.94) 100%),
-    url('https://gemsmantra.com/cdn/shop/collections/Gemstones_-_Gemsmantra-4015525.webp?v=1777889520&width=1800') center/cover no-repeat;
+     url('/gem4.webp') center/cover no-repeat; 
 }
 
 .gems-hero-overlay {
