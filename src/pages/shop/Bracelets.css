@@ -35,7 +35,7 @@
   overflow: hidden;
   background:
     linear-gradient(135deg, rgba(10,14,26,0.94) 0%, rgba(20,8,42,0.9) 50%, rgba(10,14,26,0.94) 100%),
-    url('https://gemsmantra.com/cdn/shop/collections/Bracelets_-_Gemsmantra-4015501.jpg?v=1727539872&width=1800')
+    url('/bracelet3.webp')
     center / cover no-repeat;
 }
 
