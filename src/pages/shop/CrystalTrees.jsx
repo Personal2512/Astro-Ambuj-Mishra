@@ -1,6 +1,4 @@
 import React, { useState } from 'react'
-import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
 import './CrystalTrees.css'
 const products = [
   // Crystal Trees
@@ -377,7 +375,6 @@ export default function CrystalTrees() {
 
   return (
     <div className="ct-page">
-      <Navbar />
 
       {/* Hero */}
       <section className="ct-hero">
@@ -567,8 +564,6 @@ export default function CrystalTrees() {
           ))}
         </div>
       </section>
-
-      <Footer />
     </div>
   )
 }

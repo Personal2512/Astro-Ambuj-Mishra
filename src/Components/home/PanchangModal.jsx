@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { X, Share2, ArrowLeft } from "lucide-react";
-import Navbar from "./Navbar";
+import Navbar from "../common/Navbar";
 
 const PanchangModal = ({ onClose, selectedDate, location }) => {
   const [activeTab, setActiveTab] = useState("panchang");

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { stats } from "../data/siteData";
+import { stats } from "../../data/siteData";
 
 export default function Stats() {
   return (
