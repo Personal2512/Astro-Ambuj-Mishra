@@ -20,8 +20,8 @@ export default function Footer() {
         </div>
 
         {[
-          ["Services", "Consultation", "Products", "Karmkand / Online Pooja"],
-          ["Company", "About Us", "Blogs", "Contact", "Courses"],
+          ["Services", "Consultation", "Products", "Karmkand / Online Pooja","Courses"],
+          ["Company", "About Us", "Contact"],
           ["Support", "Privacy Policy", "Terms", "Refund Policy", "Help"],
         ].map(([title, ...links]) => (
           <div key={title}>

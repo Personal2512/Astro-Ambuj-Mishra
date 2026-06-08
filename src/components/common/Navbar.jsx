@@ -7,10 +7,11 @@ const serviceItems = [
   { label: "Consultation", href: "#consultation" },
   { label: "Products", href: "#products" },
   { label: "Karamkand / Online Puja", href: "#puja" },
+  { label: "Courses", href: "#courses" },
 ];
 
 const navItems = [
-  { label: "About", href: "#about" },
+  { label: "About Us", href: "#about" },
   { label: "Contact Us", href: "#contact-us" },
 ];
 
