@@ -25,7 +25,7 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto grid min-h-screen max-w-7xl items-center gap-6 pt-6 md:min-h-[calc(100vh-7rem)] md:grid-cols-2 md:items-end md:gap-16 md:pt-10">
         {/* LEFT CONTENT */}
-        <div className=" max-w-2xl text-center md:order-1 md:text-left mb-10">
+        <div className=" max-w-2xl text-center  md:text-left mb-10">
           <motion.p
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
