@@ -7,12 +7,14 @@ const serviceItems = [
   { label: "Consultation", href: "#consultation" },
   { label: "Products", href: "#products" },
   { label: "Karamkand / Online Puja", href: "#puja" },
-  { label: "Courses", href: "/courses", isRoute: true },
+ 
 ];
 
 const navItems = [
+  { label: "Courses", href: "/courses", isRoute: true },
   { label: "About Us", href: "/about-us", isRoute: true },
   { label: "Contact Us", href: "/contact-us", isRoute: true },
+  
 ];
 
 export default function Navbar() {
