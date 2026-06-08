@@ -8,12 +8,18 @@ import Gemstones from "../pages/shop/Gemstones";
 import Rudraksha from "../pages/shop/Rudraksha";
 import CrystalTrees from "../pages/shop/CrystalTrees";
 import ProductDetail from "../pages/shop/ProductDetail";
+import Contact from "../pages/Contact";
+import AboutUs from "../pages/AboutUs";
+import Courses from "../pages/Courses";
 
 export default function AppRoutes() {
   return (
     <Routes>
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
+        <Route path="/contact-us" element={<Contact />} />
+        <Route path="/about-us" element={<AboutUs />} />
+        <Route path="/courses" element={<Courses />} />
 
         {/* ── Category listing pages ── */}
         <Route path="/bracelets" element={<Bracelets />} />

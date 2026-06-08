@@ -28,6 +28,18 @@
   --color-cardBg: #101B2D;
 }
 
+/* :root{
+  --color-midnight: #07111F;
+  --color-teal: #0E7490;
+  --color-seafoam: #9AE6D8;
+  --color-gold: #EAB308;
+
+  --color-cream: #F5EEDC;
+
+  --color-purpleGlow: #6D28D9;
+  --color-cardBg: #101B2D;
+} */
+
 
 body {
   background:
