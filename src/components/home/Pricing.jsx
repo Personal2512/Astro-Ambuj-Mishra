@@ -45,7 +45,7 @@ export default function Pricing() {
               <h3 className="font-display text-3xl font-bold">{name}</h3>
               <p
                 className={`mt-5 text-4xl font-bold ${
-                  index === 1 ? "text-white" : "text-teal"
+                  index === 1 ? "text-white" : "text-gold"
                 }`}
               >
                 {price}
