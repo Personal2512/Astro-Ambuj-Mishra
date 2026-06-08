@@ -7,12 +7,12 @@ const serviceItems = [
   { label: "Consultation", href: "#consultation" },
   { label: "Products", href: "#products" },
   { label: "Karamkand / Online Puja", href: "#puja" },
-  { label: "Courses", href: "#courses" },
+  { label: "Courses", href: "/courses", isRoute: true },
 ];
 
 const navItems = [
-  { label: "About Us", href: "#about" },
-  { label: "Contact Us", href: "#contact-us" },
+  { label: "About Us", href: "/about-us", isRoute: true },
+  { label: "Contact Us", href: "/contact-us", isRoute: true },
 ];
 
 export default function Navbar() {
@@ -59,29 +59,49 @@ export default function Navbar() {
                   exit={{ opacity: 0, y: 12 }}
                   className="absolute left-0 top-9 w-64 overflow-hidden rounded-2xl border border-cream/10 bg-midnight/95 p-2 shadow-2xl backdrop-blur-xl"
                 >
-                  {serviceItems.map((item) => (
-                    <a
-                      key={item.label}
-                      href={item.href}
-                      className="block rounded-xl px-4 py-3 text-sm font-semibold text-cream/80 transition hover:bg-cream/10 hover:text-gold"
-                    >
-                      {item.label}
-                    </a>
-                  ))}
+                  {serviceItems.map((item) =>
+                    item.isRoute ? (
+                      <Link
+                        key={item.label}
+                        to={item.href}
+                        className="block rounded-xl px-4 py-3 text-sm font-semibold text-cream/80 transition hover:bg-cream/10 hover:text-gold"
+                      >
+                        {item.label}
+                      </Link>
+                    ) : (
+                      <a
+                        key={item.label}
+                        href={item.href}
+                        className="block rounded-xl px-4 py-3 text-sm font-semibold text-cream/80 transition hover:bg-cream/10 hover:text-gold"
+                      >
+                        {item.label}
+                      </a>
+                    )
+                  )}
                 </motion.div>
               )}
             </AnimatePresence>
           </div>
 
-          {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="text-lg font-bold text-cream/80 transition hover:text-gold"
-            >
-              {item.label}
-            </a>
-          ))}
+          {navItems.map((item) =>
+            item.isRoute ? (
+              <Link
+                key={item.label}
+                to={item.href}
+                className="text-lg font-bold text-cream/80 transition hover:text-gold"
+              >
+                {item.label}
+              </Link>
+            ) : (
+              <a
+                key={item.label}
+                href={item.href}
+                className="text-lg font-bold text-cream/80 transition hover:text-gold"
+              >
+                {item.label}
+              </a>
+            )
+          )}
         </div>
 
         <a
@@ -130,30 +150,52 @@ export default function Navbar() {
                   exit={{ opacity: 0, y: -8 }}
                   className="mb-3 rounded-2xl border border-cream/10 bg-cardBg p-2"
                 >
-                  {serviceItems.map((item) => (
-                    <a
-                      key={item.label}
-                      href={item.href}
-                      onClick={() => setOpenMenu(false)}
-                      className="block rounded-xl px-4 py-3 text-sm font-semibold text-cream/75 hover:bg-cream/10 hover:text-gold"
-                    >
-                      {item.label}
-                    </a>
-                  ))}
+                  {serviceItems.map((item) =>
+                    item.isRoute ? (
+                      <Link
+                        key={item.label}
+                        to={item.href}
+                        onClick={() => setOpenMenu(false)}
+                        className="block rounded-xl px-4 py-3 text-sm font-semibold text-cream/75 hover:bg-cream/10 hover:text-gold"
+                      >
+                        {item.label}
+                      </Link>
+                    ) : (
+                      <a
+                        key={item.label}
+                        href={item.href}
+                        onClick={() => setOpenMenu(false)}
+                        className="block rounded-xl px-4 py-3 text-sm font-semibold text-cream/75 hover:bg-cream/10 hover:text-gold"
+                      >
+                        {item.label}
+                      </a>
+                    )
+                  )}
                 </motion.div>
               )}
             </AnimatePresence>
 
-            {navItems.map((item) => (
-              <a
-                key={item.label}
-                href={item.href}
-                onClick={() => setOpenMenu(false)}
-                className="block py-4 text-lg font-bold text-cream/80 transition hover:text-gold"
-              >
-                {item.label}
-              </a>
-            ))}
+            {navItems.map((item) =>
+              item.isRoute ? (
+                <Link
+                  key={item.label}
+                  to={item.href}
+                  onClick={() => setOpenMenu(false)}
+                  className="block py-4 text-lg font-bold text-cream/80 transition hover:text-gold"
+                >
+                  {item.label}
+                </Link>
+              ) : (
+                <a
+                  key={item.label}
+                  href={item.href}
+                  onClick={() => setOpenMenu(false)}
+                  className="block py-4 text-lg font-bold text-cream/80 transition hover:text-gold"
+                >
+                  {item.label}
+                </a>
+              )
+            )}
 
             <a
               href="#kundli"

@@ -58,7 +58,7 @@ export const testimonials = [
   {
     name: "Priya Mehta",
     role: "Working Professional",
-    text: "I loved the detailed kundli report. The remedies were practical and easy to follow.",
+    text: "I loved the detailed kundli report. The remedies were practical, easy to follow, and truly brought positive results.",
   },
   {
     name: "Amit Verma",
