@@ -81,25 +81,57 @@ const Panchang = () => {
       sub: "",
       icon: Scale,
     },
-     {
+    {
       title: "Retu",
       value: "Jyeshtha",
       sub: "",
       icon: Orbit,
     },
-     {
+    {
       title: "Kali Samvat",
       value: "Swati",
       sub: "",
       icon: Eclipse,
     },
-     {
+    {
       title: "Ayana",
       value: "Variyaan",
       sub: "",
       icon: Sparkles,
     },
   ];
+
+  const cards = [
+    {
+      title: "Surya Uday",
+      time: "05:34 AM",
+      image: "/sunrise.webp",
+      Icon: Sunrise,
+      color: "text-yellow-400",
+    },
+    {
+      title: "Surya Ast",
+      time: "07:12 PM",
+      image: "/sunset.webp",
+      Icon: Sunset,
+      color: "text-orange-400",
+    },
+    {
+      title: "Chandra Uday",
+      time: "04:52 PM",
+      image: "/moonrise.webp",
+      Icon: WiMoonrise,
+      color: "text-cyan-300",
+    },
+    {
+      title: "Chandra Ast",
+      time: "03:27 AM",
+      image: "/moonset.webp",
+      Icon: WiMoonset,
+      color: "text-purple-300",
+    },
+  ];
+
   const formatDate = (dateString) => {
     if (!dateString) return "";
 
@@ -214,30 +246,41 @@ const Panchang = () => {
 
         {/* Sunrise / Sunset */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-8">
-          <div className="bg-gradient-to-br from-[#24012b] to-[#0a1645] rounded-2xl p-6 border border-gray-700">
-            <Sunrise className="text-yellow-400 mb-4" size={48} />
-            <h3 className="text-white text-xl">Surya Uday</h3>
-            <p className="text-yellow-400 text-3xl font-bold mt-3">05:34 AM</p>
-          </div>
+          {cards.map(({ title, time, image, Icon, color }) => (
+            <div
+              key={title}
+              className="relative h-56 rounded-2xl overflow-hidden border border-gray-700"
+            >
+              {/* Background Image */}
+              <img
+                src={image}
+                alt={title}
+                className="absolute inset-0 w-full h-full object-cover"
+              />
 
-          <div className="bg-gradient-to-br from-[#2a0038] to-[#131b55] rounded-2xl p-6 border border-gray-700">
-            <Sunset className="text-orange-400 mb-4" size={48} />
-            <h3 className="text-white text-xl">Surya Ast</h3>
-            <p className="text-orange-400 text-3xl font-bold mt-3">07:12 PM</p>
-          </div>
+              {/* Gradient overlays */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-black/20" />
 
-          <div className="bg-gradient-to-br from-[#24012b] to-[#0a1645] rounded-2xl p-6 border border-gray-700">
-            <WiMoonrise className="text-yellow-400 mb-4" size={60} />
-            <h3 className="text-white text-xl">Chandra Uday</h3>
-            <p className="text-yellow-400 text-3xl font-bold mt-3">04:52 PM</p>
-          </div>
+              {/* Top: Icon + Title (with dark pill backdrop) */}
+              <div className="absolute top-3 left-3 right-3 z-10 flex items-center gap-2">
+                <div className="flex items-center gap-1.5 bg-black/50 backdrop-blur-sm rounded-full px-2.5 py-1 max-w-full">
+                  <Icon className={`${color} shrink-0`} size={18} />
+                  <span className="text-white text-xs font-semibold whitespace-nowrap">
+                    {title}
+                  </span>
+                </div>
+              </div>
 
-          <div className="bg-gradient-to-br from-[#2a0038] to-[#131b55] rounded-2xl p-6 border border-gray-700">
-            <WiMoonset className="text-orange-400 mb-4" size={60} />
-            <h3 className="text-white text-xl">Chandra Ast</h3>
-            <p className="text-orange-400 text-3xl font-bold mt-3">03:27 AM</p>
-          </div>
+              {/* Bottom: Time — bounded by left-3 and right-3 so it never overflows */}
+              <div className="absolute bottom-3 left-3 right-3 z-10">
+                <p className={`${color} text-xl font-bold leading-none drop-shadow-lg`}>
+                  {time}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
+
 
         {/* Panchang Details */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -271,9 +314,9 @@ const Panchang = () => {
       </div>
       {showPanchangModal && (
         <PanchangModal onClose={() => setShowPanchangModal(false)}
-        selectedDate={selectedDate}
-        location={location}
-     />
+          selectedDate={selectedDate}
+          location={location}
+        />
       )}
     </section>
   );

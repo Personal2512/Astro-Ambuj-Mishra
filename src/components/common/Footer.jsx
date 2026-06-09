@@ -4,9 +4,9 @@ const footerLinks = [
   {
     title: "Services",
     links: [
-      { label: "Consultation", href: "#consultation" },
+      { label: "Consultation", to: "/consultation" },
       { label: "Products", href: "#products" },
-      { label: "Karmkand / Online Pooja", href: "#puja" },
+      { label: "Karmkand / Online Pooja", to: "/online-pooja" },
       { label: "Courses", to: "/courses" },
     ],
   },
@@ -23,7 +23,6 @@ const footerLinks = [
       { label: "Privacy Policy", href: "#" },
       { label: "Terms", href: "#" },
       { label: "Refund Policy", href: "#" },
-      { label: "Help", href: "#" },
     ],
   },
 ];
@@ -95,4 +94,4 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+}

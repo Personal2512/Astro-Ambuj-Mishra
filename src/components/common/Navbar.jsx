@@ -4,10 +4,9 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const serviceItems = [
-  { label: "Consultation", href: "#consultation" },
+  { label: "Consultation", href: "/consultation", isRoute: true },
   { label: "Products", href: "#products" },
-  { label: "Karamkand / Online Puja", href: "#puja" },
- 
+  { label: "Karamkand / Online Puja", href: "/online-pooja", isRoute: true },
 ];
 
 const navItems = [
@@ -66,6 +65,7 @@ export default function Navbar() {
                       <Link
                         key={item.label}
                         to={item.href}
+                        onClick={() => setOpenServices(false)}
                         className="block rounded-xl px-4 py-3 text-sm font-semibold text-cream/80 transition hover:bg-cream/10 hover:text-gold"
                       >
                         {item.label}
@@ -74,6 +74,7 @@ export default function Navbar() {
                       <a
                         key={item.label}
                         href={item.href}
+                        onClick={() => setOpenServices(false)}
                         className="block rounded-xl px-4 py-3 text-sm font-semibold text-cream/80 transition hover:bg-cream/10 hover:text-gold"
                       >
                         {item.label}
@@ -106,12 +107,12 @@ export default function Navbar() {
           )}
         </div>
 
-        <a
-          href=""
+        <Link
+          to="/consultation"
           className="hidden rounded-full bg-gold px-5 py-2 text-sm font-bold text-midnight shadow-lg shadow-gold/20 md:block"
         >
           Book Consultation
-        </a>
+        </Link>
 
         {/* Mobile Toggle */}
         <button
@@ -199,13 +200,13 @@ export default function Navbar() {
               )
             )}
 
-            <a
-              href="#kundli"
+            <Link
+              to="/consultation"
               onClick={() => setOpenMenu(false)}
               className="mt-4 block rounded-full bg-gold px-5 py-3 text-center text-sm font-bold text-midnight shadow-lg shadow-gold/20"
             >
               Book Consultation
-            </a>
+            </Link>
           </motion.div>
         )}
       </AnimatePresence>

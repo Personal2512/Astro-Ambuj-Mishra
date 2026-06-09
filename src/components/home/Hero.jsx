@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Sparkles, ArrowRight, PhoneCall } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -70,13 +71,13 @@ export default function Hero() {
               <ArrowRight size={18} />
             </a>
 
-            <a
-              href="#contact-us"
+            <Link
+              to="/consultation"
               className="inline-flex items-center justify-center gap-2 rounded-full border border-cream/20 bg-white/5 px-8 py-4 font-bold text-cream backdrop-blur-md transition-all duration-300 hover:bg-cream/10"
             >
               <PhoneCall size={18} />
               Book Consultation
-            </a>
+            </Link>
           </motion.div>
         </div>
 
