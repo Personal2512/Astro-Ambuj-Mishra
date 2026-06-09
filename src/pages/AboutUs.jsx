@@ -28,47 +28,47 @@ const fadeUp = {
 /* ── Static data ─────────────────────────────────────────── */
 const credentials = [
   {
-    icon: <GraduationCap size={16} />,
-    title: "M.A. Jyotish Vigyan",
-    sub: "Certified by Uttar Pradesh Sanskrit Sansthan",
-  },
-  {
-    icon: <Award size={16} />,
-    title: "Jyotish Visharad — ICAS",
-    sub: "Lifetime Member, Indian Council of Astrological Sciences",
+    icon: <Star size={16} />,
+    title: "25 Years of Experience",
+    sub: "Guiding individuals through astrology, life guidance, and personal growth",
   },
   {
     icon: <BookOpen size={16} />,
-    title: "Guru-Shishya Parampara",
-    sub: "Deeply rooted in traditional Vedic lineage",
+    title: "Holistic Life Guidance",
+    sub: "Blending astrology, mental wellness, and practical life insights",
   },
   {
-    icon: <Star size={16} />,
-    title: "15+ Years of Practice",
-    sub: "Active research-backed consultations since 2009",
+    icon: <Award size={16} />,
+    title: "Trusted Astrology Expert",
+    sub: "Helping people make informed decisions with clarity and confidence",
+  },
+  {
+    icon: <GraduationCap size={16} />,
+    title: "Personal Growth Mentor",
+    sub: "Empowering individuals through self-awareness and positive transformation",
   },
 ];
 
 const pillars = [
   {
     icon: "🔮",
-    title: "Authentic Vedic Knowledge",
-    desc: "Grounded in classical texts — Brihat Parashara Hora Shastra, Jataka Parijata — for precise, time-tested readings.",
+    title: "Astrology with Practical Insights",
+    desc: "Combining traditional astrological wisdom with practical guidance to help individuals make informed decisions and navigate life's challenges.",
   },
   {
-    icon: "📚",
-    title: "Academic Excellence",
-    desc: "A Master's degree in Jyotish Vigyan blends rigorous scholarship with spiritual depth for unmatched accuracy.",
+    icon: "🧠",
+    title: "Mental Wellness & Self-Growth",
+    desc: "Focusing on emotional well-being, self-awareness, and personal development to inspire confidence and positive transformation.",
   },
   {
     icon: "🌍",
-    title: "Global Client Base",
-    desc: "Serving seekers from 20+ countries with personalised guidance tailored to their unique planetary blueprints.",
+    title: "25+ Years of Experience",
+    desc: "Over two decades of guiding individuals through astrology, life coaching, and holistic wellness with compassion and clarity.",
   },
   {
-    icon: "🕉️",
-    title: "Research-Backed Approach",
-    desc: "Acharya Bhairav actively documents astrological patterns to continuously refine the quality of every reading.",
+    icon: "✨",
+    title: "Holistic Life Guidance",
+    desc: "A unique approach that integrates astrology, mental wellness, and life guidance to help people achieve balance, purpose, and success.",
   },
 ];
 
@@ -111,13 +111,11 @@ export default function AboutUs() {
           </span>
 
           <h1 className="au-hero-title">
-            About <span>Acharya Bhairav</span>
+            About <span>Ambuj Mishra</span>
           </h1>
 
           <p className="au-hero-sub">
-            Over 15 years of authentic Vedic astrology practice, academic
-            mastery, and a sacred lineage — brought to you with clarity,
-            compassion and precision.
+            Over 25 years of experience in astrology, mental wellness, and life guidance — empowering individuals with clarity, wisdom, compassion, and practical insights for a balanced and fulfilling life.
           </p>
         </motion.div>
       </section>
@@ -159,7 +157,7 @@ export default function AboutUs() {
                 <Award size={22} />
               </div>
               <div>
-                <h4>15+ Years</h4>
+                <h4>25 Years</h4>
                 <p>Experience in Astrology</p>
               </div>
             </div>
@@ -180,31 +178,21 @@ export default function AboutUs() {
           </div>
 
           <h2 className="au-content-title">
-            Acharya Vatsal Mishra{" "}
-            <span>'Bhairav'</span>
+            Ambuj Mishra{" "}
+            {/* <span>'Bhairav'</span> */}
           </h2>
 
           <div className="au-divider" />
 
           <div className="au-content-body">
             <p>
-              Astro Ambuj Mishra has been practicing astrology for
-              over 15 years, deeply rooted in the sacred Guru-Shishya
-              Parampara. Certified by the Uttar Pradesh Sanskrit Sansthan, he
-              holds a Master of Arts (Jyotish Vigyan) degree, blending deep
-              academic excellence with traditional spiritual lineage.
+             Ambuj Mishra is a visionary businesswoman, astrologer, and mental wellness professional with over 25 years of experience in guiding people toward personal growth, clarity, and balance.
             </p>
             <p>
-              He is a lifetime member and Jyotish Visharad of the prestigious
-              Indian Council of Astrological Sciences (ICAS). Driven by a
-              passion for accuracy, Acharya Bhairav actively incorporates
-              rigorous astrological research into his practice.
+              With a unique blend of business expertise, astrological knowledge, and a deep understanding of human emotions, Ambuj Mishra helps individuals explore their potential, overcome challenges, and create a more meaningful path in life.
             </p>
             <p>
-              By combining timeless traditional wisdom with a contemporary,
-              research-backed approach, he continues to uphold the rich legacy
-              of Vedic astrology — delivering logical, practical, and highly
-              impactful guidance for the modern world.
+              Her approach combines traditional wisdom with practical insights, focusing on self-awareness, confidence, emotional well-being, and positive transformation. Through her work in astrology and mental wellness programs, she has supported many individuals in making thoughtful decisions and building a balanced lifestyle.
             </p>
           </div>
 
@@ -240,7 +228,7 @@ export default function AboutUs() {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h2>What Sets Acharya Bhairav Apart</h2>
+          <h2>What Sets Ambuj Mishra Apart</h2>
           <p>Four pillars that define every consultation and every reading.</p>
         </motion.div>
 
@@ -365,7 +353,7 @@ export default function AboutUs() {
         >
           <h2>Ready to Begin Your Cosmic Journey?</h2>
           <p>
-            Book a personalised consultation with Acharya Bhairav and discover
+            Book a personalised consultation with Ambuj Mishra and discover
             the guidance the stars hold for you.
           </p>
 

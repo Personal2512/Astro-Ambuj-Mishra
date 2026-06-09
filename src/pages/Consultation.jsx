@@ -35,7 +35,7 @@ const fadeUp = {
 const stats = [
   { icon: "⭐", number: "10,000+", label: "Consultations Done" },
   { icon: "🌍", number: "20+", label: "Countries Served" },
-  { icon: "🏆", number: "15+", label: "Years of Expertise" },
+  { icon: "🏆", number: "25", label: "Years of Expertise" },
   { icon: "💯", number: "98%", label: "Satisfaction Rate" },
 ];
 
@@ -125,7 +125,7 @@ const howItWorks = [
     num: "3",
     icon: "🔭",
     title: "Chart Preparation",
-    desc: "Acharya Bhairav personally prepares your Kundli and analyses the planetary positions before your session.",
+    desc: "Ambuj Mishra personally prepares your Kundli and analyses the planetary positions before your session.",
   },
   {
     num: "4",
@@ -138,7 +138,7 @@ const howItWorks = [
 const testimonials = [
   {
     avatar: "🙏",
-    text: "The birth chart reading was incredibly precise. Acharya Bhairav identified a challenging Saturn transit I was unknowingly going through and gave me practical remedies that truly helped.",
+    text: "The birth chart reading was incredibly precise. Ambuj Mishra identified a challenging Saturn transit I was unknowingly going through and gave me practical remedies that truly helped.",
     name: "Priya Sharma",
     location: "Delhi, India",
     stars: 5,
@@ -152,7 +152,7 @@ const testimonials = [
   },
   {
     avatar: "✨",
-    text: "We consulted Acharya Bhairav for kundli matching before our wedding. His analysis was thorough, compassionate and deeply rooted in traditional Vedic principles. Highly recommended.",
+    text: "We consulted Ambuj Mishra for kundli matching before our wedding. His analysis was thorough, compassionate and deeply rooted in traditional Vedic principles. Highly recommended.",
     name: "Ananya & Rohan",
     location: "Bangalore, India",
     stars: 5,
@@ -166,14 +166,14 @@ const testimonials = [
   },
   {
     avatar: "🕉️",
-    text: "Acharya Bhairav's knowledge of Jyotish is unmatched. His reading was not just about predictions but about empowering me to make better decisions. A truly life-changing experience.",
+    text: "Ambuj Mishra's knowledge of Jyotish is unmatched. His reading was not just about predictions but about empowering me to make better decisions. A truly life-changing experience.",
     name: "Meera Iyer",
     location: "Gujarat, India",
     stars: 5,
   },
   {
     avatar: "🌙",
-    text: "The spiritual guidance session helped me understand my life's purpose. I walked away with clarity, peace and a clear path forward. Acharya Bhairav is a rare gem.",
+    text: "The spiritual guidance session helped me understand my life's purpose. I walked away with clarity, peace and a clear path forward. Ambuj Mishra is a rare gem.",
     name: "Amit Joshi",
     location: "Varanasi, India",
     stars: 5,
@@ -183,23 +183,23 @@ const testimonials = [
 const whyCards = [
   {
     icon: "🎓",
-    title: "MA in Jyotish Vigyan",
-    desc: "Academically trained with a Master's degree in Jyotish Vigyan — a rare combination of scholarly rigour and traditional wisdom.",
+   title: "Holistic Life Mentor",
+desc: "With expertise in astrology, business guidance, and mental wellness, Ambuj Mishra inspires individuals to overcome challenges and unlock their true potential.",
   },
   {
     icon: "📜",
-    title: "Guru-Shishya Parampara",
-    desc: "Knowledge passed down through the sacred Guru-Shishya lineage, ensuring authentic, classical Vedic methodology.",
-  },
+  title: "Trusted Guidance",
+  desc: "With over 25 years of experience, providing trusted astrology consultations and holistic guidance to support personal growth and meaningful life decisions.",
+},
   {
     icon: "🌍",
     title: "Global Clientele",
-    desc: "Clients from 20+ countries across India, UAE, UK, USA, Canada and beyond trust Acharya Bhairav for life-changing guidance.",
+    desc: "Clients from 20+ countries across India, UAE, UK, USA, Canada and beyond trust Ambuj Mishra for life-changing guidance.",
   },
   {
     icon: "💬",
     title: "Personal Attention",
-    desc: "Every consultation is conducted personally by Acharya Bhairav — no assistants, no templates. Genuine, one-on-one care.",
+    desc: "Every consultation is conducted personally by Ambuj Mishra — no assistants, no templates. Genuine, one-on-one care.",
   },
   {
     icon: "⚡",
@@ -235,9 +235,9 @@ const infoCards = [
   {
     icon: <Mail size={18} />,
     label: "Email",
-    value: "info@acharyabhairav.com",
+    value: "info@ambujmishra.com",
     sub: "Reply within 24 hours",
-    href: "mailto:info@acharyabhairav.com",
+    href: "mailto:info@ambujmishra.com",
   },
   {
     icon: <Clock size={18} />,
@@ -337,9 +337,7 @@ export default function Consultation() {
           </h1>
 
           <p className="cn-hero-sub">
-            Book a personal one-on-one consultation with Acharya Bhairav — MA in
-            Jyotish Vigyan, with 15+ years of experience guiding thousands across
-            the globe towards a life of purpose, harmony and abundance.
+            Book a personalized one-on-one consultation with Ambuj Mishra, a renowned astrologer, business mentor, and mental wellness professional with over 25 years of experience helping individuals achieve clarity, confidence, and personal growth.
           </p>
 
           <div className="cn-hero-btns">
@@ -389,8 +387,8 @@ export default function Consultation() {
           <h2>Choose Your Consultation</h2>
           <p>
             Select the type of guidance that resonates most with your current
-            life situation. Every session is conducted personally by Acharya
-            Bhairav.
+            life situation. Every session is conducted personally by Ambuj Mishra
+            .
           </p>
         </motion.div>
 
@@ -487,7 +485,7 @@ export default function Consultation() {
           <p className="cn-section-label">Book Now</p>
           <h2>Schedule Your Session</h2>
           <p>
-            Fill in your details below and Acharya Bhairav's team will confirm
+            Fill in your details below and Ambuj Mishra's team will confirm
             your appointment within a few hours.
           </p>
         </motion.div>
@@ -504,7 +502,7 @@ export default function Consultation() {
             <div>
               <h2>Reach Out Directly</h2>
               <p>
-                Prefer a quick chat? Call or WhatsApp Acharya Bhairav's team
+                Prefer a quick chat? Call or WhatsApp Ambuj Mishra's team
                 directly for same-day appointment confirmation.
               </p>
             </div>
@@ -585,7 +583,7 @@ export default function Consultation() {
                   <div className="cn-success-icon">🙏</div>
                   <h3>Booking Received!</h3>
                   <p>
-                    Thank you for reaching out. Acharya Bhairav's team will
+                    Thank you for reaching out. Ambuj Mishra's team will
                     confirm your appointment within a few hours.
                   </p>
                   <button className="cn-success-btn" onClick={handleReset}>
@@ -786,7 +784,7 @@ export default function Consultation() {
         </div>
       </section>
 
-      {/* ── Why Acharya Bhairav ────────────────────────────── */}
+      {/* ── Why Ambuj Mishra ────────────────────────────── */}
       <section className="cn-why">
         <motion.div
           className="cn-section-head"
@@ -796,7 +794,7 @@ export default function Consultation() {
           variants={fadeUp}
         >
           <p className="cn-section-label">Why Choose Us</p>
-          <h2>Why Thousands Trust Acharya Bhairav</h2>
+          <h2>Why Thousands Trust Ambuj Mishra</h2>
           <p>
             Authentic, research-backed Vedic guidance rooted in classical
             tradition — tailored uniquely for you.
@@ -833,7 +831,7 @@ export default function Consultation() {
         >
           <h2>Begin Your Cosmic Journey Today</h2>
           <p>
-            Your stars hold the answers. Let Acharya Bhairav help you decode
+            Your stars hold the answers. Let Ambuj Mishra help you decode
             them and navigate life with confidence and clarity.
           </p>
           <div className="cn-cta-btns">

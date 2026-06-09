@@ -30,7 +30,7 @@ const AboutUs = () => {
             <div className="inline-block overflow-hidden rounded-3xl shadow-2xl border border-white/10 bg-midnight">
               <img
                 src="/about.webp"
-                alt="Acharya Vatsal Mishra"
+                alt="Ambuj Mishra"
                 className="h-auto w-auto max-h-[520px] rounded-3xl object-contain"
               />
             </div>
@@ -42,7 +42,7 @@ const AboutUs = () => {
               </div>
 
               <div>
-                <h4 className="font-bold text-lg text-white">15+ Years</h4>
+                <h4 className="font-bold text-lg text-white">25 Years</h4>
 
                 <p className="text-sm text-white">Experience in Astrology</p>
               </div>
@@ -60,25 +60,15 @@ const AboutUs = () => {
             </div>
 
             <p className="text-white leading-8 text-lg mb-6">
-              Astro Ambuj Mishra has been practicing astrology for
-              over 15 years, deeply rooted in the sacred Guru-Shishya Parampara.
+              Astro Ambuj Mishra is a visionary businesswoman, astrologer, and mental wellness professional with over 25 years of experience in guiding people toward personal growth, clarity, and balance.
             </p>
 
             <p className="text-white leading-8 text-lg mb-6">
-              Certified by the Uttar Pradesh Sanskrit Sansthan, he holds a
-              Master of Arts (Jyotish Vigyan) degree, blending deep academic
-              excellence with traditional spiritual lineage. He is a lifetime
-              member and Jyotish Visharad of the prestigious Indian Council of
-              Astrological Sciences (ICAS).
+              With a unique blend of business expertise, astrological knowledge, and a deep understanding of human emotions, Ambuj Mishra helps individuals explore their potential, overcome challenges, and create a more meaningful path in life.
             </p>
 
             <p className="text-white leading-8 text-lg mb-6">
-              Driven by a passion for accuracy, Acharya Bhairav actively
-              incorporates rigorous astrological research into his practice. By
-              combining timeless traditional wisdom with a contemporary,
-              research-backed approach, he continues to uphold the rich legacy
-              of Vedic astrology delivering logical, practical, and highly
-              impactful guidance for the modern world.
+              Her approach combines traditional wisdom with practical insights, focusing on self-awareness, confidence, emotional well-being, and positive transformation. Through her work in astrology and mental wellness programs, she has supported many individuals in making thoughtful decisions and building a balanced lifestyle.
             </p>
           </div>
         </div>

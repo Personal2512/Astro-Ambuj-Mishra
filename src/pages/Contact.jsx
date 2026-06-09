@@ -27,9 +27,9 @@ const contactItems = [
   {
     icon: <Mail size={18} />,
     label: "Email",
-    value: "info@acharyabhairav.com",
+    value: "info@ambujmishra.com",
     sub: "Reply within 24 hours",
-    href: "mailto:info@acharyabhairav.com",
+    href: "mailto:info@ambujmishra.com",
   },
   {
     icon: <MapPin size={18} />,
@@ -65,8 +65,8 @@ const quickLinks = [
   {
     icon: <Mail size={18} />,
     label: "Send Email",
-    detail: "info@acharyabhairav.com",
-    href: "mailto:info@acharyabhairav.com",
+    detail: "info@ambujmishra.com",
+    href: "mailto:info@ambujmishra.com",
     color: "#9AE6D8",
   },
 ];
@@ -93,7 +93,7 @@ const whyCards = [
   {
     icon: "🔮",
     title: "15+ Years of Expertise",
-    desc: "Acharya Bhairav brings over a decade and a half of deep Vedic astrology practice and research.",
+    desc: "Ambuj Mishra brings over a decade and a half of deep Vedic astrology practice and research.",
   },
   {
     icon: "🕉️",
@@ -103,7 +103,7 @@ const whyCards = [
   {
     icon: "🌍",
     title: "Global Reach",
-    desc: "Clients from 20+ countries trust Acharya Bhairav for accurate, life-changing guidance.",
+    desc: "Clients from 20+ countries trust Ambuj Mishra for accurate, life-changing guidance.",
   },
   {
     icon: "💬",
@@ -202,7 +202,7 @@ export default function Contact() {
           </span>
 
           <h1 className="ct-hero-title">
-            Contact <span>Acharya Bhairav</span>
+            Contact <span>Ambuj Mishra</span>
           </h1>
 
           <p className="ct-hero-sub">
@@ -350,7 +350,7 @@ export default function Contact() {
                 <div className="ct-success-icon">✨</div>
                 <h3>Message Received!</h3>
                 <p>
-                  Thank you for reaching out. Acharya Bhairav's team will get
+                  Thank you for reaching out. Ambuj Mishra's team will get
                   back to you within 24 hours.
                 </p>
                 <button className="ct-success-btn" onClick={handleReset}>
@@ -470,7 +470,7 @@ export default function Contact() {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h2>Why Thousands Trust Acharya Bhairav</h2>
+          <h2>Why Thousands Trust Ambuj Mishra</h2>
           <p>Authentic, research-backed Vedic guidance — tailored for you.</p>
         </motion.div>
 
