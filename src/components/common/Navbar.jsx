@@ -36,7 +36,7 @@ export default function Navbar() {
           />
 
           <span className="font-display text-2xl font-bold text-cream">
-            Acharya Bhairav
+            Astro Ambuj Mishra
           </span>
         </div>
         </Link>
