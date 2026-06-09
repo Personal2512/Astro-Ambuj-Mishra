@@ -182,7 +182,7 @@ const benefits = [
   {
     icon: "📜",
     title: "Certified by Acharya Bhairav",
-    desc: "Receive a personal certificate of completion, signed by Acharya Vatsal Mishra 'Bhairav'.",
+    desc: "Receive a personal certificate of completion, signed by Astro Ambuj Mishra.",
   },
   {
     icon: "🤝",
@@ -395,13 +395,13 @@ export default function Courses() {
         >
           <img
             src="/about.webp"
-            alt="Acharya Vatsal Mishra Bhairav"
+            alt="Astro Ambuj Mishra"
             className="cr-instructor-avatar"
           />
           <div>
             <p className="cr-instructor-label">Your Instructor</p>
             <h2 className="cr-instructor-name">
-              Acharya Vatsal Mishra 'Bhairav'
+              Astro Ambuj Mishra
             </h2>
             <p className="cr-instructor-bio">
               MA in Jyotish Vigyan · Lifetime ICAS Member · 15+ Years of

@@ -151,7 +151,7 @@ export default function AboutUs() {
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
           <div className="au-image-frame">
-            <img src="/about.webp" alt="Acharya Vatsal Mishra 'Bhairav'" />
+            <img src="/about.webp" alt="Astro Ambuj Mishra" />
 
             {/* Floating badge */}
             <div className="au-image-badge">
@@ -188,7 +188,7 @@ export default function AboutUs() {
 
           <div className="au-content-body">
             <p>
-              Acharya Vatsal Mishra 'Bhairav' has been practicing astrology for
+              Astro Ambuj Mishra has been practicing astrology for
               over 15 years, deeply rooted in the sacred Guru-Shishya
               Parampara. Certified by the Uttar Pradesh Sanskrit Sansthan, he
               holds a Master of Arts (Jyotish Vigyan) degree, blending deep

@@ -18,7 +18,7 @@ const AboutUs = () => {
           </p> */}
 
           <h2 className="text-4xl md:text-5xl font-bold text-cream leading-tight">
-            About <span className="text-orange-400">Acharya Vatsal Mishra  <span className="text-cream">'Bhairav'</span> </span>
+            About <span className="text-orange-400">Astro Ambuj Mishra</span>
           </h2>
 
           <div className="w-28 h-1 bg-orange-500 mx-auto mt-5 rounded-full"></div>
@@ -60,7 +60,7 @@ const AboutUs = () => {
             </div>
 
             <p className="text-white leading-8 text-lg mb-6">
-              Acharya Vatsal Mishra ‘Bhairav’ has been practicing astrology for
+              Astro Ambuj Mishra has been practicing astrology for
               over 15 years, deeply rooted in the sacred Guru-Shishya Parampara.
             </p>
 
