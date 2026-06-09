@@ -232,7 +232,7 @@ export default function ProductDetail({ category }) {
   const handleBuyNow = () => {
     const msg =
       `Hi! I want to buy *${product.name}* priced at *${fmt(product.price)}* ` +
-      `(Qty: ${qty}) from Acharya Bhairav. Please confirm availability.`;
+      `(Qty: ${qty}) from Ambuj Mishra. Please confirm availability.`;
     window.open(`https://dashboard.paytm.com/login/?text=${encodeURIComponent(msg)}`, '_blank');
   };
 
@@ -409,7 +409,7 @@ export default function ProductDetail({ category }) {
             <div className="pd-desc">
               <p>{content.description}</p>
               <p>
-                At Acharya Bhairav, every product is personally selected and energized
+                At Ambuj Mishra, every product is personally selected and energized
                 by our expert team of Vedic astrologers. We believe that the right product,
                 chosen with intention and energized with authentic Vedic rituals, can bring
                 meaningful positive change in your life. Each piece is packed with care and

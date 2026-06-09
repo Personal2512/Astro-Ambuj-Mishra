@@ -32,7 +32,7 @@ const fadeUp = {
 const stats = [
   { icon: "🕉️", number: "500+", label: "Pujas Performed" },
   { icon: "🌍", number: "15+", label: "Countries Reached" },
-  { icon: "🏆", number: "15+", label: "Years of Tradition" },
+  { icon: "🏆", number: "25", label: "Years of Tradition" },
   { icon: "🙏", number: "98%", label: "Devotee Satisfaction" },
 ];
 
@@ -168,7 +168,7 @@ const testimonials = [
   },
   {
     avatar: "🌺",
-    text: "We had the Kaal Sarp Dosh Nivaran puja done for my son. The change was remarkable — job offers started coming after months of struggle. Truly grateful to Acharya Bhairav.",
+    text: "We had the Kaal Sarp Dosh Nivaran puja done for my son. The change was remarkable — job offers started coming after months of struggle. Truly grateful to Ambuj Mishra.",
     name: "Ramesh Gupta",
     location: "Jaipur, India",
     stars: 5,
@@ -182,7 +182,7 @@ const testimonials = [
   },
   {
     avatar: "🕉️",
-    text: "Acharya Bhairav's team performed Satyanarayan Puja for our new home. The entire ceremony was beautiful, authentic and filled with spiritual energy. Highly recommended.",
+    text: "Ambuj Mishra's team performed Satyanarayan Puja for our new home. The entire ceremony was beautiful, authentic and filled with spiritual energy. Highly recommended.",
     name: "Suresh & Anita Verma",
     location: "Lucknow, India",
     stars: 5,
@@ -246,9 +246,9 @@ const infoCards = [
   {
     icon: <Mail size={18} />,
     label: "Email",
-    value: "info@acharyabhairav.com",
+    value: "info@ambujmishra.com",
     sub: "Reply within 24 hours",
-    href: "mailto:info@acharyabhairav.com",
+    href: "mailto:info@ambujmishra.com",
   },
   {
     icon: <Clock size={18} />,
@@ -336,7 +336,7 @@ export default function OnlinePooja() {
 
           <p className="op-hero-sub">
             Experience authentic Vedic pujas and karamkand ceremonies performed
-            by Acharya Bhairav and his team of trained pandits — from the comfort
+            by Ambuj Mishra and his team of trained pandits — from the comfort
             of your home, with live online darshan and prasad delivery.
           </p>
 
@@ -508,7 +508,7 @@ export default function OnlinePooja() {
             <div>
               <h2>Get in Touch</h2>
               <p>
-                Prefer a direct call? Reach Acharya Bhairav's team to schedule
+                Prefer a direct call? Reach Ambuj Mishra's team to schedule
                 your puja, ask questions or get guidance on the right ceremony
                 for your needs.
               </p>

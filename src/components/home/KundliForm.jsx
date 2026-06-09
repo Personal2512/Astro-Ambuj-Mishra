@@ -10,8 +10,7 @@ export default function KundliForm() {
             Start Your Personalized Astrology Journey
           </h2>
           <p className="mt-5 text-lg leading-8 text-midnight/70">
-            Fill your birth details and get your basic kundli preview. This
-            form can later be connected with your backend API.
+            Fill your birth details to generate your basic Kundli preview and gain valuable astrological insights.
           </p>
 
           <div className="mt-8 rounded-3xl bg-midnight p-6 text-cream h-80">

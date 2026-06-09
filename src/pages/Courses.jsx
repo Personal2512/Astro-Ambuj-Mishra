@@ -181,13 +181,13 @@ const benefits = [
   },
   {
     icon: "📜",
-    title: "Certified by Acharya Bhairav",
+    title: "Certified by Ambuj Mishra",
     desc: "Receive a personal certificate of completion, signed by Astro Ambuj Mishra.",
   },
   {
     icon: "🤝",
     title: "Live Q&A Sessions",
-    desc: "Regular live doubt-clearing sessions with Acharya Bhairav for in-depth clarity.",
+    desc: "Regular live doubt-clearing sessions with Ambuj Mishra for in-depth clarity.",
   },
   {
     icon: "📖",
@@ -242,13 +242,11 @@ export default function Courses() {
           </span>
 
           <h1 className="cr-hero-title">
-            Astrology <span>Courses</span> by Acharya Bhairav
+            Astrology <span>Courses</span> by Ambuj Mishra
           </h1>
 
           <p className="cr-hero-sub">
-            Master the sacred sciences of Vedic Astrology, Numerology, Vastu
-            and more — through structured, research-backed courses taught by an
-            MA-certified astrologer with 15+ years of practice.
+            Master the sacred sciences of Vedic Astrology, Numerology, Vastu, and more through structured, practical courses designed by Ambuj Mishra, drawing on over 25 years of experience in astrology, mental wellness, and personal development.
           </p>
         </motion.div>
       </section>
@@ -404,9 +402,7 @@ export default function Courses() {
               Astro Ambuj Mishra
             </h2>
             <p className="cr-instructor-bio">
-              MA in Jyotish Vigyan · Lifetime ICAS Member · 15+ Years of
-              Practice. Acharya Bhairav brings unmatched academic credentials
-              and traditional Guru-Shishya lineage to every course he teaches.
+              With over 25 years of experience in astrology, business guidance, and mental wellness, Ambuj Mishra brings a unique blend of traditional wisdom and practical insights to every course, empowering learners with knowledge for personal growth and positive transformation.
             </p>
           </div>
           <Link to="/about-us" className="cr-instructor-cta">
