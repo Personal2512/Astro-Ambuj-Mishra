@@ -427,12 +427,12 @@
 .cr-card-price strong {
   font-size: 1.2rem;
   font-weight: 800;
-  color: #eab308;
+  color: #07111F;
 }
 
 .cr-card-price span {
   font-size: 0.75rem;
-  color: rgba(245, 238, 220, 0.4);
+  color: rgba(7, 17, 31, 0.5);
   text-decoration: line-through;
 }
 

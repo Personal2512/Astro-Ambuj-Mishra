@@ -1,5 +1,5 @@
 import { Routes, Route } from "react-router-dom";
-
+import ScrollToTop from "../components/scrollToTop";
 import MainLayout from "../layouts/MainLayout";
 
 import Home from "../pages/Home";
@@ -11,12 +11,17 @@ import ProductDetail from "../pages/shop/ProductDetail";
 import Contact from "../pages/Contact";
 import AboutUs from "../pages/AboutUs";
 import Courses from "../pages/Courses";
-
+import Consultation from "../pages/Consultation";
+import OnlinePooja from "../pages/OnlinePooja";
 export default function AppRoutes() {
   return (
+    <>
+    <ScrollToTop/>
     <Routes>
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
+        <Route path="/consultation" element={<Consultation />} />
+        <Route path="/online-pooja" element={<OnlinePooja />} />
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/courses" element={<Courses />} />
@@ -46,5 +51,6 @@ export default function AppRoutes() {
         />
       </Route>
     </Routes>
+    </>
   );
 }
