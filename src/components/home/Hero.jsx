@@ -11,10 +11,12 @@ export default function Hero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/home.webp"
+          src="/home5.webp"
           alt="Astrology Background"
-          className=" w-full h-full  object-cover object-center"
+          className=" w-full h-full  object-cotain object-center"
         />
+
+        <div className="absolute inset-0 bg-gradient-to-r from-[#2B0A0A]/80 via-[#2B0A0A]/40 to-transparent" />
 
         {/* Premium Overlay */}
         {/* <div className="absolute inset-0 bg-gradient-to-r from-midnight via-midnight/75 to-midnight/30" />
@@ -36,14 +38,13 @@ export default function Hero() {
             Premium Vedic Astrology Guidance
           </motion.p>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 35 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.15 }}
-            className="font-display text-4xl font-bold leading-tight text-cream sm:text-5xl md:text-6xl lg:text-7xl"
-          >
-            Find Clarity In Your{" "}
-            <span className="text-gradient">Cosmic Journey</span>
+          <motion.h1 className="font-display text-4xl font-bold leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
+            <span className="text-white drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]">
+              Illuminate Your Future With
+            </span>{" "}
+            <span className="bg-gradient-to-r from-[#FBBF24] via-[#FDE68A] to-[#FFFFFF] bg-clip-text text-transparent drop-shadow-[0_4px_20px_rgba(0,0,0,0.6)]">
+              Cosmic Insight
+            </span>
           </motion.h1>
 
           <motion.p
@@ -88,12 +89,12 @@ export default function Hero() {
           transition={{ duration: 1 }}
           className=" relative flex h-full items-end justify-center  md:justify-end"
         >
-          <div className="absolute h-[260px] w-[260px] rounded-full bg-gold/20 blur-3xl sm:h-[360px] sm:w-[360px]" />
+          <div className="absolute h-[360px] w-[260px] rounded-full bg-gold/20 blur-3xl sm:h-[560px] sm:w-[360px]" />
 
           <img
-            src="/home2.webp"
+            src="/home3.webp"
             alt="Astrology"
-            className="relative z-10 h-[330px] w-full object-contain sm:h-[430px] md:h-[560px] lg:h-[620px] lg:mt-20"
+            className="relative z-10 h-[330px] w-full object-cover translate-y-8 sm:h-[430px] md:h-[560px] lg:h-[690px] lg:translate-y-50"
           />
         </motion.div>
       </div>

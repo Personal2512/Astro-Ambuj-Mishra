@@ -16,19 +16,7 @@
   --color-cardBg: #101b2d;
 } */
 
-@theme {
-  --color-midnight: #07111F;
-  --color-teal: #0E7490;
-  --color-seafoam: #9AE6D8;
-  --color-gold: #EAB308;
-
-  --color-cream: #F5EEDC;
-
-  --color-purpleGlow: #6D28D9;
-  --color-cardBg: #101B2D;
-}
-
-/* :root{
+/* @theme {
   --color-midnight: #07111F;
   --color-teal: #0E7490;
   --color-seafoam: #9AE6D8;
@@ -40,6 +28,17 @@
   --color-cardBg: #101B2D;
 } */
 
+@theme {
+  --color-midnight: #7A0C0C;      /* Deep Red */
+  --color-teal: #B91C1C;          /* Rich Red */
+  --color-seafoam: #FFF8F0;       /* Warm White */
+  --color-gold: #FBBF24;          /* Golden Yellow */
+
+  --color-cream: #FFFFFF;         /* Pure White */
+
+  --color-purpleGlow: #DC2626;    /* Bright Red Glow */
+  --color-cardBg: #2B0A0A;        /* Dark Maroon Card */
+}
 
 body {
   background:

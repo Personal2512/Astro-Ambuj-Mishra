@@ -29,7 +29,7 @@ const AboutUs = () => {
           <div className="relative flex justify-center">
             <div className="inline-block overflow-hidden rounded-3xl shadow-2xl border border-white/10 bg-midnight">
               <img
-                src="/about.webp"
+                src="/home4.webp"
                 alt="Ambuj Mishra"
                 className="h-auto w-auto max-h-[520px] rounded-3xl object-contain"
               />

@@ -29,7 +29,7 @@ const footerLinks = [
 
 export default function Footer() {
   return (
-    <footer className="bg-[#04101f] px-5 py-14 text-cream">
+    <footer className="bg-midnight px-5 py-14 text-cream">
       <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-4">
         <div>
           <div className="flex items-center gap-2">
@@ -38,7 +38,7 @@ export default function Footer() {
               alt="Astro Logo"
               className="h-12 w-12 object-contain rounded-full border border-cream/20"
             />
-            <span className="font-display text-2xl font-bold">Ambuj Mishra</span>
+            <span className="font-display text-2xl font-bold">Astro Ambuj Mishra</span>
           </div>
           <p className="mt-4 text-white">
             Premium astrology consultation, Leadership Guidance, Personal Growth and Self-Development.
@@ -76,7 +76,7 @@ export default function Footer() {
       <div className="mx-auto mt-10 max-w-7xl border-t border-cream/10 pt-6 text-gold">
         <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-center sm:text-left">
-            © {new Date().getFullYear()} Ambuj Mishra. All Rights Reserved.
+            © {new Date().getFullYear()} Astro Ambuj Mishra. All Rights Reserved.
           </p>
           <p className="text-center sm:text-right text-white">
             Powered by{" "}

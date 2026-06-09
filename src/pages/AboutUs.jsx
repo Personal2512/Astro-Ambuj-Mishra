@@ -148,8 +148,8 @@ export default function AboutUs() {
           viewport={{ once: true }}
           transition={{ duration: 0.6, ease: "easeOut" }}
         >
-          <div className="au-image-frame">
-            <img src="/about.webp" alt="Astro Ambuj Mishra" />
+          <div className="au-image-frame mt-30">
+            <img src="/home4.webp" alt="Astro Ambuj Mishra" />
 
             {/* Floating badge */}
             <div className="au-image-badge">
