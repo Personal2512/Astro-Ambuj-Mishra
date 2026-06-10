@@ -187,22 +187,22 @@
   font-size: 0.85rem;
   font-weight: 600;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(16, 27, 45, 0.75);
-  color: rgba(245, 238, 220, 0.7);
+  background: var(--color-cream);
+  color: var(--color-midnight);
   cursor: pointer;
   transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.15s;
 }
 
 .cr-tab:hover {
   border-color: rgba(234, 179, 8, 0.4);
-  color: #f5eedc;
+  /* color: var(--color-gold); */
   transform: translateY(-1px);
 }
 
 .cr-tab.active {
   background: #eab308;
   border-color: #eab308;
-  color: #07111f;
+  color: var(--color-midnight);
 }
 
 /* ── Search bar ──────────────────────────────────────────── */
@@ -222,7 +222,7 @@
   left: 1.1rem;
   top: 50%;
   transform: translateY(-50%);
-  color: rgba(7, 17, 31, 0.5);
+  color: var(--color-midnight);
 }
 
 .cr-search-input {
@@ -231,7 +231,7 @@
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 9999px;
   padding: 0.85rem 1.25rem 0.85rem 3rem;
-  color: #07111F;
+  color: var(--color-midnight);
   font-size: 0.95rem;
   outline: none;
   box-sizing: border-box;
@@ -240,7 +240,7 @@
 }
 
 .cr-search-input::placeholder {
-  color: rgba(7, 17, 31, 0.5);
+  color: var(--color-midnight);
 }
 
 .cr-search-input:focus {
@@ -441,7 +441,7 @@
   align-items: center;
   gap: 0.4rem;
   background: #eab308;
-  color: #07111f;
+  color: var(--color-midnight);
   border: none;
   border-radius: 9999px;
   padding: 0.6rem 1.2rem;
@@ -539,7 +539,7 @@
   align-items: center;
   gap: 0.5rem;
   background: #eab308;
-  color: #07111f;
+  color: var(--color-midnight);
   border: none;
   border-radius: 9999px;
   padding: 0.85rem 1.75rem;
@@ -609,14 +609,14 @@
 .cr-benefit-card h3 {
   font-size: 1rem;
   font-weight: 800;
-  color: #07111f;
+  color: var(--color-midnight);
   margin: 0 0 0.5rem;
 }
 
 .cr-benefit-card p {
   font-size: 0.85rem;
   line-height: 1.65;
-  color: #07111f;
+  color: var(--color-midnight);
   margin: 0;
 }
 
@@ -660,7 +660,7 @@
   align-items: center;
   gap: 0.55rem;
   background: #eab308;
-  color: #07111f;
+  color: var(--color-midnight);
   border: none;
   border-radius: 9999px;
   padding: 0.9rem 2rem;
@@ -682,7 +682,7 @@
   align-items: center;
   gap: 0.55rem;
   background: transparent;
-  color: #07111f;
+  color: var(--color-midnight);
   border: 2px solid rgba(7, 17, 31, 0.3);
   border-radius: 9999px;
   padding: 0.9rem 2rem;

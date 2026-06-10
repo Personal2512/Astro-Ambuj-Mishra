@@ -16,6 +16,7 @@
   min-height: 46vh;
   padding: 7rem 1.25rem 5rem;
   overflow: hidden;
+  background: var(--color-midnight);
 }
 
 .ct-hero-glow-a {
@@ -203,7 +204,7 @@
   display: flex;
   align-items: flex-start;
   gap: 0.9rem;
-  background: rgba(16, 27, 45, 0.75);
+  background: var(--color-cream);
   border: 1px solid rgba(255, 255, 255, 0.07);
   backdrop-filter: blur(14px);
   border-radius: 1.2rem;
@@ -219,7 +220,7 @@
   width: 2.5rem;
   height: 2.5rem;
   border-radius: 0.75rem;
-  background: rgba(234, 179, 8, 0.1);
+  background: var(--color-midnight);
   border: 1px solid rgba(234, 179, 8, 0.2);
   display: flex;
   align-items: center;
@@ -232,7 +233,7 @@
   display: block;
   font-size: 0.82rem;
   font-weight: 700;
-  color: rgba(245, 238, 220, 0.5);
+  color: var(--color-midnight);
   text-transform: uppercase;
   letter-spacing: 0.05em;
   margin-bottom: 0.2rem;
@@ -241,13 +242,13 @@
 .ct-ci-text p {
   margin: 0;
   font-size: 0.95rem;
-  color: #f5eedc;
+  color: var(--color-midnight);
   font-weight: 600;
 }
 
 .ct-ci-text span {
   font-size: 0.82rem;
-  color: rgba(245, 238, 220, 0.55);
+  color: var(--color-midnight);
 }
 
 /* Social links */
@@ -266,8 +267,8 @@
   font-size: 0.82rem;
   font-weight: 700;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(16, 27, 45, 0.75);
-  color: #f5eedc;
+  background: var(--color-cream);
+  color: var(--color-midnight);
   text-decoration: none;
   transition: border-color 0.22s, background 0.22s, transform 0.2s;
   cursor: pointer;
@@ -291,13 +292,13 @@
 .ct-form-title {
   font-size: 1.45rem;
   font-weight: 800;
-  color: #07111F;
+  color: var(--color-midnight);
   margin: 0 0 0.4rem;
 }
 
 .ct-form-subtitle {
   font-size: 0.88rem;
-  color:#07111F;
+  color:var(--color-midnight);
   margin: 0 0 2rem;
 }
 
@@ -328,7 +329,7 @@
 .ct-field label {
   font-size: 0.8rem;
   font-weight: 700;
-  color: #07111F;
+  color: var(--color-midnight);
   text-transform: uppercase;
   letter-spacing: 0.05em;
 }
@@ -340,7 +341,7 @@
   border: 1px solid rgba(7, 17, 31, 0.2);
   border-radius: 0.9rem;
   padding: 0.8rem 1.1rem;
-  color: #07111f;
+  color: var(--color-midnight);
   font-size: 0.93rem;
   outline: none;
   transition: border-color 0.2s, box-shadow 0.2s;
@@ -351,7 +352,7 @@
 
 .ct-field input::placeholder,
 .ct-field textarea::placeholder {
-  color: rgba(7, 17, 31, 0.5);
+  color: #BC8585;
 }
 
 .ct-field input:focus,
@@ -363,7 +364,7 @@
 
 .ct-field select option {
   background: #F5EEDC;
-  color: #07111F;
+  color: var(--color-midnight);
 }
 
 .ct-field textarea {
@@ -377,7 +378,7 @@
   justify-content: center;
   gap: 0.6rem;
   background: #eab308;
-  color: #07111f;
+  color: var(--color-midnight);
   border: none;
   border-radius: 9999px;
   padding: 1rem 2rem;
