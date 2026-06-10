@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import "./Contact.css";
 
+
 /* ── Static data ─────────────────────────────────────────── */
 const contactItems = [
   {
