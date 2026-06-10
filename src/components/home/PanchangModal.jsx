@@ -32,7 +32,7 @@ const PanchangModal = ({ onClose, selectedDate, location }) => {
     <>
       <Navbar />
       <div className="fixed left-0 right-0 top-[72px] bottom-0 z-40 bg-black/70 backdrop-blur-sm overflow-y-auto">
-        <div className="min-h-screen bg-gradient-to-br from-[#050816] via-[#0b1437] to-[#141b4d] p-6">
+        <div className="min-h-screen bg-[var(--color-midnight)] p-6">
           {/* Header */}
           <div className="max-w-7xl mx-auto">
             <div className="flex justify-between items-center mb-6">
