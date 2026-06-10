@@ -392,7 +392,7 @@ export default function Courses() {
           variants={fadeUp}
         >
           <img
-            src="/about.webp"
+            src="/home4.webp"
             alt="Astro Ambuj Mishra"
             className="cr-instructor-avatar"
           />

@@ -94,7 +94,7 @@ export default function Hero() {
           <img
             src="/home3.webp"
             alt="Astrology"
-            className="relative z-10 h-[330px] w-full object-cover translate-y-8 sm:h-[430px] md:h-[560px] lg:h-[690px] lg:translate-y-50"
+            className="relative z-10 h-[390px] w-full object-cover translate-y-10 sm:h-[430px] md:h-[560px] lg:h-[690px] lg:translate-y-50"
           />
         </motion.div>
       </div>

@@ -1,6 +1,6 @@
 /* ── Page wrapper ────────────────────────────────────────── */
 .ct-page {
-  background: #07111f;
+  background: var(--color-midnight);
   min-height: 100vh;
   color: #f5eedc;
   overflow-x: hidden;
@@ -25,7 +25,7 @@
   width: 380px;
   height: 380px;
   border-radius: 50%;
-  background: rgba(14, 116, 144, 0.22);
+  background: var(--color-teal);
   filter: blur(90px);
   pointer-events: none;
 }
@@ -37,7 +37,7 @@
   width: 340px;
   height: 340px;
   border-radius: 50%;
-  background: rgba(234, 179, 8, 0.18);
+  background: var(--color-teal);
   filter: blur(90px);
   pointer-events: none;
 }

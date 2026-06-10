@@ -1,6 +1,6 @@
 /* ── Page wrapper ────────────────────────────────────────── */
 .cn-page {
-  background: #07111f;
+  background: var(--color-midnight);
   min-height: 100vh;
   color: #f5eedc;
   overflow-x: hidden;

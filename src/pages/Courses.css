@@ -1,6 +1,6 @@
 /* ── Page wrapper ─────────────────────────────────────────── */
 .cr-page {
-  background: #07111f;
+  background: var(--color-midnight);
   min-height: 100vh;
   color: #f5eedc;
   overflow-x: hidden;
@@ -501,7 +501,7 @@
 }
 
 .cr-instructor-avatar {
-  width: 5.7rem;
+  width: 6rem;
   height: 8rem;
   border-radius: 50%;
   margin-top: 2rem;

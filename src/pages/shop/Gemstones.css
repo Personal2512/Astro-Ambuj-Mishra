@@ -2,7 +2,7 @@
 
 /* ─── Page ────────────────────────────────── */
 .gems-page {
-  background: #0a0e1a;
+  background: var(--color-midnight);
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
   color: #e8e0d4;
