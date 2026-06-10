@@ -2,7 +2,7 @@
 
 /* ─── Page ────────────────────────────────── */
 .br-page {
-  background: #0a0e1a;
+  background: var(--color-midnight);
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
   color: #e8e0d4;
@@ -33,10 +33,6 @@
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  background:
-    linear-gradient(135deg, rgba(10,14,26,0.94) 0%, rgba(20,8,42,0.9) 50%, rgba(10,14,26,0.94) 100%),
-    url('/bracelet3.webp')
-    center / cover no-repeat;
 }
 
 .br-hero-overlay {
@@ -96,9 +92,9 @@
 }
 .br-hero-pills { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
 .br-pill {
-  background: rgba(245,240,232,0.07);
+  background: var(--color-cream);
   border: 1px solid rgba(201,169,110,0.3);
-  color: #c9a96e; padding: 6px 16px;
+  color: var(--color-midnight); padding: 6px 16px;
   border-radius: 100px; font-size: 0.78rem;
   letter-spacing: 0.05em; backdrop-filter: blur(6px);
 }
@@ -126,7 +122,7 @@
 
 /* ─── BENEFITS ────────────────────────────── */
 .br-benefits {
-  background: rgba(245,240,232,0.03);
+  background: var(--color-cream);
   border-bottom: 1px solid rgba(255,255,255,0.06);
   padding: 40px 24px;
 }
@@ -138,8 +134,8 @@
 }
 .br-benefit { display: flex; gap: 14px; align-items: flex-start; }
 .br-ben-icon { font-size: 2rem; flex-shrink: 0; }
-.br-benefit strong { display: block; color: #f5f0e8; font-size: 0.9rem; font-weight: 600; margin-bottom: 4px; }
-.br-benefit p { color: #8a8070; font-size: 0.78rem; line-height: 1.55; margin: 0; }
+.br-benefit strong { display: block; color: var(--color-midnight); font-size: 0.9rem; font-weight: 600; margin-bottom: 4px; }
+.br-benefit p { color: var(--color-midnight); font-size: 0.78rem; line-height: 1.55; margin: 0; }
 
 /* ─── WEAR GUIDE ──────────────────────────── */
 .br-wear-section {
@@ -148,7 +144,7 @@
 }
 .br-wear-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .br-wear-card {
-  background: rgba(245,240,232,0.05);
+  background: var(--color-cream);
   border: 1px solid rgba(245,240,232,0.1);
   border-radius: 16px; padding: 28px 24px;
   transition: border-color 0.3s, transform 0.3s;
@@ -157,12 +153,12 @@
 .br-wear-card:hover { border-color: var(--wc); transform: translateY(-4px); }
 .br-wear-hand {
   font-family: 'Playfair Display', serif;
-  font-size: 1.1rem; color: #f5f0e8;
+  font-size: 1.1rem; color: var(--color-midnight);
   margin: 0 0 12px; font-weight: 600;
 }
-.br-wear-effect { color: #9a9285; font-size: 0.86rem; line-height: 1.7; margin: 0 0 14px; }
-.br-wear-stones { font-size: 0.78rem; color: #c9a96e; }
-.br-wear-stones span { color: #7a7268; margin-right: 6px; }
+.br-wear-effect { color: var(--color-midnight); font-size: 0.86rem; line-height: 1.7; margin: 0 0 14px; }
+.br-wear-stones { font-size: 0.78rem; color: var(--color-midnight); }
+.br-wear-stones span { color: var(--color-teal); margin-right: 6px; }
 
 /* ─── TOOLBAR ─────────────────────────────── */
 .br-toolbar {
@@ -174,26 +170,26 @@
 }
 .br-filters { display: flex; gap: 10px; flex-wrap: wrap; }
 .br-filter-btn {
-  background: rgba(245,240,232,0.06);
+  background: var(--color-gold);
   border: 1px solid rgba(245,240,232,0.12);
-  color: #b8b0a4; padding: 8px 20px;
+  color: var(--color-midnight); padding: 8px 20px;
   border-radius: 100px; cursor: pointer;
   font-size: 0.82rem; font-family: 'Inter', sans-serif;
   transition: all 0.25s; letter-spacing: 0.03em;
 }
 .br-filter-btn:hover {
-  background: rgba(201,169,110,0.12);
-  border-color: rgba(201,169,110,0.4); color: #c9a96e;
+  background: gold;
+  border-color: rgba(201,169,110,0.4); color: var(--color-midnight);
 }
 .br-filter-btn.active {
-  background: #c9a96e; border-color: #c9a96e;
-  color: #0a0e1a; font-weight: 600;
+  background: var(--color-gold); border-color: #c9a96e;
+  color: var(--color-midnight); font-weight: 600;
 }
-.br-sort { display: flex; align-items: center; gap: 10px; color: #8a8070; font-size: 0.82rem; }
+.br-sort { display: flex; align-items: center; gap: 10px; color: var(--color-cream); font-size: 0.82rem; }
 .br-sort select {
   background: var(--color-cream);
   border: 1px solid rgba(245,240,232,0.12);
-  color: #07111f; padding: 8px 16px;
+  color: var(--color-midnight); padding: 8px 16px;
   border-radius: 8px; font-size: 0.82rem;
   font-family: 'Inter', sans-serif;
   cursor: pointer; outline: none;
@@ -301,7 +297,7 @@
   border-radius: 100px; border: 1px solid rgba(10,14,26,0.12);
 }
 .br-add-btn {
-  width: 100%; background:gold; color: midnight;
+  width: 100%; background:var(--color-gold); color: var(--color-midnight);
   border: none; padding: 10px;
   border-radius: 8px; font-size: 0.8rem; font-weight: 600;
   cursor: pointer; letter-spacing: 0.05em; text-transform: uppercase;
@@ -335,7 +331,7 @@
   gap: 18px; min-width: 240px;
 }
 .br-stat {
-  background: rgba(245,240,232,0.05);
+  background: var(--color-cream);
   border: 1px solid rgba(245,240,232,0.1);
   border-radius: 14px; padding: 20px 14px;
   text-align: center; transition: border-color 0.3s;
@@ -345,15 +341,15 @@
   display: block;
   font-family: 'Playfair Display', serif;
   font-size: 1.7rem; font-weight: 700;
-  color: #c9a96e; line-height: 1; margin-bottom: 6px;
+  color: var(--color-gold); line-height: 1; margin-bottom: 6px;
 }
-.br-stat p { font-size: 0.72rem; color: #7a7268; margin: 0; letter-spacing: 0.05em; text-transform: uppercase; }
+.br-stat p { font-size: 0.72rem; color: var(--color-midnight); margin: 0; letter-spacing: 0.05em; text-transform: uppercase; }
 
 /* ─── FAQ ─────────────────────────────────── */
 .br-faq { max-width: 860px; margin: 0 auto; padding: 72px 24px 80px; }
 .br-faq-list { display: flex; flex-direction: column; gap: 12px; }
 .br-faq-item {
-  background: rgba(245,240,232,0.05);
+  background: var(--color-gold);
   border: 1px solid rgba(245,240,232,0.1);
   border-radius: 12px; overflow: hidden;
   transition: border-color 0.25s;
@@ -363,12 +359,12 @@
   width: 100%; display: flex; align-items: center;
   justify-content: space-between; gap: 16px;
   padding: 18px 22px; background: none; border: none;
-  color: #e8e0d4; font-size: 0.9rem; font-weight: 500;
+  color: var(--color-midnight); font-size: 0.9rem; font-weight: 500;
   cursor: pointer; text-align: left;
   font-family: 'Inter', sans-serif; transition: color 0.2s;
 }
-.br-faq-q:hover { color: #c9a96e; }
-.br-faq-icon { flex-shrink: 0; font-size: 1.2rem; color: #c9a96e; width: 24px; text-align: center; }
+.br-faq-q:hover { color: var(--color-teal); }
+.br-faq-icon { flex-shrink: 0; font-size: 1.2rem; color: var(--color-midnight); width: 24px; text-align: center; }
 .br-faq-a {
   max-height: 0; overflow: hidden;
   transition: max-height 0.38s ease, padding 0.38s ease;
@@ -376,7 +372,7 @@
 }
 .br-faq-item.open .br-faq-a { max-height: 320px; padding: 0 22px 20px; }
 .br-faq-a p {
-  color: #8a8070; font-size: 0.86rem; line-height: 1.75; margin: 0;
+  color: var(--color-midnight); font-size: 0.86rem; line-height: 1.75; margin: 0;
   border-top: 1px solid rgba(255,255,255,0.07); padding-top: 14px;
 }
 

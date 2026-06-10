@@ -2,7 +2,7 @@
 
 /* ─── Root & Page ─────────────────────────── */
 .rudraksha-page {
-  background: #0a0e1a;
+  background: var(--color-midnight);
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
   color: #e8e0d4;
@@ -17,9 +17,6 @@
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  background:
-    linear-gradient(135deg, rgba(10,14,26,0.92) 0%, rgba(20,10,40,0.88) 50%, rgba(10,14,26,0.92) 100%),
-    url('/rudra1.webp') center/cover no-repeat;
 }
 
 .rudraksha-hero-overlay {
@@ -80,9 +77,9 @@
 }
 
 .hero-badge {
-  background: rgba(245,240,232,0.08);
+  background: var(--color-cream);
   border: 1px solid rgba(201,169,110,0.35);
-  color: #c9a96e;
+  color: var(--color-midnight);
   padding: 6px 16px;
   border-radius: 100px;
   font-size: 0.78rem;
@@ -125,7 +122,7 @@
 
 /* ─── BENEFITS STRIP ──────────────────────── */
 .rudraksha-benefits-strip {
-  background: rgba(245,240,232,0.04);
+  background:var(--color-cream);
   border-top: 1px solid rgba(255,255,255,0.06);
   border-bottom: 1px solid rgba(255,255,255,0.06);
   padding: 40px 24px;
@@ -153,14 +150,14 @@
 
 .benefit-item strong {
   display: block;
-  color: #f5f0e8;
+  color: var(--color-midnight);
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 4px;
 }
 
 .benefit-item p {
-  color: #8a8070;
+  color: var(--color-midnight);
   font-size: 0.78rem;
   line-height: 1.55;
   margin: 0;
@@ -185,9 +182,9 @@
 }
 
 .filter-btn {
-  background: rgba(245,240,232,0.06);
+  background:var(--color-gold);
   border: 1px solid rgba(245,240,232,0.12);
-  color: #b8b0a4;
+  color: var(--color-midnight);
   padding: 8px 20px;
   border-radius: 100px;
   cursor: pointer;
@@ -198,15 +195,15 @@
 }
 
 .filter-btn:hover {
-  background: rgba(201,169,110,0.12);
+  background: gold;
   border-color: rgba(201,169,110,0.4);
-  color: #c9a96e;
+  color: var(--color-midnight);
 }
 
 .filter-btn.active {
-  background: #c9a96e;
+  background: var(--color-gold);
   border-color: #c9a96e;
-  color: #0a0e1a;
+  color: var(--color-midnight);
   font-weight: 600;
 }
 
@@ -214,14 +211,14 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  color: #8a8070;
+  color: var(--color-cream);
   font-size: 0.82rem;
 }
 
 .rudraksha-sort select {
   background: var(--color-cream);
   border: 1px solid rgba(245,240,232,0.12);
-  color: #07111f;
+  color: var(--color-midnight);
   padding: 8px 16px;
   border-radius: 8px;
   font-size: 0.82rem;
@@ -407,8 +404,8 @@
 
 .card-btn {
   width: 100%;
-  background: gold;
-  color: midnight;
+  background:var(--color-gold);
+  color: var(--color-midnight);
   border: none;
   padding: 11px;
   border-radius: 8px;
@@ -471,7 +468,7 @@
 }
 
 .a-stat {
-  background: rgba(245,240,232,0.05);
+  background: var(--color-cream);
   border: 1px solid rgba(245,240,232,0.1);
   border-radius: 14px;
   padding: 24px 16px;
@@ -488,14 +485,14 @@
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   font-weight: 700;
-  color: #c9a96e;
+  color:var(--color-gold);
   line-height: 1;
   margin-bottom: 6px;
 }
 
 .a-stat p {
   font-size: 0.75rem;
-  color: #7a7268;
+  color: var(--color-midnight);
   margin: 0;
   letter-spacing: 0.05em;
   text-transform: uppercase;
@@ -559,19 +556,19 @@
 .guide-deity {
   font-weight: 700;
   font-size: 0.82rem;
-  color: #1a1208;
+  color: var(--color-midnight);
   margin: 0 0 6px;
 }
 
 .guide-planet {
   font-size: 0.75rem;
-  color: #07111f;
+  color: var(--color-teal);
   margin: 0 0 6px;
 }
 
 .guide-benefit {
   font-size: 0.75rem;
-  color: #07111f;
+  color: var(--color-teal);
   line-height: 1.4;
   margin: 0;
 }
@@ -598,7 +595,7 @@
 }
 
 .faq-item {
-  background: rgba(245,240,232,0.05);
+  background: var(--color-gold);
   border: 1px solid rgba(245,240,232,0.1);
   border-radius: 12px;
   overflow: hidden;
@@ -618,7 +615,7 @@
   padding: 18px 22px;
   background: none;
   border: none;
-  color: #e8e0d4;
+  color: var(--color-midnight);
   font-size: 0.9rem;
   font-weight: 500;
   cursor: pointer;
@@ -628,13 +625,13 @@
 }
 
 .faq-question:hover {
-  color: #c9a96e;
+  color: var(--color-teal);
 }
 
 .faq-icon {
   flex-shrink: 0;
   font-size: 1.2rem;
-  color: #c9a96e;
+  color: var(--color-midnight);
   width: 24px;
   text-align: center;
   transition: transform 0.25s ease;
@@ -657,7 +654,7 @@
 }
 
 .faq-answer p {
-  color: #8a8070;
+  color: var(--color-midnight);
   font-size: 0.86rem;
   line-height: 1.75;
   margin: 0;

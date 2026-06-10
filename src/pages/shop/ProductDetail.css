@@ -4,7 +4,7 @@
    PAGE SHELL
 ═══════════════════════════════════════════════════ */
 .pd-page {
-  background: #0a0e1a;
+  background: var(--color-midnight);
   min-height: 100vh;
   font-family: 'Inter', sans-serif;
   color: #e8e0d4;
@@ -160,10 +160,11 @@
 /* Category tag */
 .pd-cat-tag {
   display: inline-block;
+  background: var(--color-cream);
   font-size: 0.7rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  color: var(--color-cream);
+  color: var(--color-midnight);
   font-weight: 600;
   border: 1px solid rgba(201,169,110,0.35);
   padding: 4px 14px;
@@ -174,18 +175,18 @@
 /* Deity / Planet / Benefit tag */
 .pd-meta-tag {
   font-size: 0.8rem;
-  color: #9a9285;
+  color: var(--color-cream);
   display: flex;
   align-items: center;
   gap: 8px;
   flex-wrap: wrap;
 }
 .pd-meta-tag span {
-  background: rgba(245,240,232,0.06);
+  background: var(--color-cream);
   border: 1px solid rgba(245,240,232,0.1);
   padding: 3px 12px;
   border-radius: 100px;
-  color: var(--color-cream);
+  color: var(--color-midnight);
   font-size: 0.75rem;
 }
 
@@ -220,7 +221,7 @@
   font-size: 1rem;
   color: #4a4238;
 }
-.pd-star.filled { color: gold; }
+.pd-star.filled { color: var(--color-gold); }
 .pd-rating-val {
   font-size: 0.88rem;
   font-weight: 600;
@@ -279,7 +280,7 @@
   align-items: center;
   gap: 0;
   width: fit-content;
-  background: rgba(245,240,232,0.06);
+  background: var(--color-cream);
   border: 1px solid rgba(245,240,232,0.12);
   border-radius: 10px;
   overflow: hidden;
@@ -289,7 +290,7 @@
   height: 42px;
   background: none;
   border: none;
-  color: var(--color-cream);
+  color: var(--color-midnight);
   font-size: 1.2rem;
   font-weight: 700;
   cursor: pointer;
@@ -306,7 +307,7 @@
   text-align: center;
   font-size: 1rem;
   font-weight: 600;
-  color: #f5f0e8;
+  color: var(--color-midnight);
   border-left: 1px solid rgba(245,240,232,0.1);
   border-right: 1px solid rgba(245,240,232,0.1);
   padding: 8px 0;
@@ -317,8 +318,8 @@
 .pd-tags { display: flex; flex-wrap: wrap; gap: 8px; }
 .pd-tag {
   font-size: 0.72rem;
-  color: var(--color-cream);
-  background: rgba(201,169,110,0.08);
+  color: var(--color-midnight);
+  background:var(--color-cream);
   border: 1px solid rgba(201,169,110,0.22);
   padding: 4px 12px;
   border-radius: 100px;
@@ -362,9 +363,9 @@
 .pd-buy-btn {
   width: 100%;
   padding: 15px 24px;
-  background: gold;
+  background: var(--color-gold);
   border: none;
-  color: #07111f;
+  color: var(--color-midnight);
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
   font-weight: 700;
@@ -473,7 +474,7 @@
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  background: rgba(245,240,232,0.04);
+  background: var(--color-gold);
   border: 1px solid rgba(245,240,232,0.08);
   border-radius: 12px;
   padding: 16px 20px;
@@ -484,19 +485,19 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background: #c9a96e;
+  background: var(--color-midnight);
   flex-shrink: 0;
   margin-top: 6px;
 }
 .pd-benefit-text {
   font-size: 0.88rem;
-  color: white;
+  color: var(--color-midnight);
   line-height: 1.6;
 }
 
 /* How to Use tab */
 .pd-how-to {
-  background: rgba(201,169,110,0.06);
+  background: var(--color-cream);
   border: 1px solid rgba(201,169,110,0.2);
   border-radius: 16px;
   padding: 28px 32px;
@@ -504,13 +505,13 @@
 }
 .pd-how-to h3 {
   font-family: 'Playfair Display', serif;
-  color: #c9a96e;
+  color: var(--color-midnight);
   font-size: 1.1rem;
   margin: 0 0 14px;
   font-weight: 600;
 }
 .pd-how-to p {
-  color: white;
+  color: var(--color-midnight);
   line-height: 1.9;
   font-size: 0.9rem;
   margin: 0;
@@ -553,18 +554,18 @@
   align-items: flex-start;
   margin-bottom: 10px;
 }
-.pd-reviewer-name { font-size: 0.9rem; font-weight: 600; color: #07111f; }
-.pd-review-date { font-size: 0.72rem; color: #07111f; }
+.pd-reviewer-name { font-size: 0.9rem; font-weight: 600; color: var(--color-midnight); }
+.pd-review-date { font-size: 0.72rem; color: var(--color-teal); }
 .pd-review-stars { display: flex; gap: 1px; margin-bottom: 10px; }
 .pd-review-star { font-size: 0.8rem; color: #4a4238; }
-.pd-review-star.filled { color: gold; }
-.pd-review-text { font-size: 0.83rem; color: #07111f; line-height: 1.7; }
+.pd-review-star.filled { color: var(--color-gold); }
+.pd-review-text { font-size: 0.83rem; color: var(--color-midnight); line-height: 1.7; }
 .pd-verified {
   display: inline-flex;
   align-items: center;
   gap: 4px;
   font-size: 0.68rem;
-  color: gold;
+  color: var(--color-gold);
   margin-top: 10px;
 }
 
