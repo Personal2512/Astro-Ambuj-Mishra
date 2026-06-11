@@ -6,7 +6,7 @@ const footerLinks = [
     links: [
       { label: "Consultation", to: "/consultation" },
       { label: "Products", href: "#products" },
-      { label: "Karmkand / Online Pooja", to: "/online-pooja" },
+      { label: "Karmkand / Online Puja", to: "/online-pooja" },
       { label: "Courses", to: "/courses" },
     ],
   },
