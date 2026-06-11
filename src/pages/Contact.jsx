@@ -119,7 +119,7 @@ const serviceOptions = [
   "Marriage Compatibility",
   "Career Astrology",
   "Gemstone Recommendation",
-  "Karamkand / Online Puja",
+  "Karmkand / Online Puja",
   "Astrology Course Enquiry",
   "Product / Shop Enquiry",
   "Other",

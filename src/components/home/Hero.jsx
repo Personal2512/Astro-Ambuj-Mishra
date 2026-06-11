@@ -18,9 +18,6 @@ export default function Hero() {
 
         <div className="absolute inset-0 bg-gradient-to-r from-[#2B0A0A]/80 via-[#2B0A0A]/40 to-transparent" />
 
-        {/* Premium Overlay */}
-        {/* <div className="absolute inset-0 bg-gradient-to-r from-midnight via-midnight/75 to-midnight/30" />
-        <div className="absolute inset-0 bg-black/25" /> */}
       </div>
       {/* Soft Glow */}
       <div className="absolute left-[-120px] top-20 h-[320px] w-[320px] rounded-full bg-teal/25 blur-3xl" />
@@ -28,7 +25,7 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto grid min-h-screen max-w-7xl items-center gap-6 pt-6 md:min-h-[calc(100vh-7rem)] md:grid-cols-2 md:items-end md:gap-16 md:pt-10">
         {/* LEFT CONTENT */}
-        <div className=" max-w-2xl text-center  md:text-left mb-10">
+        <div className=" max-w-2xl text-center   md:text-left lg:mb-10">
           <motion.p
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
@@ -94,7 +91,7 @@ export default function Hero() {
           <img
             src="/home3.webp"
             alt="Astrology"
-            className="relative z-10 h-[390px] w-full object-cover translate-y-10 sm:h-[430px] md:h-[560px] lg:h-[690px] lg:translate-y-50"
+            className="relative z-10 h-full w-full object-cover translate-y-12 sm:h-[430px] md:h-[560px] lg:h-[690px] lg:translate-y-50"
           />
         </motion.div>
       </div>
