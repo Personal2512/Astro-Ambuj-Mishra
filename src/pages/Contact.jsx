@@ -146,6 +146,7 @@ export default function Contact() {
   });
   const [sending, setSending] = useState(false);
   const [sent, setSent] = useState(false);
+  const [serviceOpen, setServiceOpen] = useState(false);
 
   const handleChange = (e) => {
     setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
@@ -413,7 +414,7 @@ export default function Contact() {
                     />
                   </div>
 
-                  <div className="ct-field">
+                  {/* <div className="ct-field">
                     <label htmlFor="ct-service">Topic / Service</label>
                     <select
                       id="ct-service"
@@ -427,7 +428,39 @@ export default function Contact() {
                         </option>
                       ))}
                     </select>
-                  </div>
+                  </div> */}
+                  <div className="ct-field">
+  <label>Topic / Service</label>
+
+  <div className="ct-custom-select">
+    <button
+      type="button"
+      className="ct-select-btn"
+      onClick={() => setServiceOpen(!serviceOpen)}
+    >
+      {form.service || "Select a topic…"}
+      <span>⌄</span>
+    </button>
+
+    {serviceOpen && (
+      <div className="ct-select-menu">
+        {serviceOptions.slice(1).map((opt) => (
+          <button
+            type="button"
+            key={opt}
+            className={`ct-select-option ${form.service === opt ? "active" : ""}`}
+            onClick={() => {
+              setForm((prev) => ({ ...prev, service: opt }));
+              setServiceOpen(false);
+            }}
+          >
+            {opt}
+          </button>
+        ))}
+      </div>
+    )}
+  </div>
+</div>
 
                   <div className="ct-field">
                     <label htmlFor="ct-message">Your Message</label>

@@ -308,6 +308,64 @@
   gap: 1.15rem;
 }
 
+.ct-custom-select {
+  position: relative;
+}
+
+.ct-select-btn {
+  width: 100%;
+  background: #ffffff;
+  border: 1px solid rgba(7, 17, 31, 0.2);
+  border-radius: 0.9rem;
+  padding: 0.8rem 1.1rem;
+  color: var(--color-midnight);
+  font-size: 0.93rem;
+  font-family: inherit;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ct-select-btn:hover,
+.ct-select-btn:focus {
+  border-color: rgba(234, 179, 8, 0.55);
+  box-shadow: 0 0 0 3px rgba(234, 179, 8, 0.1);
+  outline: none;
+}
+
+.ct-select-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: #f5eedc;
+  border: 1px solid rgba(7, 17, 31, 0.15);
+  border-radius: 0.9rem;
+  overflow: hidden;
+  z-index: 50;
+  box-shadow: 0 16px 40px rgba(7, 17, 31, 0.18);
+}
+
+.ct-select-option {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 0.85rem 1.1rem;
+  text-align: left;
+  color: var(--color-midnight);
+  font-size: 0.9rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.ct-select-option:hover,
+.ct-select-option.active {
+  background: #eab308;
+  color: #07111f;
+}
+
 .ct-form-row {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -516,7 +574,7 @@
 .ct-why-card h3 {
   font-size: 1.05rem;
   font-weight: 800;
-  color: #07111F;
+  color: var(--color-midnight);
   margin: 0 0 0.5rem;
 }
 
