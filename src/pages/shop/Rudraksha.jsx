@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Rudraksha.css";
 import { rudraksha as products } from "../../data/rudraksha";
+import { useCart } from "../../context/CartContext";
 
 const benefits = [
   {
@@ -71,6 +72,7 @@ const discount = (orig, curr) => Math.round(((orig - curr) / orig) * 100);
 
 export default function Rudraksha() {
   const navigate = useNavigate();
+  const { addToCart } = useCart();
   const [activeFilter, setActiveFilter] = useState("all");
   const [sortBy, setSortBy] = useState("featured");
   const [openFaq, setOpenFaq] = useState(null);
@@ -201,7 +203,10 @@ export default function Rudraksha() {
                   <span className="tag">✓ Certified</span>
                   <span className="tag">✓ Energized</span>
                 </div>
-                <button className="card-btn" onClick={() => navigate(`/rudraksha/${product.id}`)}>Add to Cart</button>
+                <button
+                  className="card-btn"
+                  onClick={() => addToCart({ ...product, category: "rudraksha" })}
+                >Add to Cart</button>
               </div>
             </div>
           ))}

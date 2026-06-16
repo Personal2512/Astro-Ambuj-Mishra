@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate, Link } from 'react-router-dom';
 import './ProductDetail.css';
+import { useCart } from '../../context/CartContext';
 
 import { bracelets }    from '../../data/bracelets';
 import { gemstones }    from '../../data/gemstones';
@@ -178,11 +179,11 @@ const TRUST_BADGES = [
 export default function ProductDetail({ category }) {
   const { id }       = useParams();
   const navigate     = useNavigate();
+  const { addToCart } = useCart();
 
   const [activeImage, setActiveImage] = useState(0);
   const [qty,         setQty]         = useState(1);
   const [activeTab,   setActiveTab]   = useState('description');
-  const [toast,       setToast]       = useState(false);
 
   /* Look up product */
   const products = dataMap[category] || [];
@@ -225,8 +226,7 @@ export default function ProductDetail({ category }) {
 
   /* ── Action handlers ────────────────────────────── */
   const handleAddToCart = () => {
-    setToast(true);
-    setTimeout(() => setToast(false), 3500);
+    addToCart({ ...product, category }, qty);
   };
 
   const handleBuyNow = () => {
@@ -508,15 +508,6 @@ export default function ProductDetail({ category }) {
           </div>
         </section>
       )}
-
-      {/* ─── Toast ───────────────────────────────── */}
-      <div className={`pd-toast ${toast ? 'visible' : ''}`} role="status" aria-live="polite">
-        <span className="pd-toast-icon">🛒</span>
-        <div className="pd-toast-text">
-          <strong>Added to cart!</strong>
-          {product.name} × {qty} — we'll confirm shortly.
-        </div>
-      </div>
 
     </div>
   );

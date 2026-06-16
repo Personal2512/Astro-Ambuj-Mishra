@@ -13,6 +13,7 @@ import AboutUs from "../pages/AboutUs";
 import Courses from "../pages/Courses";
 import Consultation from "../pages/Consultation";
 import OnlinePooja from "../pages/OnlinePooja";
+import Profile from "../pages/Profile";
 export default function AppRoutes() {
   return (
     <>
@@ -25,6 +26,7 @@ export default function AppRoutes() {
         <Route path="/contact-us" element={<Contact />} />
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/courses" element={<Courses />} />
+        <Route path="/profile" element={<Profile />} />
 
         {/* ── Category listing pages ── */}
         <Route path="/bracelets" element={<Bracelets />} />

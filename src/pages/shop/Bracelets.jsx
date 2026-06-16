@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Bracelets.css";
 import { bracelets as products } from "../../data/bracelets";
+import { useCart } from "../../context/CartContext";
 
 const benefits = [
   {
@@ -86,6 +87,7 @@ const pct = (o, c) => Math.round(((o - c) / o) * 100);
 
 export default function Bracelets() {
   const navigate = useNavigate();
+  const { addToCart } = useCart();
   const [filter, setFilter] = useState("all");
   const [sort, setSort] = useState("featured");
   const [faqOpen, setFaqOpen] = useState(null);
@@ -252,7 +254,10 @@ export default function Bracelets() {
                     <span className="br-tag">🎁 Combo</span>
                   )}
                 </div>
-                <button className="br-add-btn" onClick={() => navigate(`/bracelets/${p.id}`)}>Add to Cart</button>
+                <button
+                  className="br-add-btn"
+                  onClick={() => addToCart({ ...p, originalPrice: p.orig, category: "bracelets" })}
+                >Add to Cart</button>
               </div>
             </div>
           ))}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Gemstones.css";
 import { gemstones as products } from "../../data/gemstones";
+import { useCart } from "../../context/CartContext";
 
 const benefits = [
   {
@@ -97,6 +98,7 @@ const discount = (orig, curr) => Math.round(((orig - curr) / orig) * 100);
 
 export default function Gemstones() {
   const navigate = useNavigate();
+  const { addToCart } = useCart();
   const [activeFilter, setActiveFilter] = useState("all");
   const [sortBy, setSortBy] = useState("featured");
   const [openFaq, setOpenFaq] = useState(null);
@@ -278,7 +280,10 @@ export default function Gemstones() {
                       : "🌀 Semi-Precious"}
                   </span>
                 </div>
-                <button className="gems-card-btn" onClick={() => navigate(`/gemstones/${product.id}`)}>Add to Cart</button>
+                <button
+                  className="gems-card-btn"
+                  onClick={() => addToCart({ ...product, category: "gemstones" })}
+                >Add to Cart</button>
               </div>
             </div>
           ))}
