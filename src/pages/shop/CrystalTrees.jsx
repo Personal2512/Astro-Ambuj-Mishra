@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import './CrystalTrees.css'
 import { crystalTrees as products } from '../../data/crystalTrees'
+import { useCart } from '../../context/CartContext'
 
 const benefits = [
   { icon: "🌳", title: "Hand-crafted Trees", desc: "Each crystal tree is handcrafted with genuine gemstone chips set on natural wire branches." },
@@ -42,6 +43,7 @@ const discount = (orig, curr) => Math.round(((orig - curr) / orig) * 100)
 
 export default function CrystalTrees() {
   const navigate = useNavigate()
+  const { addToCart } = useCart()
   const [activeFilter, setActiveFilter] = useState('all')
   const [sortBy, setSortBy] = useState('featured')
   const [openFaq, setOpenFaq] = useState(null)
@@ -199,7 +201,10 @@ export default function CrystalTrees() {
                     product.category === 'mala' ? '📿 Mala' : '🔮 Bracelet'
                   }</span>
                 </div>
-                <button className="ct-card-btn" onClick={() => navigate(`/crystal-trees/${product.id}`)}>Add to Cart</button>
+                <button
+                  className="ct-card-btn"
+                  onClick={() => addToCart({ ...product, category: 'crystal-trees' })}
+                >Add to Cart</button>
               </div>
             </div>
           ))}

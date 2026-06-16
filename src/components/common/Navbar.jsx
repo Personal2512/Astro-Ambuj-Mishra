@@ -1,7 +1,8 @@
 import { useState } from "react";
-import { Menu, X, ChevronDown } from "lucide-react";
+import { Menu, X, ChevronDown, ShoppingCart, User } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
+import { useCart } from "../../context/CartContext";
 
 const serviceItems = [
   { label: "Consultation", href: "/consultation", isRoute: true },
@@ -13,12 +14,18 @@ const navItems = [
   { label: "Courses", href: "/courses", isRoute: true },
   { label: "About Us", href: "/about-us", isRoute: true },
   { label: "Contact Us", href: "/contact-us", isRoute: true },
-  
 ];
 
 export default function Navbar() {
   const [openMenu, setOpenMenu] = useState(false);
   const [openServices, setOpenServices] = useState(false);
+  const { cartCount, setCartOpen } = useCart();
+  const navigate = useNavigate();
+  const { pathname } = useLocation();
+
+  // Show Book Consultation button only on non-shop pages
+  const CONSULT_PAGES = ["/", "/consultation", "/online-pooja", "/courses", "/about-us", "/contact-us"];
+  const showConsultBtn = CONSULT_PAGES.includes(pathname);
 
   return (
     <motion.header
@@ -28,17 +35,16 @@ export default function Navbar() {
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-5 py-5">
         <Link to="/" className="flex items-center gap-3">
-        <div className="flex items-center gap-3">
-          <img
-            src="/favicon.webp"
-            alt="Astro Logo"
-            className="h-12 w-12 rounded-full border border-cream/20 object-contain"
-          />
-
-          <span className="font-display text-2xl font-bold text-cream">
-            Astro Ambuj Mishra
-          </span>
-        </div>
+          <div className="flex items-center gap-3">
+            <img
+              src="/favicon.webp"
+              alt="Astro Logo"
+              className="h-12 w-12 rounded-full border border-cream/20 object-contain"
+            />
+            <span className="font-display text-2xl font-bold text-cream">
+              Astro Ambuj Mishra
+            </span>
+          </div>
         </Link>
 
         {/* Desktop Menu */}
@@ -107,20 +113,83 @@ export default function Navbar() {
           )}
         </div>
 
-        <Link
-          to="/consultation"
-          className="hidden rounded-full bg-gold px-5 py-2 text-sm font-bold text-midnight shadow-lg shadow-gold/20 md:block"
-        >
-          Book Consultation
-        </Link>
+        {/* Right Icons — Desktop: shown only on shop/product/profile pages */}
+        <div className="hidden items-center gap-3 md:flex">
+          {!showConsultBtn && (
+            <>
+              {/* Cart Icon */}
+              <button
+                id="navbar-cart-btn"
+                onClick={() => setCartOpen(true)}
+                className="navbar-icon-btn"
+                aria-label="Open cart"
+              >
+                <ShoppingCart size={22} />
+                {cartCount > 0 && (
+                  <motion.span
+                    key={cartCount}
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    className="navbar-cart-badge"
+                  >
+                    {cartCount > 9 ? "9+" : cartCount}
+                  </motion.span>
+                )}
+              </button>
 
-        {/* Mobile Toggle */}
-        <button
-          onClick={() => setOpenMenu(!openMenu)}
-          className="text-cream md:hidden"
-        >
-          {openMenu ? <X size={28} /> : <Menu size={28} />}
-        </button>
+              {/* Profile Icon */}
+              <button
+                id="navbar-profile-btn"
+                onClick={() => navigate("/profile")}
+                className="navbar-icon-btn"
+                aria-label="Go to profile"
+              >
+                <User size={22} />
+              </button>
+            </>
+          )}
+
+          {/* Book Consultation — shown only on non-shop pages */}
+          {showConsultBtn && (
+            <Link
+              to="/consultation"
+              className="rounded-full bg-gold px-5 py-2 text-sm font-bold text-midnight shadow-lg shadow-gold/20 transition hover:opacity-90"
+            >
+              Book Consultation
+            </Link>
+          )}
+        </div>
+
+        {/* Mobile: icons + hamburger — cart/profile only on shop pages */}
+        <div className="flex items-center gap-2 md:hidden">
+          {!showConsultBtn && (
+            <>
+              <button
+                onClick={() => setCartOpen(true)}
+                className="navbar-icon-btn"
+                aria-label="Open cart"
+              >
+                <ShoppingCart size={20} />
+                {cartCount > 0 && (
+                  <span className="navbar-cart-badge">{cartCount > 9 ? "9+" : cartCount}</span>
+                )}
+              </button>
+              <button
+                onClick={() => navigate("/profile")}
+                className="navbar-icon-btn"
+                aria-label="Go to profile"
+              >
+                <User size={20} />
+              </button>
+            </>
+          )}
+          <button
+            onClick={() => setOpenMenu(!openMenu)}
+            className="text-cream"
+          >
+            {openMenu ? <X size={28} /> : <Menu size={28} />}
+          </button>
+        </div>
       </nav>
 
       {/* Mobile Menu */}
@@ -139,9 +208,7 @@ export default function Navbar() {
               Services
               <ChevronDown
                 size={20}
-                className={`transition-transform ${
-                  openServices ? "rotate-180" : ""
-                }`}
+                className={`transition-transform ${openServices ? "rotate-180" : ""}`}
               />
             </button>
 
@@ -200,13 +267,16 @@ export default function Navbar() {
               )
             )}
 
-            <Link
-              to="/consultation"
-              onClick={() => setOpenMenu(false)}
-              className="mt-4 block rounded-full bg-gold px-5 py-3 text-center text-sm font-bold text-midnight shadow-lg shadow-gold/20"
-            >
-              Book Consultation
-            </Link>
+            {/* Book Consultation in mobile menu */}
+            {showConsultBtn && (
+              <Link
+                to="/consultation"
+                onClick={() => setOpenMenu(false)}
+                className="mt-4 block rounded-full bg-gold px-5 py-3 text-center text-sm font-bold text-midnight shadow-lg shadow-gold/20"
+              >
+                Book Consultation
+              </Link>
+            )}
           </motion.div>
         )}
       </AnimatePresence>
