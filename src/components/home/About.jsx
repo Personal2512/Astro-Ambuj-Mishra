@@ -42,7 +42,7 @@ const AboutUs = () => {
               </div>
 
               <div>
-                <h4 className="font-bold text-lg text-white">20 Years</h4>
+                <h4 className="font-bold text-lg text-white">20+ Years</h4>
 
                 <p className="text-sm text-white">Experience in Astrology</p>
               </div>
