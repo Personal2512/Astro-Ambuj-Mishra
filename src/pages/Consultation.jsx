@@ -33,9 +33,9 @@ const fadeUp = {
 
 /* ── Static data ─────────────────────────────────────────── */
 const stats = [
-  { icon: "⭐", number: "10,000+", label: "Consultations Done" },
+  { icon: "⭐", number: "18,000+", label: "Consultations Done" },
   { icon: "🌍", number: "20+", label: "Countries Served" },
-  { icon: "🏆", number: "25", label: "Years of Expertise" },
+  { icon: "🏆", number: "20+", label: "Years of Expertise" },
   { icon: "💯", number: "98%", label: "Satisfaction Rate" },
 ];
 
