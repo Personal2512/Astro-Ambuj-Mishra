@@ -28,9 +28,9 @@ const contactItems = [
   {
     icon: <Mail size={18} />,
     label: "Email",
-    value: "AmbujMishra1975@gmail.com",
+    value: "ambujmishra1975@gmail.com",
     sub: "Reply within 24 hours",
-    href: "mailto:AmbujMishra1975@gmail.com",
+    href: "mailto:ambujmishra1975@gmail.com",
   },
   {
     icon: <MapPin size={18} />,
@@ -66,8 +66,8 @@ const quickLinks = [
   {
     icon: <Mail size={18} />,
     label: "Send Email",
-    detail: "AmbujMishra1975@gmail.com",
-    href: "mailto:AmbujMishra1975@gmail.com",
+    detail: "ambujmishra1975@gmail.com",
+    href: "mailto:ambujmishra1975@gmail.com",
     color: "#9AE6D8",
   },
 ];
@@ -531,7 +531,7 @@ export default function Contact() {
       <div className="ct-map-wrap">
         <div className="ct-map-inner">
           <iframe
-            src="https://www.google.com/maps?q=26.8592105,81.0271141&z=17&output=embed"
+            src="https://www.google.com/maps?q=26.493340,80.275988&z=17&output=embed"
             width="100%"
             height="100%"
             style={{ border: 0 }}
@@ -545,7 +545,7 @@ export default function Contact() {
         <p>Ecogram, Lucknow, Uttar Pradesh 226010, India</p> */}
 
         <a
-          href="https://www.google.com/maps/place/Ecogram/@26.8592105,81.0271141,17z"
+          href="https://www.google.com/maps/place/Lakhanpur/@26.493340,80.275988,17z"
           target="_blank"
           rel="noopener noreferrer"
           style={{

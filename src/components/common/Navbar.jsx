@@ -7,7 +7,7 @@ import { useCart } from "../../context/CartContext";
 const serviceItems = [
   { label: "Consultation", href: "/consultation", isRoute: true },
   { label: "Products", href: "/products", isRoute: true },
-  { label: "Karamkand / Online Puja", href: "/online-pooja", isRoute: true },
+  { label: "Online Puja", href: "/online-pooja", isRoute: true },
 ];
 
 const navItems = [
