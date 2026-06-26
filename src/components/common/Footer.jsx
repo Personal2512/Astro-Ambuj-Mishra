@@ -81,7 +81,7 @@ export default function Footer() {
           <p className="text-center sm:text-right text-white">
             Powered by{" "}
             <a
-              href="https://hexaschoolerp.com"
+              href="https://web.hexawarre.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-medium text-gold transition-colors duration-300 hover:underline"

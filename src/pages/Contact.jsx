@@ -21,29 +21,29 @@ const contactItems = [
   {
     icon: <Phone size={18} />,
     label: "Phone / WhatsApp",
-    value: "+91 98765 43210",
+    value: "+91 98393 18555",
     sub: "Mon – Sat, 9 AM – 8 PM IST",
-    href: "tel:+919876543210",
+    href: "tel:+919839318555",
   },
   {
     icon: <Mail size={18} />,
     label: "Email",
-    value: "info@ambujmishra.com",
+    value: "AmbujMishra1975@gmail.com",
     sub: "Reply within 24 hours",
-    href: "mailto:info@ambujmishra.com",
+    href: "mailto:AmbujMishra1975@gmail.com",
   },
   {
     icon: <MapPin size={18} />,
     label: "Location",
-    value: "B-5/434 Ground Floor, Viraj Khand, Gomti Nagar, Lucknow",
-    sub: "Uttar Pradesh – 226010",
+    value: "House No-833, Lakhanpur Housing Society, Metro Pillar Number 133, Lakhanpur, Gurudev, Kanpur Nagar",
+    sub: "Uttar Pradesh – 208024",
     href: "https://maps.app.goo.gl/cKyKiB8hnJ1qY56w7",
   },
   {
     icon: <Clock size={18} />,
     label: "Consultation Hours",
-    value: "Mon – Sat: 9 AM – 8 PM",
-    sub: "Sunday: By appointment only",
+    value: "Mon – Sat: 11 AM – 6 PM",
+    sub: "Sunday Closed",
     href: null,
   },
 ];
@@ -53,21 +53,21 @@ const quickLinks = [
     icon: <MessageCircle size={18} />,
     label: "WhatsApp Us",
     detail: "Chat instantly",
-    href: "https://wa.me/919876543210",
+    href: "https://wa.me/919839318555",
     color: "#25D366",
   },
   {
     icon: <Phone size={18} />,
     label: "Call Now",
-    detail: "+91 98765 43210",
-    href: "tel:+919876543210",
+    detail: "+91 98393 18555",
+    href: "tel:+919839318555",
     color: "#EAB308",
   },
   {
     icon: <Mail size={18} />,
     label: "Send Email",
-    detail: "info@ambujmishra.com",
-    href: "mailto:info@ambujmishra.com",
+    detail: "AmbujMishra1975@gmail.com",
+    href: "mailto:AmbujMishra1975@gmail.com",
     color: "#9AE6D8",
   },
 ];
@@ -76,7 +76,7 @@ const socials = [
   {
     icon: <Camera size={14} />,
     label: "Instagram",
-    href: "https://instagram.com",
+    href: "https://www.instagram.com/ambujmishra_7/",
   },
   {
     icon: <Play size={14} />,
@@ -93,7 +93,7 @@ const socials = [
 const whyCards = [
   {
     icon: "🔮",
-    title: "15+ Years of Expertise",
+    title: "20+ Years of Expertise",
     desc: "Ambuj Mishra brings over a decade and a half of deep Vedic astrology practice and research.",
   },
   {
