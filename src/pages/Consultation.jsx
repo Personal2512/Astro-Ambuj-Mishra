@@ -235,9 +235,9 @@ const infoCards = [
   {
     icon: <Mail size={18} />,
     label: "Email",
-    value: "AmbujMishra1975@gmail.com",
+    value: "ambujmishra1975@gmail.com",
     sub: "Reply within 24 hours",
-    href: "mailto:AmbujMishra1975@gmail.com",
+    href: "mailto:ambujmishra1975@gmail.com",
   },
   {
     icon: <Clock size={18} />,
