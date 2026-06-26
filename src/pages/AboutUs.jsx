@@ -29,64 +29,64 @@ const fadeUp = {
 const credentials = [
   {
     icon: <Star size={16} />,
-    title: "25 Years of Experience",
-    sub: "Guiding individuals through astrology, life guidance, and personal growth",
+    title: "Practicing Since 2006",
+    sub: "Analyzing Kundlis and guiding individuals for nearly two decades",
   },
   {
     icon: <BookOpen size={16} />,
-    title: "Holistic Life Guidance",
-    sub: "Blending astrology, mental wellness, and practical life insights",
+    title: "18,000+ Individuals Guided",
+    sub: "Personalized consultations covering every area of life",
   },
   {
     icon: <Award size={16} />,
-    title: "Trusted Astrology Expert",
-    sub: "Helping people make informed decisions with clarity and confidence",
+    title: "Trusted Spiritual Guide",
+    sub: "Combining Vedic wisdom with NLP for holistic life guidance",
   },
   {
     icon: <GraduationCap size={16} />,
-    title: "Personal Growth Mentor",
-    sub: "Empowering individuals through self-awareness and positive transformation",
+    title: "Multi-Disciplinary Expert",
+    sub: "Vedic Astrology, Numerology, Palmistry, Face Reading & NLP",
   },
 ];
 
 const pillars = [
   {
     icon: "🔮",
-    title: "Astrology with Practical Insights",
-    desc: "Combining traditional astrological wisdom with practical guidance to help individuals make informed decisions and navigate life's challenges.",
+    title: "Vedic Astrology & Kundli Analysis",
+    desc: "Deep-dive birth chart readings covering career, business, relationships, marriage, and financial growth with practical remedies.",
   },
   {
     icon: "🧠",
-    title: "Mental Wellness & Self-Growth",
-    desc: "Focusing on emotional well-being, self-awareness, and personal development to inspire confidence and positive transformation.",
+    title: "NLP & Numerology",
+    desc: "Integrating Neuro-Linguistic Programming with numerological insights to foster self-awareness, confidence, and positive transformation.",
   },
   {
-    icon: "🌍",
-    title: "25+ Years of Experience",
-    desc: "Over two decades of guiding individuals through astrology, life coaching, and holistic wellness with compassion and clarity.",
+    icon: "🌿",
+    title: "Palmistry & Face Reading",
+    desc: "Reading life's story through the lines of the palm and the features of the face — a powerful complement to Vedic consultations.",
   },
   {
     icon: "✨",
-    title: "Holistic Life Guidance",
-    desc: "A unique approach that integrates astrology, mental wellness, and life guidance to help people achieve balance, purpose, and success.",
+    title: "Planetary Remedies & Muhurat",
+    desc: "Meaningful, actionable remedies and auspicious timing guidance that bring clarity and positive shifts to everyday life.",
   },
 ];
 
 const missionPoints = [
   {
     icon: <CheckCircle size={14} />,
-    title: "Clarity Over Complexity",
-    desc: "Every reading is delivered in clear, actionable language — no jargon, no vagueness.",
+    title: "Clarity & Confidence",
+    desc: "Helping individuals gain clarity, confidence, and direction across every major life decision.",
   },
   {
     icon: <CheckCircle size={14} />,
-    title: "Ethical & Responsible Guidance",
-    desc: "We empower you with knowledge — never fear, never dependency.",
+    title: "Challenges into Opportunities",
+    desc: "Every challenge has a solution — every phase of life carries an opportunity for growth.",
   },
   {
     icon: <CheckCircle size={14} />,
-    title: "Preserving Vedic Heritage",
-    desc: "A commitment to keeping the ancient science alive and accessible for generations to come.",
+    title: "Balanced & Fulfilling Future",
+    desc: "Guiding people to understand their true potential and create a more balanced, fulfilling life.",
   },
 ];
 
@@ -115,7 +115,7 @@ export default function AboutUs() {
           </h1>
 
           <p className="au-hero-sub">
-            Over 25 years of experience in astrology, mental wellness, and life guidance — empowering individuals with clarity, wisdom, compassion, and practical insights for a balanced and fulfilling life.
+            A trusted astrologer, numerologist, and spiritual guide based in Kanpur, Uttar Pradesh — empowering individuals with Vedic wisdom, NLP, and practical insights since 2006.
           </p>
         </motion.div>
       </section>
@@ -157,8 +157,8 @@ export default function AboutUs() {
                 <Award size={22} />
               </div>
               <div>
-                <h4>25 Years</h4>
-                <p>Experience in Astrology</p>
+                <h4>Since 2006</h4>
+                <p>Vedic Astrology & Guidance</p>
               </div>
             </div>
           </div>
@@ -174,25 +174,24 @@ export default function AboutUs() {
         >
           <div className="au-eyebrow">
             <Sparkles size={14} />
-            Vedic Astrology
+            Astrologer · Numerologist · Spiritual Guide
           </div>
 
           <h2 className="au-content-title">
-            Ambuj Mishra{" "}
-            {/* <span>'Bhairav'</span> */}
+            Ambuj Mishra
           </h2>
 
           <div className="au-divider" />
 
           <div className="au-content-body">
             <p>
-             Ambuj Mishra is a visionary businesswoman, astrologer, and mental wellness professional with over 25 years of experience in guiding people toward personal growth, clarity, and balance.
+              Ambuj Mishra is a trusted astrologer, numerologist, and spiritual guide based in Kanpur, Uttar Pradesh. Since 2006, she has helped more than 18,000 individuals make informed life decisions through detailed Kundli consultations, offering practical solutions and spiritual insights tailored to each unique journey.
             </p>
             <p>
-              With a unique blend of business expertise, astrological knowledge, and a deep understanding of human emotions, Ambuj Mishra helps individuals explore their potential, overcome challenges, and create a more meaningful path in life.
+              Her expertise extends beyond Vedic Astrology to Numerology, Palmistry, Face Reading, Planetary Analysis, and NLP (Neuro-Linguistic Programming), allowing her to provide a holistic approach to personal growth and life guidance.
             </p>
             <p>
-              Her approach combines traditional wisdom with practical insights, focusing on self-awareness, confidence, emotional well-being, and positive transformation. Through her work in astrology and mental wellness programs, she has supported many individuals in making thoughtful decisions and building a balanced lifestyle.
+              Whether it's career planning, business growth, financial concerns, marriage, relationships, family matters, or important life decisions — she helps individuals gain clarity, confidence, and direction. Known for combining traditional astrological wisdom with modern understanding of human behavior, Ambuj Mishra focuses not only on identifying challenges but also on providing meaningful remedies and actionable guidance.
             </p>
           </div>
 
@@ -229,7 +228,7 @@ export default function AboutUs() {
           variants={fadeUp}
         >
           <h2>What Sets Ambuj Mishra Apart</h2>
-          <p>Four pillars that define every consultation and every reading.</p>
+          <p>Four pillars that define every consultation, reading, and guidance session.</p>
         </motion.div>
 
         <div className="au-pillars-grid">
@@ -264,12 +263,13 @@ export default function AboutUs() {
           <div>
             <p className="au-mission-label">Our Mission</p>
             <h2 className="au-mission-title">
-              Bridging Ancient Wisdom with the Modern Seeker
+              Helping People Understand Their Potential & Navigate Life's Path
             </h2>
             <p className="au-mission-body">
-              The mission is simple: to make the profound science of Vedic
-              astrology accessible, accurate and transformative — for every
-              person who seeks clarity, purpose and direction in life.
+              Her mission is to help people understand their potential, navigate
+              life's uncertainties, and create a more balanced and fulfilling future.
+              Every challenge has a solution — and through the right guidance, clarity
+              becomes the foundation of a better tomorrow. ✨
             </p>
           </div>
 
@@ -351,10 +351,10 @@ export default function AboutUs() {
           viewport={{ once: true }}
           variants={fadeUp}
         >
-          <h2>Ready to Begin Your Cosmic Journey?</h2>
+          <h2>Ready to Begin Your Journey?</h2>
           <p>
-            Book a personalised consultation with Ambuj Mishra and discover
-            the guidance the stars hold for you.
+            Book a personalised consultation with Ambuj Mishra and gain the
+            clarity, confidence, and direction you deserve.
           </p>
 
           <div className="au-cta-btns">

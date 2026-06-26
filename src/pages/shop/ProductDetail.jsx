@@ -3,9 +3,9 @@ import { useParams, useNavigate, Link } from 'react-router-dom';
 import './ProductDetail.css';
 import { useCart } from '../../context/CartContext';
 
-import { bracelets }    from '../../data/bracelets';
-import { gemstones }    from '../../data/gemstones';
-import { rudraksha }    from '../../data/rudraksha';
+import { bracelets } from '../../data/bracelets';
+import { gemstones } from '../../data/gemstones';
+import { rudraksha } from '../../data/rudraksha';
 import { crystalTrees } from '../../data/crystalTrees';
 
 /* ─── Data & Route Maps ─────────────────────────────── */
@@ -17,16 +17,16 @@ const dataMap = {
 };
 
 const categoryLabels = {
-  bracelets:       'Crystal Bracelets',
-  gemstones:       'Gemstones',
-  rudraksha:       'Natural Rudraksha',
+  bracelets: 'Crystal Bracelets',
+  gemstones: 'Gemstones',
+  rudraksha: 'Natural Rudraksha',
   'crystal-trees': 'Crystal Trees',
 };
 
 const categoryRoutes = {
-  bracelets:       '/bracelets',
-  gemstones:       '/gemstones',
-  rudraksha:       '/rudraksha',
+  bracelets: '/bracelets',
+  gemstones: '/gemstones',
+  rudraksha: '/rudraksha',
   'crystal-trees': '/crystal-trees',
 };
 
@@ -168,26 +168,26 @@ const SAMPLE_REVIEWS = [
 ];
 
 const TRUST_BADGES = [
-  { icon: '🚚', label: 'Free Shipping',    sub: 'On orders ₹999+' },
-  { icon: '🔒', label: 'Secure Payment',   sub: '100% encrypted'  },
-  { icon: '🎁', label: 'Gift Packaging',   sub: 'Premium pouch'   },
-  { icon: '✅', label: 'Authenticated',     sub: 'Certified genuine'},
-  { icon: '🔄', label: 'Easy Returns',     sub: '7-day policy'    },
+  { icon: '🚚', label: 'Free Shipping', sub: 'On orders ₹999+' },
+  { icon: '🔒', label: 'Secure Payment', sub: '100% encrypted' },
+  { icon: '🎁', label: 'Gift Packaging', sub: 'Premium pouch' },
+  { icon: '✅', label: 'Authenticated', sub: 'Certified genuine' },
+  { icon: '🔄', label: 'Easy Returns', sub: '7-day policy' },
 ];
 
 /* ─── Component ─────────────────────────────────────── */
 export default function ProductDetail({ category }) {
-  const { id }       = useParams();
-  const navigate     = useNavigate();
+  const { id } = useParams();
+  const navigate = useNavigate();
   const { addToCart } = useCart();
 
   const [activeImage, setActiveImage] = useState(0);
-  const [qty,         setQty]         = useState(1);
-  const [activeTab,   setActiveTab]   = useState('description');
+  const [qty, setQty] = useState(1);
+  const [activeTab, setActiveTab] = useState('description');
 
   /* Look up product */
   const products = dataMap[category] || [];
-  const product  = products.find((p) => String(p.id) === String(id));
+  const product = products.find((p) => String(p.id) === String(id));
 
   /* Scroll to top whenever product changes */
   useEffect(() => { window.scrollTo({ top: 0, behavior: 'smooth' }); }, [id, category]);
@@ -206,23 +206,23 @@ export default function ProductDetail({ category }) {
 
   /* ── Derived values ─────────────────────────────── */
   const origPrice = product.orig || product.originalPrice;
-  const discount  = pct(origPrice, product.price);
-  const images    = Array(4).fill(product.image);
-  const related   = products.filter((p) => p.id !== product.id).slice(0, 4);
-  const content   = generateContent(product, category);
-  const rating    = product.rating    || 4.5;
-  const revCount  = product.reviewCount || 1247;
-  const catLabel  = categoryLabels[category] || 'Shop';
-  const catRoute  = categoryRoutes[category] || '/';
+  const discount = pct(origPrice, product.price);
+  const images = Array(4).fill(product.image);
+  const related = products.filter((p) => p.id !== product.id).slice(0, 4);
+  const content = generateContent(product, category);
+  const rating = product.rating || 4.5;
+  const revCount = product.reviewCount || 1247;
+  const catLabel = categoryLabels[category] || 'Shop';
+  const catRoute = categoryRoutes[category] || '/';
 
   /* ── Meta tags for current product ─────────────── */
   const metaTags = [];
-  if (product.benefit)  metaTags.push(`✦ ${product.benefit}`);
-  if (product.deity)    metaTags.push(`🙏 ${product.deity}`);
-  if (product.planet)   metaTags.push(`🪐 ${product.planet}`);
-  if (product.mukhis)   metaTags.push(`${product.mukhis} Mukhi`);
-  if (product.rashi)    metaTags.push(`♈ ${product.rashi}`);
-  if (product.hindi)    metaTags.push(product.hindi);
+  if (product.benefit) metaTags.push(`✦ ${product.benefit}`);
+  if (product.deity) metaTags.push(`🙏 ${product.deity}`);
+  if (product.planet) metaTags.push(`🪐 ${product.planet}`);
+  if (product.mukhis) metaTags.push(`${product.mukhis} Mukhi`);
+  if (product.rashi) metaTags.push(`♈ ${product.rashi}`);
+  if (product.hindi) metaTags.push(product.hindi);
 
   /* ── Action handlers ────────────────────────────── */
   const handleAddToCart = () => {
@@ -386,9 +386,9 @@ export default function ProductDetail({ category }) {
         <div className="pd-tabs-nav" role="tablist">
           {[
             { key: 'description', label: 'Description' },
-            { key: 'benefits',    label: 'Benefits'    },
-            { key: 'howToUse',   label: 'How to Use'  },
-            { key: 'reviews',    label: `Reviews (${revCount.toLocaleString('en-IN')})` },
+            { key: 'benefits', label: 'Benefits' },
+            { key: 'howToUse', label: 'How to Use' },
+            { key: 'reviews', label: `Reviews (${revCount.toLocaleString('en-IN')})` },
           ].map((t) => (
             <button
               key={t.key}

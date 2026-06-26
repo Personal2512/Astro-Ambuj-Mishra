@@ -43,10 +43,10 @@ export const services = [
 ];
 
 export const stats = [
-  ["25", "Years Legacy"],
-  ["100 K+", "Consultations"],
-  ["20+", "Countries"],
-  ["1000+", "Students Trained"],
+  ["2006", "Practicing Since"],
+  ["18,000+", "Individuals Guided"],
+  ["10+", "Areas of Expertise"],
+  ["Kanpur", "Based in UP"],
 ];
 
 export const testimonials = [

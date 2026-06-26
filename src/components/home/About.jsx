@@ -42,7 +42,7 @@ const AboutUs = () => {
               </div>
 
               <div>
-                <h4 className="font-bold text-lg text-white">25 Years</h4>
+                <h4 className="font-bold text-lg text-white">20 Years</h4>
 
                 <p className="text-sm text-white">Experience in Astrology</p>
               </div>
@@ -60,15 +60,15 @@ const AboutUs = () => {
             </div>
 
             <p className="text-white leading-8 text-lg mb-6">
-              Astro Ambuj Mishra is a visionary businesswoman, astrologer, and mental wellness professional with over 25 years of experience in guiding people toward personal growth, clarity, and balance.
+              Ambuj Mishra is a trusted astrologer, numerologist, and spiritual guide based in Kanpur, Uttar Pradesh. Since 2006, she has helped more than 18,000 individuals make informed life decisions through detailed Kundli consultations, offering practical solutions and spiritual insights tailored to each unique journey.
             </p>
 
             <p className="text-white leading-8 text-lg mb-6">
-              With a unique blend of business expertise, astrological knowledge, and a deep understanding of human emotions, Ambuj Mishra helps individuals explore their potential, overcome challenges, and create a more meaningful path in life.
+               Her expertise extends beyond Vedic Astrology to Numerology, Palmistry, Face Reading, Planetary Analysis, and NLP (Neuro-Linguistic Programming), allowing her to provide a holistic approach to personal growth and life guidance.
             </p>
 
             <p className="text-white leading-8 text-lg mb-6">
-              Her approach combines traditional wisdom with practical insights, focusing on self-awareness, confidence, emotional well-being, and positive transformation. Through her work in astrology and mental wellness programs, she has supported many individuals in making thoughtful decisions and building a balanced lifestyle.
+               Whether it's career planning, business growth, financial concerns, marriage, relationships, family matters, or important life decisions  she helps individuals gain clarity, confidence, and direction. Ambuj Mishra focuses not only on identifying challenges but also on providing meaningful remedies and actionable guidance.
             </p>
           </div>
         </div>

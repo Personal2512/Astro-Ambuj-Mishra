@@ -3,6 +3,7 @@ import ScrollToTop from "../components/scrollToTop";
 import MainLayout from "../layouts/MainLayout";
 
 import Home from "../pages/Home";
+import Products from "../pages/Products";
 import Bracelets from "../pages/shop/Bracelets";
 import Gemstones from "../pages/shop/Gemstones";
 import Rudraksha from "../pages/shop/Rudraksha";
@@ -21,6 +22,7 @@ export default function AppRoutes() {
     <Routes>
       <Route element={<MainLayout />}>
         <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
         <Route path="/consultation" element={<Consultation />} />
         <Route path="/online-pooja" element={<OnlinePooja />} />
         <Route path="/contact-us" element={<Contact />} />

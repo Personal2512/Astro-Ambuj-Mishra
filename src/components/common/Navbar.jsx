@@ -6,7 +6,7 @@ import { useCart } from "../../context/CartContext";
 
 const serviceItems = [
   { label: "Consultation", href: "/consultation", isRoute: true },
-  { label: "Products", href: "#products" },
+  { label: "Products", href: "/products", isRoute: true },
   { label: "Karamkand / Online Puja", href: "/online-pooja", isRoute: true },
 ];
 
@@ -24,7 +24,7 @@ export default function Navbar() {
   const { pathname } = useLocation();
 
   // Show Book Consultation button only on non-shop pages
-  const CONSULT_PAGES = ["/", "/consultation", "/online-pooja", "/courses", "/about-us", "/contact-us"];
+  const CONSULT_PAGES = ["/", "/consultation", "/online-pooja", "/courses", "/about-us", "/contact-us", "/products"];
   const showConsultBtn = CONSULT_PAGES.includes(pathname);
 
   return (
