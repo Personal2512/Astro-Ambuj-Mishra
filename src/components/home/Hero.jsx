@@ -22,9 +22,7 @@ export default function Hero() {
           alt="Astrology Background"
           className="hidden md:block w-full h-full object-cotain object-center"
         />
-
         <div className="absolute inset-0 bg-gradient-to-r from-[#2B0A0A]/80 via-[#2B0A0A]/40 to-transparent" />
-
       </div>
       {/* Soft Glow */}
       <div className="absolute left-[-120px] top-20 h-[320px] w-[320px] rounded-full bg-teal/25 blur-3xl" />
