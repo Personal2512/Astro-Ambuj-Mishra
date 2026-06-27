@@ -61,10 +61,10 @@ export default function Navbar() {
             <AnimatePresence>
               {openServices && (
                 <motion.div
-                  initial={{ opacity: 0, y: 12 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: 12 }}
-                  className="absolute left-0 top-9 w-64 overflow-hidden rounded-2xl border border-cream/10 bg-midnight/95 p-2 shadow-2xl backdrop-blur-xl"
+                  initial={{ opacity: 0, y: 12, x: "-50%" }}
+                  animate={{ opacity: 1, y: 0, x: "-50%" }}
+                  exit={{ opacity: 0, y: 12, x: "-50%" }}
+                  className="absolute left-1/2 top-9 w-40 overflow-hidden rounded-2xl border border-cream/10 bg-midnight/95 p-2 shadow-2xl backdrop-blur-xl"
                 >
                   {serviceItems.map((item) =>
                     item.isRoute ? (
