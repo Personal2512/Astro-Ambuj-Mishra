@@ -1,5 +1,6 @@
 import Hero from "../components/home/Hero";
 import About from "../components/home/About";
+import ImageAnimation from "../components/home/ImageAnimation";
 import Stats from "../components/home/Stats";
 // import AstroShop from "../components/home/AstroShop";
 import Services from "../components/home/Services";
@@ -12,6 +13,7 @@ export default function Home() {
     <>
       <Hero />
       <About />
+      <ImageAnimation />
       <Stats />
       {/* <AstroShop /> */}
       <Services />
