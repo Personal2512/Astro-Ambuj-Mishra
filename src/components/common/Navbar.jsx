@@ -42,7 +42,7 @@ export default function Navbar() {
               className="h-12 w-12 rounded-full border border-cream/20 object-contain"
             />
             <span className="font-display text-2xl font-bold text-cream">
-              Astro Ambuj Mishra
+              Astro Ambuj 
             </span>
           </div>
         </Link>
